@@ -1,0 +1,25 @@
+.universal {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  background-image: url("../images/universal-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+
+  .language {
+    margin-top: 50px;
+    &__title {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-top: 20px;
+    }
+  }
+
+}

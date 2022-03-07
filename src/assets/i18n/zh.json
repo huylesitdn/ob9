@@ -1,0 +1,15 @@
+{
+  "header": "hehe",
+  "languages": {
+    "malaysia": "malaysia",
+    "singapore": "singapore",
+    "vietnam": "vietnam",
+    "international": "international"
+  },
+  "login": "login",
+  "username": "username",
+  "password": "password",
+  "i_ll_do_this_later": "i_ll_do_this_later",
+  "remember_password": "remember_password",
+  "forget_password": "forget_password"
+}

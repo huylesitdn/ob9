@@ -1,0 +1,24 @@
+html {
+  --primary-color: #FDBB2C;
+  --max-with-mobile: 768px;
+  --default-font-size: 14px;
+  --default-small-font-size: 13px;
+  --default-padding-content: 20px;
+  --default-mobile-padding-content: 15px;
+}
+
+html,
+body {
+  font-size: var(--default-font-size);
+  max-width: var(--max-with-mobile);
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
