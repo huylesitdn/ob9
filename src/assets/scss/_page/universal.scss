@@ -1,6 +1,8 @@
 .universal {
   min-height: 100vh;
+  max-width: 768px;
   text-align: center;
+  overflow: hidden;
 
   video {
     position: fixed;
@@ -20,7 +22,8 @@
     right: 0;
     bottom: 0;
     flex-direction: column;
-
+    max-width: 768px;
+    left: 0;
     &__logo {
       img {
         max-width: 310px;

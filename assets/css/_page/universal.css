@@ -1,6 +1,8 @@
 .universal {
   min-height: 100vh;
-  text-align: center; }
+  max-width: 768px;
+  text-align: center;
+  overflow: hidden; }
   .universal video {
     position: fixed;
     right: 0;
@@ -16,7 +18,9 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 768px;
+    left: 0; }
     .universal__content__logo img {
       max-width: 310px; }
     .universal__content__language {
