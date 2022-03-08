@@ -11,5 +11,18 @@
   "password": "password",
   "i_ll_do_this_later": "i_ll_do_this_later",
   "remember_password": "remember_password",
-  "forget_password": "forget_password"
+  "forget_password": "forget_password",
+  "register_new_account": "register_new_account",
+  "register": "register",
+  "confirm_password": "confirm_password",
+  "back_to_login_page": "back_to_login_page",
+  "captcha_code": "captcha_code",
+  "register_long_text": "register_long_text",
+  "register_second_long_text": "register_second_long_text",
+  "full_name": "full_name",
+  "date_of_birth": "date_of_birth",
+  "phone_number": "phone_number",
+  "email_address": "email_address",
+  "submit": "submit",
+  "customer_service": "customer_service"
 }

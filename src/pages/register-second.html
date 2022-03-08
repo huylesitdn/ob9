@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../components/base/header.html', {title: 'Register Second'})
+  <body>
+    <!-- Content -->
+    <section class="register register-second">
+      <div class="container-fluid">
+        <div>
+          <div class="register__logo">
+            <img src="./images/login-logo.png" />
+          </div>
+          <div class="register__logo1">
+            <img src="./images/login-logo-1.svg" />
+            <img src="./images/login-logo-2.svg" />
+          </div>
+        </div>
+        <div class="register__form">
+          <form class="no-bg">
+            <h4 data-i18n="register_second_long_text">You are required to fill in the following informations to protect the security of your account.</h4>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/user.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="full_name"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/date.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="date_of_birth"
+                placeholder="Date Of Birth"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/phone.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="phone_number"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/email.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="email_address"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="mt-5">
+              <a href="/register-second.html" class="btn btn-primary btn-login" data-i18n="submit">SUBMIT</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a class="customer-service" href="#">
+        <img src="./icons/customer-service.png" alt=""/> <span data-i18n="customer_service">Customer Service</span>
+      </a>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../components/base/header.html', {title: 'Register'})
+  <body>
+    <!-- Content -->
+    <section class="register">
+      <div class="container-fluid">
+        <div>
+          <div class="register__logo">
+            <img src="./images/login-logo.png" />
+          </div>
+          <div class="register__logo1">
+            <img src="./images/login-logo-1.svg" />
+            <img src="./images/login-logo-2.svg" />
+          </div>
+        </div>
+        <div class="register__form">
+          <div class="register__form__left-button">
+            <a class="btn btn-primary register_link" data-i18n="back_to_login_page" role="button" href="/login.html">
+              Back to Login Page
+              <img src="./icons/user-fill.png" />
+            </a>
+          </div>
+          <form>
+            <h2 data-i18n="register">REGISTER</h2>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/user.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/password.png" />
+              </span>
+              <input
+                type="password"
+                class="form-control"
+                data-i18n="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/password.png" />
+              </span>
+              <input
+                type="password"
+                class="form-control"
+                data-i18n="confirm_password"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="input-group mb-3 captcha_code">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="./icons/captcha.png" />
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                data-i18n="captcha_code"
+                placeholder="Captcha Code"
+              />
+              <span class="input-group-text">
+                <img src="./icons/captcha-code.png" />
+              </span>
+            </div>
+            <div class="mt-5">
+              <p class="font-small"  data-i18n="register_long_text">By clicking the REGISTER button, I hereby acknowledge that I am above 18 years old and have read and accepted your terms & conditions.</p>
+              <a href="/register-second.html" class="btn btn-primary btn-login" data-i18n="register">REGISTER</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    @@include('../components/base/footer.html')
+  </body>
+</html>

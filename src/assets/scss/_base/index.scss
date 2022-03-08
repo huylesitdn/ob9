@@ -5,11 +5,17 @@ html {
   --default-small-font-size: 13px;
   --default-padding-content: 20px;
   --default-mobile-padding-content: 15px;
+  --bs-gutter-x: 20px;
+  --bs-gutter-y: 20px;
+  --bs-gutter-x-mobile: 15px;
+  --bs-gutter-y-mobile: 15px;
 }
 
 html,
 body {
   font-size: var(--default-font-size);
+  line-height: 16px;
+  font-weight: 300;
   max-width: var(--max-with-mobile);
   margin: auto;
   font-family: 'Roboto', sans-serif;
@@ -21,4 +27,20 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-right: var(--bs-gutter-x-mobile,.75rem);
+  padding-left: var(--bs-gutter-x-mobile,.75rem);
+}
+
+.form-control {
+  font-size: 14px;
+  line-height: 16px;
 }

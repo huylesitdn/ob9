@@ -1,20 +1,31 @@
 .universal {
-  display: flex;
-  place-content: center;
-  place-items: center;
-  background-image: url("../images/universal-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   min-height: 100vh;
   text-align: center; }
-  .universal .language {
-    margin-top: 50px; }
-    .universal .language__title {
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 14px;
-      text-align: center;
-      color: #FFFFFF;
-      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-      margin-top: 20px; }
+  .universal video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: -1; }
+  .universal__content {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    align-items: stretch;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    flex-direction: column; }
+    .universal__content__logo img {
+      max-width: 310px; }
+    .universal__content__language {
+      margin-top: 50px; }
+      .universal__content__language__title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: 20px; }
