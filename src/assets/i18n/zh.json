@@ -24,5 +24,9 @@
   "phone_number": "phone_number",
   "email_address": "email_address",
   "submit": "submit",
-  "customer_service": "customer_service"
+  "customer_service": "customer_service",
+  "register_success": "register_success",
+  "deposit_now": "deposit_now",
+  "register_thank_you_shoft": "register_thank_you_shoft",
+  "register_thank_you_long": "register_thank_you_long"
 }

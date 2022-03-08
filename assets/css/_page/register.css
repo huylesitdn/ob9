@@ -122,6 +122,37 @@
       color: #FFFFFF;
       padding-top: 20px;
       text-decoration: none; }
+  .register.register-thank-you .register__logo1 {
+    margin-bottom: 40px; }
+  .register.register-thank-you .register__form {
+    padding-top: 0; }
+  .register.register-thank-you h1 {
+    font-family: 'Aldo the Apache', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .register.register-thank-you h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px; }
+  .register.register-thank-you h5 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 15px; }
+  .register.register-thank-you .btn-login {
+    background: #597ef7; }
 
 @media only screen and (max-width: 425px) {
   .register {
@@ -164,7 +195,7 @@
         .register__form form .btn-login {
           border-radius: 30px;
           width: 100%;
-          min-height: 45px;
+          min-height: 50px;
           font-weight: 600;
           font-size: 18px;
           line-height: 21px; }

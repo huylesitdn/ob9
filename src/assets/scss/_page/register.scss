@@ -170,6 +170,50 @@
     }
   }
 
+  &.register-thank-you {
+    .register__logo1 {
+      margin-bottom: 40px;
+    }
+    .register__form {
+      padding-top: 0;
+    }
+
+    h1 {
+      font-family: 'Aldo the Apache', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 31px;
+      text-align: center;
+      text-transform: uppercase;
+      background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h4 {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .btn-login {
+      background: rgba(89, 126, 247, 1);
+    }
+  }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -236,7 +280,7 @@
         .btn-login {
           border-radius: 30px;
           width: 100%;
-          min-height: 45px;
+          min-height: 50px;
           font-weight: 600;
           font-size: 18px;
           line-height: 21px;
