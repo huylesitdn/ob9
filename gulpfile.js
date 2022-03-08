@@ -82,6 +82,11 @@ async function includeHTML(){
 }
 exports.includeHTML = includeHTML;
 
+
+gulp.task('build', async function() { 
+  buildAndReload();
+});
+
 exports.default = async function() {
   // Init serve files from the build folder
   server.init({
