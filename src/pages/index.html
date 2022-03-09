@@ -26,16 +26,131 @@
               <img src="./images/jv/banner-3.9bdac733ab51298fdc42fc882f513322.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
         </div>
 
+        <div class="notification">
+          <div class="notification__sound"><img src="./icons/sound.png" alt="" /></div>
+          <div class="text-animated">
+            <span class="text-overflow">The announcement message will runs here. The announcement message will runs here. The announcement message will runs here</span>
+          </div>
+          <div class="notification__hot-matches"><img src="./icons/hot-matches.png" alt="" /></div>
+        </div>
+
+        <div class="balance">
+          <div class="balance__total">
+            <div>
+              <span data-i18n="total_balance">Total Balance</span>
+              <img src="./icons/vip0.png" />
+              <img src="./icons/refresh.png" />
+            </div>
+            <h3>MYR 5888.20</h3>
+          </div>
+          <div class="balance__icons">
+            <div>
+              <div>
+                <img src="./icons/deposite.png" />
+              </div>
+              <p data-i18n="deposit">Deposit</p>
+            </div>
+            <div>
+              <div>
+                <img src="./icons/withdrawal.png" />
+              </div>
+              <p data-i18n="withdraw">Withdraw</p>
+            </div>
+            <div>
+              <div>
+                <img src="./icons/rebate.png" />
+              </div>
+              <p data-i18n="rebate">Rebate</p>
+            </div>
+            <div>
+              <div>
+                <img src="./icons/vip.png" />
+              </div>
+              <p data-i18n="vip">VIP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-game">
+          <ul class="home-game__nav nav nav-pills row" role="tablist">
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link active" id="sports-events-tab" data-bs-toggle="tab" data-bs-target="#sports-events" type="button" role="tab" aria-controls="home" aria-selected="true">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/sports-events.png" />
+                  <img src="./icons/home/sports-events-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="sports_events">sports events</div>
+              </button>
+            </li>
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link" id="live-casino-tab" data-bs-toggle="tab" data-bs-target="#live-casino" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/live-casino.png" />
+                  <img src="./icons/home/live-casino-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="live_casino">live casino</div>
+              </button>
+            </li>
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link" id="slot-machines-tab" data-bs-toggle="tab" data-bs-target="#slot-machines" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/slot-machines.png" />
+                  <img src="./icons/home/slot-machines-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="slot_machines">slot machines</div>
+              </button>
+            </li>
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link" id="fishing-game-tab" data-bs-toggle="tab" data-bs-target="#fishing-game" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/fishing-game.png" />
+                  <img src="./icons/home/fishing-game-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="fishing_game">fishing game</div>
+              </button>
+            </li>
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link" id="e-sports-tab" data-bs-toggle="tab" data-bs-target="#e-sports" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/e-sports.png" />
+                  <img src="./icons/home/e-sports-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="e_sports">e-sports</div>
+              </button>
+            </li>
+            <li class="nav-item home-game__nav__item col-4" role="presentation">
+              <button class="nav-link home-game__nav__item__link" id="lottery-game-tab" data-bs-toggle="tab" data-bs-target="#lottery-game" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                <div class="home-game__nav__item__link__img">
+                  <img src="./icons/home/lottery-game.png" />
+                  <img src="./icons/home/lottery-game-active.png" />
+                </div>
+                <div class="home-game__nav__item__link__text" data-i18n="lottery_game">lottery game</div>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content home-game__content" id="myTabContent">
+            <div class="tab-pane fade show active" id="sports-events" role="tabpanel" aria-labelledby="sports-events-tab">
+              @@include('../components/home/sports-events.html')
+            </div>
+            <div class="tab-pane fade" id="live-casino" role="tabpanel" aria-labelledby="live-casino-tab">
+              @@include('../components/home/live-casino.html')
+            </div>
+            <div class="tab-pane fade" id="slot-machines" role="tabpanel" aria-labelledby="slot-machines-tab">
+              @@include('../components/home/slot-machines.html')
+            </div>
+            <div class="tab-pane fade" id="fishing-game" role="tabpanel" aria-labelledby="fishing-game-tab">
+              @@include('../components/home/fishing-game.html')
+            </div>
+            <div class="tab-pane fade" id="e-sports" role="tabpanel" aria-labelledby="e-sports-tab">
+              @@include('../components/home/e-sports.html')
+            </div>
+            <div class="tab-pane fade" id="lottery-game" role="tabpanel" aria-labelledby="lottery-game-tab">
+              @@include('../components/home/lottery-game.html')
+            </div>
+          </div>
+        </div>
         
       </div>
       @@include('../components/base/navbar-bottom.html', {active: 0})

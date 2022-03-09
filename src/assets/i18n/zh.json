@@ -46,5 +46,13 @@
     "region_language": "region_language",
     "logout": "logout",
     "follow_us": "follow_us"
-  }
+  },
+  "total_balance": "total_balance",
+  "deposit": "deposit",
+  "withdraw": "withdraw",
+  "rebate": "rebate",
+  "vip": "vip",
+  "official": "official",
+  "play_now": "play_now",
+  "popular_sports": "popular_sports"
 }

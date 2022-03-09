@@ -33,5 +33,26 @@
   "wallet": "wallet",
   "promotion": "promotion",
   "sponsors": "sponsors",
-  "my_account": "my_account"
+  "my_account": "my_account",
+  "menu": {
+    "home": "home",
+    "my_account": "my_account",
+    "vip": "vip",
+    "sponsor": "sponsor",
+    "faq": "faq",
+    "info": "info",
+    "about_us": "about_us",
+    "contact_us": "contact_us",
+    "region_language": "region_language",
+    "logout": "logout",
+    "follow_us": "follow_us"
+  },
+  "total_balance": "total_balance",
+  "deposit": "deposit",
+  "withdraw": "withdraw",
+  "rebate": "rebate",
+  "vip": "vip",
+  "official": "official",
+  "play_now": "play_now",
+  "popular_sports": "popular_sports"
 }

@@ -120,7 +120,10 @@
         font-size: 18px;
         line-height: 21px;
         text-align: center;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        display: flex;
+        place-content: center;
+        place-items: center; }
     .login__form__right-button {
       display: contents; }
       .login__form__right-button .register_link {
@@ -409,7 +412,8 @@
         gap: 20px; } }
 
 .home__content {
-  padding-top: 65px; }
+  padding-top: 65px;
+  padding-bottom: 65px; }
   .home__content #carouselHome .carousel-indicators {
     margin-bottom: 0; }
     .home__content #carouselHome .carousel-indicators > [data-bs-target] {
@@ -418,3 +422,292 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px; }
+  .home__content .notification {
+    display: flex;
+    place-items: center;
+    gap: 15px;
+    padding: 15px 0; }
+    .home__content .notification__sound {
+      min-width: 20px; }
+    .home__content .notification__hot-matches {
+      min-width: 85px; }
+    .home__content .notification .text-animated {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+      color: #000000;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+      .home__content .notification .text-animated .text-overflow {
+        word-wrap: none;
+        position: relative; }
+  .home__content .balance {
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+    padding-bottom: 15px; }
+    .home__content .balance__total {
+      font-size: 12px;
+      line-height: 14px;
+      color: #000000; }
+      .home__content .balance__total > div {
+        display: flex;
+        place-items: center;
+        gap: 5px; }
+      .home__content .balance__total h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 14px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-top: 5px; }
+    .home__content .balance__icons {
+      display: flex;
+      place-items: center;
+      place-content: space-between;
+      gap: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      color: #000000; }
+      .home__content .balance__icons > div {
+        max-width: 40px; }
+        .home__content .balance__icons > div > div {
+          min-height: 36px; }
+        .home__content .balance__icons > div p {
+          margin-bottom: 0; }
+  .home__content .home-game__nav {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .home__content .home-game__nav__item {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 15px; }
+      .home__content .home-game__nav__item__link {
+        display: flex;
+        place-items: center;
+        place-content: space-around;
+        gap: 10px;
+        background: #FFFFFF;
+        border: 1px solid #A5D9FF;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
+        border-radius: 10px;
+        width: 100%;
+        min-height: 60px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-image: url(../icons/home/default-bg.png);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .home__content .home-game__nav__item__link__img img {
+          min-width: 25px; }
+          .home__content .home-game__nav__item__link__img img:last-child {
+            display: none; }
+        .home__content .home-game__nav__item__link__text {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: rgba(0, 0, 0, 0.5);
+          text-transform: uppercase; }
+        .home__content .home-game__nav__item__link.active {
+          background-color: transparent;
+          color: rgba(0, 0, 0, 0.5);
+          background-image: url(../icons/home/active-bg.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
+            min-width: 25px; }
+            .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
+              display: block;
+              min-width: 35px; }
+            .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
+              display: none; }
+  .home__content .home-game__content .home-item {
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 15px; }
+    .home__content .home-game__content .home-item__bg {
+      width: 100%; }
+    .home__content .home-game__content .home-item__official {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #fff;
+      height: 40px;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+      width: 45px;
+      height: 45px;
+      background-image: url(../images/home/official-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .home__content .home-game__content .home-item__official span {
+        transform: rotate(45deg);
+        margin-top: -11px;
+        margin-right: -11px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 16px; }
+    .home__content .home-game__content .home-item__title-head {
+      position: absolute;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      display: flex;
+      place-content: center; }
+      .home__content .home-game__content .home-item__title-head span {
+        background-image: url(../images/home/title-head-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 5px 45px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25); }
+    .home__content .home-game__content .home-item__content {
+      position: absolute;
+      left: 15px;
+      right: 40%;
+      top: 15px;
+      bottom: 15px;
+      display: flex;
+      place-content: center;
+      place-items: flex-start;
+      flex-direction: column; }
+      .home__content .home-game__content .home-item__content__title {
+        font-family: 'Aldo the Apache', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        color: #9FAACA;
+        margin-bottom: 13px; }
+      .home__content .home-game__content .home-item__content__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #9FAACA; }
+      .home__content .home-game__content .home-item__content__highest_return {
+        background: linear-gradient(180deg, #7696FF 0%, #557BF7 100%);
+        border-radius: 20px;
+        padding: 6px 15px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF; }
+      .home__content .home-game__content .home-item__content__play_now {
+        background: #FFFFFF;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #9FAACA;
+        margin-top: 15px; }
+
+@media only screen and (max-width: 425px) {
+  .home__content {
+    padding-top: 65px; }
+    .home__content #carouselHome .carousel-indicators {
+      margin-bottom: 0; }
+      .home__content #carouselHome .carousel-indicators > [data-bs-target] {
+        width: 20px; }
+    .home__content #carouselHome .carousel-inner {
+      border-radius: 10px; }
+    .home__content .notification {
+      gap: 15px;
+      padding: 15px 0; }
+      .home__content .notification__sound {
+        min-width: 20px; }
+      .home__content .notification__hot-matches {
+        min-width: 85px; }
+      .home__content .notification .text-animated {
+        font-size: 14px;
+        line-height: 14px; }
+    .home__content .balance {
+      padding-bottom: 15px; }
+      .home__content .balance__total {
+        font-size: 12px;
+        line-height: 14px; }
+        .home__content .balance__total > div {
+          gap: 5px; }
+        .home__content .balance__total h3 {
+          font-size: 18px;
+          line-height: 14px;
+          margin-bottom: 0;
+          margin-top: 5px; }
+      .home__content .balance__icons {
+        gap: 10px;
+        font-size: 10px;
+        line-height: 14px;
+        color: #000000; }
+        .home__content .balance__icons > div {
+          max-width: 40px; }
+          .home__content .balance__icons > div > div {
+            min-height: 36px; }
+          .home__content .balance__icons > div p {
+            margin-bottom: 0; }
+    .home__content .home-game__nav {
+      margin-left: -5px;
+      margin-right: -5px; }
+      .home__content .home-game__nav__item {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 15px; }
+        .home__content .home-game__nav__item__link {
+          place-content: space-between;
+          gap: 10px;
+          box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
+          border-radius: 10px;
+          width: 100%;
+          min-height: 53px;
+          padding-left: 8px;
+          padding-right: 8px; }
+          .home__content .home-game__nav__item__link__img img {
+            min-width: 25px; }
+            .home__content .home-game__nav__item__link__img img:last-child {
+              display: none; }
+          .home__content .home-game__nav__item__link__text {
+            font-size: 12px;
+            line-height: 16px; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px; }
+          .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
+            min-width: 25px; }
+            .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
+              display: block;
+              min-width: 30px;
+              margin-left: -7px; }
+            .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
+              display: none; } }

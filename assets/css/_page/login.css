@@ -84,7 +84,10 @@
         font-size: 18px;
         line-height: 21px;
         text-align: center;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        display: flex;
+        place-content: center;
+        place-items: center; }
     .login__form__right-button {
       display: contents; }
       .login__form__right-button .register_link {
