@@ -19,6 +19,8 @@ body {
   max-width: var(--max-with-mobile);
   margin: auto;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  position: relative;
 }
 
 * {

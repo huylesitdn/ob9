@@ -1,6 +1,6 @@
 .universal {
   min-height: 100vh;
-  max-width: 768px;
+  max-width: var(--max-with-mobile);
   text-align: center;
   overflow: hidden;
 
@@ -22,7 +22,7 @@
     right: 0;
     bottom: 0;
     flex-direction: column;
-    max-width: 768px;
+    max-width: var(--max-with-mobile);
     left: 0;
     &__logo {
       img {

@@ -21,4 +21,12 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   translator.translatePageTo(LANGUAGES.EN);
 });
 
-console.log('--- index.js')
+$('#navMenu').on('click', function (e) {
+  $('#mySidenav').addClass('active')
+})
+
+$('#mySidenav .backdrop, #mySidenav a').on('click', function (e) {
+  $('#mySidenav').removeClass('active')
+})
+
+console.log('--- index.jsaaa')

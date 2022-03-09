@@ -28,5 +28,10 @@
   "register_success": "register_success",
   "deposit_now": "deposit_now",
   "register_thank_you_shoft": "register_thank_you_shoft",
-  "register_thank_you_long": "register_thank_you_long"
+  "register_thank_you_long": "register_thank_you_long",
+  "home": "home",
+  "wallet": "wallet",
+  "promotion": "promotion",
+  "sponsors": "sponsors",
+  "my_account": "my_account"
 }

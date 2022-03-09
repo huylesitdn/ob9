@@ -17,7 +17,9 @@ body {
   font-weight: 300;
   max-width: var(--max-with-mobile);
   margin: auto;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  position: relative; }
 
 * {
   outline: none; }

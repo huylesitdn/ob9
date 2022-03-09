@@ -1,0 +1,105 @@
+#mySidenav {
+  min-height: 100vh; }
+  #mySidenav.sidenav {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: -500%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    max-width: var(--max-with-mobile); }
+    #mySidenav.sidenav .left-nav {
+      width: 75%;
+      background-color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      place-content: space-between;
+      max-width: 300px;
+      min-width: 300px; }
+      #mySidenav.sidenav .left-nav__top__info {
+        background-image: url(../images/menu-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 15px;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 15px;
+        color: #fff; }
+        #mySidenav.sidenav .left-nav__top__info__avatar {
+          max-width: 80px; }
+        #mySidenav.sidenav .left-nav__top__info h3 {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 14px;
+          border-bottom: 1px solid #FFFFFF;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          padding-top: 5px; }
+        #mySidenav.sidenav .left-nav__top__info p {
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 5px; }
+        #mySidenav.sidenav .left-nav__top__info div {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 14px; }
+      #mySidenav.sidenav .left-nav__top__nav {
+        padding: 15px;
+        list-style: none; }
+        #mySidenav.sidenav .left-nav__top__nav__item a {
+          display: flex;
+          place-items: center;
+          gap: 15px;
+          text-decoration: none; }
+          #mySidenav.sidenav .left-nav__top__nav__item a div {
+            min-width: 25px;
+            text-align: center; }
+          #mySidenav.sidenav .left-nav__top__nav__item a span {
+            width: 100%;
+            border-bottom: 1px solid #7F7F7F;
+            padding: 15px 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 14px;
+            color: #000000; }
+      #mySidenav.sidenav .left-nav__bottom__follow-us {
+        text-align: center; }
+        #mySidenav.sidenav .left-nav__bottom__follow-us div {
+          padding: 15px; }
+          #mySidenav.sidenav .left-nav__bottom__follow-us div img {
+            padding: 0 10px; }
+        #mySidenav.sidenav .left-nav__bottom__follow-us span {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000; }
+      #mySidenav.sidenav .left-nav__bottom__logout {
+        border-top: 1px solid #7F7F7F;
+        text-align: center;
+        padding: 15px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px; }
+        #mySidenav.sidenav .left-nav__bottom__logout a {
+          color: #000000;
+          text-decoration: none; }
+        #mySidenav.sidenav .left-nav__bottom__logout img {
+          margin-right: 15px; }
+    #mySidenav.sidenav .backdrop {
+      transition: 1s;
+      background: rgba(0, 0, 0, 0.3);
+      height: 100%;
+      width: inherit; }
+    #mySidenav.sidenav.active {
+      z-index: 9990;
+      left: 0; }

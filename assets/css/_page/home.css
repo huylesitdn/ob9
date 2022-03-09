@@ -1,0 +1,10 @@
+.home__content {
+  padding-top: 65px; }
+  .home__content #carouselHome .carousel-indicators {
+    margin-bottom: 0; }
+    .home__content #carouselHome .carousel-indicators > [data-bs-target] {
+      width: 20px; }
+  .home__content #carouselHome .carousel-inner {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; }
