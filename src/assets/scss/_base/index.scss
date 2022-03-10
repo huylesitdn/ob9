@@ -1,5 +1,5 @@
 html {
-  --primary-color: #FDBB2C;
+  --primary-color: #4E7FFF;
   --max-with-mobile: 768px;
   --default-font-size: 14px;
   --default-small-font-size: 13px;
@@ -49,6 +49,7 @@ img {
 
 .btn {
   border-radius: 10px;
+  min-width: 80px;
 
   &-primary {
     background-color: #4E7FFF;
@@ -62,4 +63,15 @@ img {
       border-color: #4E7FFF;
     }
   }
+}
+
+.text {
+  &-primary {
+    color: #597EF7;
+  }
+}
+
+.main {
+  padding-top: 65px;
+  padding-bottom: 80px;
 }

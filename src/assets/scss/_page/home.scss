@@ -1,7 +1,5 @@
 .home {
   &__content {
-    padding-top: 65px;
-    padding-bottom: 80px;
 
     #carouselHome {
       .carousel-indicators {
@@ -467,7 +465,6 @@
 @media only screen and (max-width: 425px) {
   .home {
     &__content {
-      padding-top: 65px;
 
       #carouselHome {
         .carousel-indicators {
