@@ -970,6 +970,6 @@ img {
             .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
               display: block;
               min-width: 30px;
-              margin-left: -7px; }
+              margin-left: 0; }
             .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
               display: none; } }
