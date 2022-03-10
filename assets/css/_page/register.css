@@ -38,7 +38,6 @@
         margin-bottom: 30px; }
       .register__form form h4 {
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
@@ -64,7 +63,6 @@
             box-shadow: none; }
       .register__form form a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -85,7 +83,6 @@
         place-items: center; }
       .register__form form .font-small {
         font-style: normal;
-        font-weight: normal;
         font-size: 10px;
         line-height: 12px;
         text-align: center;
@@ -106,7 +103,8 @@
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-        gap: 20px; }
+        gap: 20px;
+        min-width: 50px; }
         .register__form__left-button .register_link img {
           -webkit-transform: rotate(180deg);
           -moz-transform: rotate(180deg);
@@ -129,7 +127,6 @@
   .register.register-thank-you h1 {
     font-family: 'Aldo the Apache', sans-serif;
     font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     line-height: 31px;
     text-align: center;
@@ -147,6 +144,7 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px; }
   .register.register-thank-you h5 {
+    font-weight: 300;
     font-size: 12px;
     line-height: 14px;
     text-align: center;

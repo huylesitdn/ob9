@@ -1,4 +1,4 @@
-.wallet {
+.deposit {
   &__content {
     &__tab {
       background: #EEEEEE;
@@ -34,7 +34,7 @@
     &__tab_content {
       padding: 20px 0;
 
-      .wallet-items {
+      .deposit-items {
         margin-bottom: 20px;
 
         &__title {
@@ -44,11 +44,17 @@
           line-height: 14px;
           color: #000000;
           border-bottom: 2px solid #EEEEEE;
-          padding-bottom: 15px;
+          padding-bottom: 8px;
           margin-bottom: 15px;
         }
 
         &__content {
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+
           h3 {
             font-style: normal;
             font-weight: 600;

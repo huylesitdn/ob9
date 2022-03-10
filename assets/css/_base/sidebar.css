@@ -1,7 +1,7 @@
 #mySidenav.sidenav {
   width: 100%;
   position: fixed;
-  z-index: 0;
+  z-index: 1035;
   top: 0;
   bottom: 0;
   left: -500%;
@@ -32,7 +32,6 @@
         max-width: 80px; }
       #mySidenav.sidenav .left-nav__top__info h3 {
         font-style: normal;
-        font-weight: normal;
         font-size: 20px;
         line-height: 14px;
         border-bottom: 1px solid #FFFFFF;
@@ -45,7 +44,6 @@
         margin-bottom: 5px; }
       #mySidenav.sidenav .left-nav__top__info div {
         font-style: normal;
-        font-weight: normal;
         font-size: 18px;
         line-height: 14px; }
     #mySidenav.sidenav .left-nav__top__nav {
@@ -64,7 +62,6 @@
           border-bottom: 1px solid #7F7F7F;
           padding: 15px 0;
           font-style: normal;
-          font-weight: normal;
           font-size: 14px;
           line-height: 14px;
           color: #000000; }
@@ -76,7 +73,6 @@
           padding: 0 10px; }
       #mySidenav.sidenav .left-nav__bottom__follow-us span {
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 14px;
         color: #000000; }
@@ -85,7 +81,6 @@
       text-align: center;
       padding: 15px;
       font-style: normal;
-      font-weight: normal;
       font-size: 14px;
       line-height: 14px; }
       #mySidenav.sidenav .left-nav__bottom__logout a {
@@ -99,5 +94,4 @@
     height: 100%;
     width: inherit; }
   #mySidenav.sidenav.active {
-    z-index: 9990;
     left: 0; }

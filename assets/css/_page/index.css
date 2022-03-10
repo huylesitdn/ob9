@@ -24,7 +24,7 @@
     .universal__content__logo img {
       max-width: 310px; }
     .universal__content__language {
-      margin-top: 50px; }
+      margin-top: 40px; }
       .universal__content__language__title {
         font-weight: 600;
         font-size: 12px;
@@ -97,7 +97,6 @@
           margin-right: 0; }
         .login__form form .form-check .form-check-label {
           font-style: normal;
-          font-weight: normal;
           font-size: 12px;
           line-height: 14px;
           align-items: center;
@@ -105,7 +104,6 @@
           padding-top: 2px; }
       .login__form form a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -140,7 +138,8 @@
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-        gap: 20px; }
+        gap: 20px;
+        min-width: 50px; }
         .login__form__right-button .register_link img {
           -webkit-transform: rotate(180deg);
           -moz-transform: rotate(180deg);
@@ -241,7 +240,6 @@
         margin-bottom: 30px; }
       .register__form form h4 {
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
@@ -267,7 +265,6 @@
             box-shadow: none; }
       .register__form form a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -288,7 +285,6 @@
         place-items: center; }
       .register__form form .font-small {
         font-style: normal;
-        font-weight: normal;
         font-size: 10px;
         line-height: 12px;
         text-align: center;
@@ -309,7 +305,8 @@
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-        gap: 20px; }
+        gap: 20px;
+        min-width: 50px; }
         .register__form__left-button .register_link img {
           -webkit-transform: rotate(180deg);
           -moz-transform: rotate(180deg);
@@ -332,7 +329,6 @@
   .register.register-thank-you h1 {
     font-family: 'Aldo the Apache', sans-serif;
     font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     line-height: 31px;
     text-align: center;
@@ -350,6 +346,7 @@
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px; }
   .register.register-thank-you h5 {
+    font-weight: 300;
     font-size: 12px;
     line-height: 14px;
     text-align: center;
@@ -432,7 +429,6 @@
     min-width: 85px; }
   .home__content .notification .text-animated {
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 14px;
     color: #000000;
@@ -470,7 +466,6 @@
     place-content: space-between;
     gap: 10px;
     font-style: normal;
-    font-weight: normal;
     font-size: 10px;
     line-height: 14px;
     text-align: center;
@@ -512,7 +507,6 @@
           display: none; }
       .home__content .home-game__nav__item__link__text {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 16px;
         text-align: center;
@@ -603,23 +597,20 @@
     .home__content .home-game__content .home-item__content__title {
       font-family: 'Aldo the Apache', sans-serif;
       font-style: normal;
-      font-weight: normal;
       font-size: 30px;
       line-height: 30px;
       color: #9FAACA;
       margin-bottom: 10px; }
     .home__content .home-game__content .home-item__content__subtitle {
       font-style: normal;
-      font-weight: normal;
       font-size: 12px;
       line-height: 15px;
       color: #9FAACA; }
     .home__content .home-game__content .home-item__content__highest_return {
       background: linear-gradient(180deg, #7696FF 0%, #557BF7 100%);
       border-radius: 20px;
-      padding: 6px 15px;
+      padding: 4px 10px;
       font-style: normal;
-      font-weight: normal;
       font-size: 12px;
       line-height: 16px;
       text-align: center;
@@ -767,16 +758,16 @@
         margin-bottom: 0;
         margin-top: 5px; }
     .home__content .balance__icons {
-      gap: 10px;
-      font-size: 10px;
-      line-height: 14px;
-      color: #000000; }
+      gap: 10px; }
       .home__content .balance__icons > div {
         max-width: 40px; }
         .home__content .balance__icons > div > div {
           min-height: 36px; }
         .home__content .balance__icons > div p {
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          font-size: 10px;
+          line-height: 14px;
+          color: #000000; }
   .home__content .home-game__nav {
     margin-left: -5px;
     margin-right: -5px; }
@@ -813,11 +804,11 @@
           .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:first-child {
             display: none; } }
 
-.wallet__content__tab {
+.deposit__content__tab {
   background: #EEEEEE;
   border-radius: 10px;
   flex-wrap: nowrap; }
-  .wallet__content__tab__item__link {
+  .deposit__content__tab__item__link {
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
@@ -829,39 +820,45 @@
     position: relative;
     padding-left: 5px;
     padding-right: 5px; }
-    .wallet__content__tab__item__link:hover, .wallet__content__tab__item__link:focus, .wallet__content__tab__item__link.active {
+    .deposit__content__tab__item__link:hover, .deposit__content__tab__item__link:focus, .deposit__content__tab__item__link.active {
       background: #FFFFFF;
       margin-bottom: 0; }
 
-.wallet__content__tab_content {
+.deposit__content__tab_content {
   padding: 20px 0; }
-  .wallet__content__tab_content .wallet-items {
+  .deposit__content__tab_content .deposit-items {
     margin-bottom: 20px; }
-    .wallet__content__tab_content .wallet-items__title {
+    .deposit__content__tab_content .deposit-items__title {
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 14px;
       color: #000000;
       border-bottom: 2px solid #EEEEEE;
-      padding-bottom: 15px;
+      padding-bottom: 8px;
       margin-bottom: 15px; }
-    .wallet__content__tab_content .wallet-items__content h3 {
+    .deposit__content__tab_content .deposit-items__content {
+      font-family: 'Roboto';
       font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 14px;
-      color: #000000; }
-    .wallet__content__tab_content .wallet-items__content ul {
-      padding-right: 15px;
-      padding-left: 15px;
-      list-style: auto; }
-      .wallet__content__tab_content .wallet-items__content ul li {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px; }
+      .deposit__content__tab_content .deposit-items__content h3 {
         font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
+        font-weight: 600;
+        font-size: 16px;
         line-height: 14px;
-        color: #000000;
-        padding-bottom: 10px; }
-        .wallet__content__tab_content .wallet-items__content ul li::marker {
-          padding-right: 5px; }
+        color: #000000; }
+      .deposit__content__tab_content .deposit-items__content ul {
+        padding-right: 15px;
+        padding-left: 15px;
+        list-style: auto; }
+        .deposit__content__tab_content .deposit-items__content ul li {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: #000000;
+          padding-bottom: 10px; }
+          .deposit__content__tab_content .deposit-items__content ul li::marker {
+            padding-right: 5px; }

@@ -13,6 +13,7 @@
       line-height: 21px;
       text-align: center;
       color: #000000;
+      text-transform: uppercase;
     }
   }
 
@@ -25,6 +26,16 @@
 
     .content {
       display: flex;
+
+      #navMenu {
+        min-width: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
 
       &__customer_service {
         max-width: 100px;
@@ -73,7 +84,6 @@
 
         .text {
           font-style: normal;
-          font-weight: normal;
           font-size: 12px;
           line-height: 14px;
           text-align: center;
@@ -162,6 +172,197 @@
         line-height: 12px;
         text-align: center;
         color: #000000;
+      }
+    }
+  }
+}
+
+
+.deposit-amount {
+  margin-left: -8px;
+  margin-right: -8px;
+
+  &__action {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+
+    .btn {
+      min-height: 50px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF;
+
+      &-choose {
+        min-height: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        border: 1px solid #A5A9B3;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        gap: 5px;
+
+        &:hover,
+        &:active {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__input-group {
+    margin-bottom: 15px;
+
+    .form-control {
+      background: #FFFFFF;
+      border: 1px solid #A5A9B3;
+      box-sizing: border-box;
+      border-radius: 10px !important;
+      min-height: 40px;
+
+      &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A5A9B3;
+      }
+    }
+
+    .input-group-text {
+      background: #FFFFFF;
+      border: none;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 14px;
+      color: #000000;
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &__label {
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+      box-sizing: border-box;
+      border-radius: 10px;
+      min-height: 50px;
+      width: 100%;
+      display: flex;
+      place-content: space-around;
+      place-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      padding: 8px 0;
+
+      .checkmark {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px solid transparent;
+        border-radius: 10px;
+      }
+
+      &__checkbox {
+        display: none;
+
+        &:checked {
+          ~.checkmark {
+            border-color: #597EF7;
+
+            &::before {
+              content: "";
+              width: 18px;
+              height: 19px;
+              background-image: url(../images/wallet/check.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              z-index: 9;
+            }
+          }
+        }
+      }
+
+      &__title {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+  }
+}
+
+#selectLanguage {
+  .modal-dialog {
+    max-width: 300px;
+    margin: auto;
+
+    .modal-content {
+      border-radius: 0;
+      border: none;
+
+      .modal-header {
+        background-image: url(../images/select-language-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 14px;
+        color: #FFFFFF;
+        text-align: center;
+        border-radius: 0 !important;
+      }
+
+      .modal-body {
+        img {
+          max-width: 40px;
+        }
+
+        .title {
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 12px;
+          text-align: center;
+          color: #000000;
+          margin-top: 7px;
+        }
+
+        .subtitle {
+          display: flex;
+          place-items: center;
+          place-content: space-between;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000;
+          padding-bottom: 25px;
+        }
       }
     }
   }

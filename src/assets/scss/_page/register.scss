@@ -51,7 +51,6 @@
 
       h4 {
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
@@ -91,7 +90,6 @@
 
       a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -116,7 +114,6 @@
 
       .font-small {
         font-style: normal;
-        font-weight: normal;
         font-size: 10px;
         line-height: 12px;
         text-align: center;
@@ -142,6 +139,7 @@
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         gap: 20px;
+        min-width: 50px;
 
         img {
           -webkit-transform: rotate(180deg);
@@ -181,7 +179,6 @@
     h1 {
       font-family: 'Aldo the Apache', sans-serif;
       font-style: normal;
-      font-weight: normal;
       font-size: 36px;
       line-height: 31px;
       text-align: center;
@@ -203,6 +200,7 @@
     }
 
     h5 {
+      font-weight: 300;
       font-size: 12px;
       line-height: 14px;
       text-align: center;

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../components/base/header.html', {title: 'Deposit'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main deposit">
+      @@include('../components/base/navbar-child.html', {back_url: '/wallet.html', title: 'DEPOSIT'})
+      <div class="deposit__content container-fluid">
+
+        <ul class="nav nav-tabs nav-fill deposit__content__tab" id="myTab" role="tablist">
+          <li class="nav-item deposit__content__tab__item" role="presentation">
+            <button class="nav-link deposit__content__tab__item__link" id="online-banking-tab" data-bs-toggle="tab" data-bs-target="#online-banking" type="button" role="tab" aria-controls="online-banking" aria-selected="true">
+              Online Banking
+            </button>
+          </li>
+          <li class="nav-item deposit__content__tab__item" role="presentation">
+            <button class="nav-link deposit__content__tab__item__link mid" id="payment-gateway-tab" data-bs-toggle="tab" data-bs-target="#payment-gateway" type="button" role="tab" aria-controls="payment-gateway" aria-selected="false">
+              Payment Gateway
+            </button>
+          </li>
+          <li class="nav-item deposit__content__tab__item" role="presentation">
+            <button class="nav-link deposit__content__tab__item__link active" id="crypto-currency-tab" data-bs-toggle="tab" data-bs-target="#crypto-currency" type="button" role="tab" aria-controls="crypto-currency" aria-selected="false">
+              Crypto Currency
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content deposit__content__tab_content" id="myTabContent">
+          <div class="tab-pane fade" id="online-banking" role="tabpanel" aria-labelledby="online-banking-tab">
+            @@include('../components/wallet/deposit/online-banking.html')
+          </div>
+          <div class="tab-pane fade" id="payment-gateway" role="tabpanel" aria-labelledby="payment-gateway-tab">
+            @@include('../components/wallet/deposit/payment-gateway.html')
+          </div>
+          <div class="tab-pane fade show active" id="crypto-currency" role="tabpanel" aria-labelledby="crypto-currency-tab">
+            @@include('../components/wallet/deposit/cypto-currency.html')
+          </div>
+        </div>
+        
+        
+      </div>
+      @@include('../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../components/base/footer.html')
+  </body>
+</html>

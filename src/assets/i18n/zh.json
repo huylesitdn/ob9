@@ -63,5 +63,7 @@
   "copy": "copy",
   "Bank_Account_Number": "Bank_Account_Number",
   "Deposit_Amount": "Deposit_Amount",
-  "Attention": "Attention"
+  "Attention": "Attention",
+  "Attach_Receipt": "Attach_Receipt",
+  "Choose_Region": "Choose_Region"
 }

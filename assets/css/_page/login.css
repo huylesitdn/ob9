@@ -61,7 +61,6 @@
           margin-right: 0; }
         .login__form form .form-check .form-check-label {
           font-style: normal;
-          font-weight: normal;
           font-size: 12px;
           line-height: 14px;
           align-items: center;
@@ -69,7 +68,6 @@
           padding-top: 2px; }
       .login__form form a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -104,7 +102,8 @@
         -moz-transform: rotate(180deg);
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-        gap: 20px; }
+        gap: 20px;
+        min-width: 50px; }
         .login__form__right-button .register_link img {
           -webkit-transform: rotate(180deg);
           -moz-transform: rotate(180deg);

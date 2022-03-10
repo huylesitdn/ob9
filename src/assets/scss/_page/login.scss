@@ -85,7 +85,6 @@
 
         .form-check-label {
           font-style: normal;
-          font-weight: normal;
           font-size: 12px;
           line-height: 14px;
           align-items: center;
@@ -96,7 +95,6 @@
 
       a {
         font-style: normal;
-        font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         color: #FFFFFF;
@@ -138,6 +136,7 @@
         -o-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
         gap: 20px;
+        min-width: 50px;
 
         img {
           -webkit-transform: rotate(180deg);

@@ -30,8 +30,14 @@ $('#navMenu').on('click', function (e) {
   $('#mySidenav').addClass('active')
 })
 
-$('#mySidenav .backdrop, #mySidenav a').on('click', function (e) {
-  $('#mySidenav').removeClass('active')
+$('#mySidenav .backdrop, #mySidenav a.left-nav__top__nav__item__link').on('click', function (e) {
+  $('#mySidenav').removeClass('active');
+})
+
+var selectLanguageModal = new bootstrap.Modal(document.getElementById('selectLanguage'), {});
+$('.choose-language').on('click', function (e) {
+    selectLanguageModal.hide();
+    $('#mySidenav').removeClass('active')
 })
 /**
  * MENU SLIDE

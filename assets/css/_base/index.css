@@ -57,3 +57,7 @@ img {
 .main {
   padding-top: 65px;
   padding-bottom: 80px; }
+
+a {
+  color: #597EF7;
+  text-decoration: none; }

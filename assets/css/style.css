@@ -19,6 +19,12 @@
     width: 100%; }
     .navbar.fixed-top .content {
       display: flex; }
+      .navbar.fixed-top .content #navMenu {
+        min-width: auto;
+        padding-left: 0;
+        padding-right: 0; }
+        .navbar.fixed-top .content #navMenu:focus {
+          box-shadow: none; }
       .navbar.fixed-top .content__customer_service {
         max-width: 100px;
         font-style: normal;
@@ -55,7 +61,6 @@
           filter: grayscale(90%); }
         .navbar.fixed-bottom .content .nav-item .text {
           font-style: normal;
-          font-weight: normal;
           font-size: 12px;
           line-height: 14px;
           text-align: center;
@@ -116,3 +121,144 @@
         line-height: 12px;
         text-align: center;
         color: #000000; }
+
+.deposit-amount {
+  margin-left: -8px;
+  margin-right: -8px; }
+  .deposit-amount__action {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000; }
+    .deposit-amount__action .btn {
+      min-height: 50px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 16px;
+      text-align: center;
+      color: #FFFFFF; }
+      .deposit-amount__action .btn-choose {
+        min-height: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        border: 1px solid #A5A9B3;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        place-items: center;
+        place-content: center;
+        gap: 5px; }
+        .deposit-amount__action .btn-choose:hover, .deposit-amount__action .btn-choose:active {
+          background-color: #fff; }
+  .deposit-amount__input-group {
+    margin-bottom: 15px; }
+    .deposit-amount__input-group .form-control {
+      background: #FFFFFF;
+      border: 1px solid #A5A9B3;
+      box-sizing: border-box;
+      border-radius: 10px !important;
+      min-height: 40px; }
+      .deposit-amount__input-group .form-control::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A5A9B3; }
+    .deposit-amount__input-group .input-group-text {
+      background: #FFFFFF;
+      border: none;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 14px;
+      color: #000000;
+      padding-left: 0; }
+  .deposit-amount__item {
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px; }
+    .deposit-amount__item__label {
+      background: #FFFFFF;
+      border: 1px solid #EEEEEE;
+      box-sizing: border-box;
+      border-radius: 10px;
+      min-height: 50px;
+      width: 100%;
+      display: flex;
+      place-content: space-around;
+      place-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      padding: 8px 0; }
+      .deposit-amount__item__label .checkmark {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px solid transparent;
+        border-radius: 10px; }
+      .deposit-amount__item__label__checkbox {
+        display: none; }
+        .deposit-amount__item__label__checkbox:checked ~ .checkmark {
+          border-color: #597EF7; }
+          .deposit-amount__item__label__checkbox:checked ~ .checkmark::before {
+            content: "";
+            width: 18px;
+            height: 19px;
+            background-image: url(../images/wallet/check.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 9; }
+      .deposit-amount__item__label__title {
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: #000000; }
+
+#selectLanguage .modal-dialog {
+  max-width: 300px;
+  margin: auto; }
+  #selectLanguage .modal-dialog .modal-content {
+    border-radius: 0;
+    border: none; }
+    #selectLanguage .modal-dialog .modal-content .modal-header {
+      background-image: url(../images/select-language-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 60px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 14px;
+      color: #FFFFFF;
+      text-align: center;
+      border-radius: 0 !important; }
+    #selectLanguage .modal-dialog .modal-content .modal-body img {
+      max-width: 40px; }
+    #selectLanguage .modal-dialog .modal-content .modal-body .title {
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      color: #000000;
+      margin-top: 7px; }
+    #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
+      display: flex;
+      place-items: center;
+      place-content: space-between;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      padding-bottom: 25px; }

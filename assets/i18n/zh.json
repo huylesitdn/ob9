@@ -56,5 +56,14 @@
   "play_now": "play_now",
   "popular_sports": "popular_sports",
   "SPECIAL": "SPECIAL",
-  "CONSOLATION": "CONSOLATION"
+  "CONSOLATION": "CONSOLATION",
+  "select_bank": "select_bank",
+  "banking_details": "banking_details",
+  "Bank_Account_Name": "Bank_Account_Name", 
+  "copy": "copy",
+  "Bank_Account_Number": "Bank_Account_Number",
+  "Deposit_Amount": "Deposit_Amount",
+  "Attention": "Attention",
+  "Attach_Receipt": "Attach_Receipt",
+  "Choose_Region": "Choose_Region"
 }

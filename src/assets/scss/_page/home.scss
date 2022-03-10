@@ -37,7 +37,6 @@
 
       .text-animated {
         font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 14px;
         color: #000000;
@@ -86,7 +85,6 @@
         place-content: space-between;
         gap: 10px;
         font-style: normal;
-        font-weight: normal;
         font-size: 10px;
         line-height: 14px;
         text-align: center;
@@ -147,7 +145,6 @@
 
             &__text {
               font-style: normal;
-              font-weight: normal;
               font-size: 12px;
               line-height: 16px;
               text-align: center;
@@ -267,7 +264,6 @@
             &__title {
               font-family: 'Aldo the Apache', sans-serif;
               font-style: normal;
-              font-weight: normal;
               font-size: 30px;
               line-height: 30px;
               color: #9FAACA;
@@ -276,7 +272,6 @@
 
             &__subtitle {
               font-style: normal;
-              font-weight: normal;
               font-size: 12px;
               line-height: 15px;
               color: #9FAACA;
@@ -285,9 +280,8 @@
             &__highest_return {
               background: linear-gradient(180deg, #7696FF 0%, #557BF7 100%);
               border-radius: 20px;
-              padding: 6px 15px;
+              padding: 4px 10px;
               font-style: normal;
-              font-weight: normal;
               font-size: 12px;
               line-height: 16px;
               text-align: center;
@@ -525,19 +519,19 @@
 
         &__icons {
           gap: 10px;
-          font-size: 10px;
-          line-height: 14px;
-          color: #000000;
-
+          
           &>div {
             max-width: 40px;
-
+            
             &>div {
               min-height: 36px;
             }
-
+            
             p {
               margin-bottom: 0;
+              font-size: 10px;
+              line-height: 14px;
+              color: #000000;
             }
           }
         }
