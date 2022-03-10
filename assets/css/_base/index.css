@@ -40,3 +40,12 @@ img {
 .form-control {
   font-size: 14px;
   line-height: 16px; }
+
+.btn {
+  border-radius: 10px; }
+  .btn-primary {
+    background-color: #4E7FFF;
+    border-color: #4E7FFF; }
+  .btn-outline-primary {
+    color: #4E7FFF;
+    border-color: #4E7FFF; }

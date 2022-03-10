@@ -38,11 +38,28 @@ img {
 .container-sm,
 .container-xl,
 .container-xxl {
-  padding-right: var(--bs-gutter-x-mobile,.75rem);
-  padding-left: var(--bs-gutter-x-mobile,.75rem);
+  padding-right: var(--bs-gutter-x-mobile, .75rem);
+  padding-left: var(--bs-gutter-x-mobile, .75rem);
 }
 
 .form-control {
   font-size: 14px;
   line-height: 16px;
+}
+
+.btn {
+  border-radius: 10px;
+
+  &-primary {
+    background-color: #4E7FFF;
+    border-color: #4E7FFF;
+    ;
+  }
+
+  &-outline {
+    &-primary {
+      color: #4E7FFF;
+      border-color: #4E7FFF;
+    }
+  }
 }

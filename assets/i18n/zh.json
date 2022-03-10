@@ -54,5 +54,7 @@
   "vip": "vip",
   "official": "official",
   "play_now": "play_now",
-  "popular_sports": "popular_sports"
+  "popular_sports": "popular_sports",
+  "SPECIAL": "SPECIAL",
+  "CONSOLATION": "CONSOLATION"
 }
