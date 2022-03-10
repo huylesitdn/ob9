@@ -166,11 +166,11 @@
       .home__content .home-game__content .home-item__title-head span {
         background-image: url(../images/home/title-head-bg.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        padding: 5px 45px;
+        background-size: cover;
+        padding: 3px 45px;
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 16px;
         text-align: center;
         color: #FFFFFF;
@@ -192,7 +192,7 @@
         font-size: 30px;
         line-height: 30px;
         color: #9FAACA;
-        margin-bottom: 13px; }
+        margin-bottom: 10px; }
       .home__content .home-game__content .home-item__content__subtitle {
         font-style: normal;
         font-weight: normal;
@@ -219,7 +219,7 @@
         line-height: 16px;
         text-align: center;
         color: #9FAACA;
-        margin-top: 15px; }
+        margin-top: 12px; }
   .home__content .home-game__content .lottery-game #lotteryGame {
     background: #F5F5F5;
     border-radius: 10px;
