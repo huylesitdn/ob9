@@ -59,7 +59,7 @@
   "CONSOLATION": "CONSOLATION",
   "select_bank": "select_bank",
   "banking_details": "banking_details",
-  "Bank_Account_Name": "Bank_Account_Name", 
+  "Bank_Account_Name": "Bank_Account_Name",
   "copy": "copy",
   "Bank_Account_Number": "Bank_Account_Number",
   "Deposit_Amount": "Deposit_Amount",
@@ -75,5 +75,9 @@
   "lean_more": "lean_more",
   "new": "new",
   "limited": "limited",
-  "more_info": "more_info"
+  "more_info": "more_info",
+  "My_Wallet": "My_Wallet",
+  "Transaction_History": "Transaction_History",
+  "Betting_Record": "Betting_Record",
+  "Account_Setting": "Account_Setting"
 }

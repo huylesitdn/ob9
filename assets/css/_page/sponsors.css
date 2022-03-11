@@ -18,7 +18,8 @@
         object-fit: cover;
         max-width: 65%; }
       .sponsors__content .sponsors_items__content {
-        text-align: center; }
+        text-align: center;
+        width: 35%; }
         .sponsors__content .sponsors_items__content__img {
           margin-bottom: 10px; }
         .sponsors__content .sponsors_items__content__title {
@@ -67,7 +68,8 @@
           object-fit: cover;
           max-width: 60%; }
         .sponsors__content .sponsors_items__content {
-          text-align: center; }
+          text-align: center;
+          width: 40%; }
           .sponsors__content .sponsors_items__content__img {
             margin-bottom: 10px; }
           .sponsors__content .sponsors_items__content__title {
