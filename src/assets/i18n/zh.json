@@ -65,5 +65,15 @@
   "Deposit_Amount": "Deposit_Amount",
   "Attention": "Attention",
   "Attach_Receipt": "Attach_Receipt",
-  "Choose_Region": "Choose_Region"
+  "Choose_Region": "Choose_Region",
+  "promotion-all": "promotion-all",
+  "promotion-sports": "promotion-sports",
+  "promotion-live-casino": "promotion-live-casino",
+  "promotion-e-sports": "promotion-e-sports",
+  "promotion-lottery": "promotion-lottery",
+  "promotion-fishing": "promotion-fishing",
+  "lean_more": "lean_more",
+  "new": "new",
+  "limited": "limited",
+  "more_info": "more_info"
 }

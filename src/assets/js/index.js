@@ -68,7 +68,7 @@ function startScrolling(scroller_obj, velocity, start_from) {
       //is it scrolling from right or left?
       switch (start_from) {
           case 'right':
-              console.log('here')
+            //   console.log('here')
               //is it the first time?
               if (typeof c == 'undefined') {
                   //if yes, start from the absolute right

@@ -10,7 +10,8 @@
       font-size: 18px;
       line-height: 21px;
       text-align: center;
-      color: #000000; }
+      color: #000000;
+      text-transform: uppercase; }
   .navbar.fixed-top {
     background-color: #FFFFFF;
     padding: 0;
@@ -18,7 +19,8 @@
     right: auto;
     width: 100%; }
     .navbar.fixed-top .content {
-      display: flex; }
+      display: flex;
+      min-height: 50px; }
       .navbar.fixed-top .content #navMenu {
         min-width: auto;
         padding-left: 0;
