@@ -64,6 +64,17 @@ img {
 .text-primary {
   color: #597EF7; }
 
+.text-title {
+  background: linear-gradient(38.14deg, #C9AF92 47.15%, #E5D6C3 89.33%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center; }
+
 .main {
   padding-top: 65px;
   padding-bottom: 80px;
@@ -86,7 +97,7 @@ a {
     transform: translate(0, 100vh);
     display: flex;
     align-items: end;
-    margin: 0;
+    margin: auto;
     height: 100%; }
     .modal.slide-up.fade .modal-dialog .modal-content {
       border-radius: 20px 20px 0px 0px;
@@ -108,6 +119,12 @@ a {
           text-align: center;
           color: #000000;
           margin: 0; }
+
+.modal.alert .modal-dialog {
+  max-width: 300px;
+  margin: auto; }
+  .modal.alert .modal-dialog .modal-content {
+    border-radius: 20px; }
 
 #mySidenav.sidenav {
   width: 100%;
@@ -1076,10 +1093,14 @@ a {
   background: #FFFFFF;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  margin-bottom: 15px; }
-  .select-promotion__items > img {
+  margin-bottom: 15px;
+  display: block; }
+  .select-promotion__items__img {
     max-height: 180px;
-    object-fit: cover; }
+    overflow: hidden; }
+    .select-promotion__items__img img {
+      object-fit: cover;
+      width: 100%; }
   .select-promotion__items__content {
     display: flex;
     place-content: space-between;

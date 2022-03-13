@@ -127,7 +127,7 @@
 .deposit-amount {
   margin-left: -8px;
   margin-right: -8px; }
-  .deposit-amount__select-promotion {
+  .deposit-amount__select-bank, .deposit-amount__select-promotion {
     display: flex;
     place-content: space-between;
     place-items: center;
@@ -135,14 +135,14 @@
     padding: 10px 0;
     margin-bottom: 30px;
     cursor: pointer; }
-    .deposit-amount__select-promotion__input__label {
+    .deposit-amount__select-bank__input__label, .deposit-amount__select-promotion__input__label {
       font-weight: 400;
       font-size: 14px;
       line-height: 14px;
       color: #000000;
       padding-bottom: 10px;
       text-align: left; }
-    .deposit-amount__select-promotion__input__placeholder {
+    .deposit-amount__select-bank__input__placeholder, .deposit-amount__select-promotion__input__placeholder {
       font-weight: 300;
       font-size: 16px;
       line-height: 14px;
@@ -315,3 +315,19 @@
       line-height: 16px;
       color: #000000;
       padding-bottom: 25px; }
+
+#selectBankModal .select-bank-modal__items {
+  display: flex;
+  place-content: flex-start;
+  place-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 15px; }
+  #selectBankModal .select-bank-modal__items__img {
+    min-width: 50px;
+    text-align: center; }
+  #selectBankModal .select-bank-modal__items__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000000; }

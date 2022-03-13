@@ -1,1 +1,34 @@
-payment-gateway.html
+<div class="deposit-items">
+  <div class="deposit-items__title" data-i18n="Select_Payment_Gateway_Method">Select Payment Gateway Method</div>
+  <div class="deposit-items__content">
+    @@include('../select-payment-gateway.html')
+  </div>
+</div>
+
+<div class="deposit-amount__select-bank" data-bs-toggle="modal" data-bs-target="#selectBankModal">
+  <div class="deposit-amount__select-promotion__input">
+    <div class="deposit-amount__select-promotion__input__label" data-i18n="Select_Bank">Select Bank</div>
+    <div class="deposit-amount__select-promotion__input__placeholder" data-i18n="Please_select_available_promotion">Select payment gateway bank to deposit</div>
+  </div>
+  <img src="/images/wallet/deposit/right.png" />
+</div>
+
+<div class="deposit-items">
+  <div class="deposit-items__title" data-i18n="Deposit_Amount">Deposit Amount</div>
+  <div class="deposit-items__content">
+    @@include('../../deposit-amount.html', {
+      hide_attach_button: true,
+      select_promotion: './wallet/select-promotion.html'
+    })
+  </div>
+</div>
+
+<div class="deposit-items">
+  <div class="deposit-items__title" data-i18n="Attention">Attention</div>
+  <div class="deposit-items__content">
+    <ul>
+      <li>Fund deposited from a 3rd party bank account that are <strong class="text-danger">NOT</strong> in your own name or <strong class="text-danger">NOT</strong> registered with OB will <strong class="text-danger">NOT</strong> be accepted.</li>
+      <li>Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed.</li>
+    </ul>
+  </div>
+</div>

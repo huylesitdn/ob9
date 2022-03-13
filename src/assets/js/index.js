@@ -171,7 +171,30 @@ $(".select-promotion__items").on("click", function (e) {
     $('.deposit-amount__select-promotion__input__placeholder').text('Welcome Bonus up to 180%');
     $('.deposit-amount__select-promotion__input__placeholder').addClass('fw-bold');
     $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
-  }, 1000);
+  }, 500);
+});
+
+var selectBankModal = new bootstrap.Modal(
+  document.getElementById("selectBankModal"),
+  {}
+);
+$(".select-bank-modal__items").on("click", function (e) {
+  setTimeout(() => {
+    selectBankModal.hide();
+    // $('.deposit-amount__summary').removeClass('d-none');
+    // $('.deposit-amount__action .btn-submit').attr('disabled', false);
+    // $('.deposit-amount__select-promotion__input__placeholder').text('Welcome Bonus up to 180%');
+    // $('.deposit-amount__select-promotion__input__placeholder').addClass('fw-bold');
+    // $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
+  }, 500);
+});
+
+var successModal = new bootstrap.Modal(
+  document.getElementById("successModal"),
+  {}
+);
+$("#payment-gateway .btn-submit").on("click", function (e) {
+  successModal.show();
 });
 
 console.log("--- index.jsaaa");

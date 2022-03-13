@@ -101,8 +101,8 @@ exports.default = async function() {
   // watch i18n
   watch([paths.i18n.src],  series(compileI18n));
   // Watch js task
-  watch('./src/assets/js/vendor.js',  series(compileVendorJS));
-  watch(['./src/assets/js/index.js'],  series(compileJS));
+  // watch('./src/assets/js/vendor.js',  series(compileVendorJS));
+  watch(['./src/assets/js/*.js'],  series(compileJS));
   // Watch task
   watch(["./src/pages/*.html", "assets/**/*"], series(buildAndReload));
 };

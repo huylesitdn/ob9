@@ -183,6 +183,7 @@
   margin-left: -8px;
   margin-right: -8px;
 
+  &__select-bank,
   &__select-promotion {
     display: flex;
     place-content: space-between;
@@ -434,6 +435,31 @@
           color: #000000;
           padding-bottom: 25px;
         }
+      }
+    }
+  }
+}
+
+#selectBankModal {
+  .select-bank-modal {
+    &__items {
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #f2f2f2;
+      padding: 15px;
+
+      &__img {
+        min-width: 50px;
+        text-align: center;
+      }
+
+      &__content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 14px;
+        color: #000000;
       }
     }
   }

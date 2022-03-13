@@ -93,10 +93,16 @@
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin-bottom: 15px;
+    display: block;
 
-    &>img {
+    &__img {
       max-height: 180px;
-      object-fit: cover;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
     }
 
     &__content {
@@ -111,8 +117,10 @@
       &__text {
         width: 100%;
       }
+
       &__input {
         width: 30px;
+
         .checkmark {
           width: 30px;
           height: 30px;
@@ -122,8 +130,9 @@
           background-position: center;
           display: block;
         }
+
         input {
-          &:checked ~ .checkmark {
+          &:checked~.checkmark {
             background-image: url(/images/wallet/deposit/checked.png);
           }
         }

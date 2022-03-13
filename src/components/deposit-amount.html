@@ -51,11 +51,14 @@
   <!-- END SELECT -->
 
   <div class="deposit-amount__action d-grid gap-2">
-    <label class="btn btn btn-outline-secondary btn-choose" role="button">
-      <img src="/icons/choose-file.png" />
-      <span data-i18n="Attach_Receipt">Attach Receipt</span> 
-      <input type="file" hidden>
-    </label>
+    
+    @@if (!context.hide_attach_button) {
+      <label class="btn btn btn-outline-secondary btn-choose" role="button">
+        <img src="/icons/choose-file.png" />
+        <span data-i18n="Attach_Receipt">Attach Receipt</span> 
+        <input type="file" hidden>
+      </label>
+    }
 
     @@if (!!context.select_promotion) {
       @@include('@@select_promotion')
