@@ -168,13 +168,13 @@ $(".select-promotion__items").on("click", function (e) {
     selectPromotionModal.hide();
     $(".deposit-amount__summary").removeClass("d-none");
     $(".deposit-amount__action .btn-submit").attr("disabled", false);
-    $(".deposit-amount__select-promotion__input__placeholder").text(
+    $("#select-promotion-placeholder").text(
       "Welcome Bonus up to 180%"
     );
-    $(".deposit-amount__select-promotion__input__placeholder").addClass(
+    $("#select-promotion-placeholder").addClass(
       "fw-bold"
     );
-    $(".deposit-amount__select-promotion__input__placeholder").css(
+    $("#select-promotion-placeholder").css(
       "color",
       "#000"
     );
