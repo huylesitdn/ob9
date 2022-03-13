@@ -97,7 +97,8 @@ exports.default = async function() {
   // Build and reload at the first time
   buildAndReload();
   // Watch Sass task
-  watch(paths.scss.src,  series(compileScss));
+  watch('./src/assets/scss/*.scss',  series(compileScss));
+  watch('./src/assets/scss/**/*.scss',  series(compileScss));
   // watch i18n
   watch([paths.i18n.src],  series(compileI18n));
   // Watch js task

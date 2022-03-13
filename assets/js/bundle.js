@@ -159,25 +159,32 @@ $(function () {
  *
  */
 
-var selectPromotionModal = new bootstrap.Modal(
-  document.getElementById("selectPromotionModal"),
-  {}
-);
+const selectPromotionModalElm = $("#selectPromotionModal")
+if(selectPromotionModalElm.length > 0) {
+  var selectPromotionModal = new bootstrap.Modal(selectPromotionModalElm, {});
+}
 $(".select-promotion__items").on("click", function (e) {
   setTimeout(() => {
     selectPromotionModal.hide();
-    $('.deposit-amount__summary').removeClass('d-none');
-    $('.deposit-amount__action .btn-submit').attr('disabled', false);
-    $('.deposit-amount__select-promotion__input__placeholder').text('Welcome Bonus up to 180%');
-    $('.deposit-amount__select-promotion__input__placeholder').addClass('fw-bold');
-    $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
+    $(".deposit-amount__summary").removeClass("d-none");
+    $(".deposit-amount__action .btn-submit").attr("disabled", false);
+    $(".deposit-amount__select-promotion__input__placeholder").text(
+      "Welcome Bonus up to 180%"
+    );
+    $(".deposit-amount__select-promotion__input__placeholder").addClass(
+      "fw-bold"
+    );
+    $(".deposit-amount__select-promotion__input__placeholder").css(
+      "color",
+      "#000"
+    );
   }, 500);
 });
 
-var selectBankModal = new bootstrap.Modal(
-  document.getElementById("selectBankModal"),
-  {}
-);
+const selectBankModalElm = $("#selectBankModal")
+if (selectBankModalElm.length > 0) {
+  var selectBankModal = new bootstrap.Modal(selectBankModalElm, {});
+}
 $(".select-bank-modal__items").on("click", function (e) {
   setTimeout(() => {
     selectBankModal.hide();
@@ -188,13 +195,48 @@ $(".select-bank-modal__items").on("click", function (e) {
     // $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
   }, 500);
 });
-
-var successModal = new bootstrap.Modal(
-  document.getElementById("successModal"),
-  {}
-);
+const successModalElm = $("#successModal")
+if (successModalElm.length > 0) {
+  var successModal = new bootstrap.Modal(successModalElm, {});
+}
 $("#payment-gateway .btn-submit").on("click", function (e) {
   successModal.show();
+});
+
+const transferConfirmModalElm = $("#transferConfirmModal")
+if (transferConfirmModalElm.length > 0) {
+  var transferConfirmModal = new bootstrap.Modal(transferConfirmModalElm, {});
+}
+$("#autoTransferCheck").on("click", function (e) {
+  const isCheck = $(this).is(':checked');
+  if(!isCheck) {
+    e.preventDefault();
+    transferConfirmModal.show()
+  } else {
+    $(".transfer .transfer__content__auto-switch-off").addClass('d-none');
+    $(".transfer .transfer__content__action").addClass('d-none');
+  }
+});
+$("#transferConfirmModal .btn-confirm").on("click", function (e) {
+  const isCheck = $('#autoTransferCheck').is(':checked');
+  $("#autoTransferCheck").prop('checked', !isCheck);
+  transferConfirmModal.hide();
+  $(".transfer .transfer__content__auto-switch-off").removeClass('d-none');
+  $(".transfer .transfer__content__action").removeClass('d-none');
+});
+
+const chooseWalletModalElm = $("#chooseWalletModal")
+if (chooseWalletModalElm.length > 0) {
+  var chooseWalletModal = new bootstrap.Modal(chooseWalletModalElm, {});
+}
+$("#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]").on("change", function (e) {
+  const current_value = $('#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]:checked').val()
+  setTimeout(() => {
+    const attach_new_elem = current_value.split('_')
+    $('#auto-switch-off--left').html(attach_new_elem[0]);
+    $('#auto-switch-off--right').html(attach_new_elem[1]);
+    chooseWalletModal.hide()
+  }, 500);
 });
 
 console.log("--- index.jsaaa");

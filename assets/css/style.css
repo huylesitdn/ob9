@@ -331,3 +331,24 @@
     font-size: 16px;
     line-height: 14px;
     color: #000000; }
+
+#chooseWalletModal .choose-modal__items {
+  display: flex;
+  place-content: space-between;
+  place-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 15px; }
+  #chooseWalletModal .choose-modal__items__img {
+    min-width: 50px;
+    text-align: center; }
+  #chooseWalletModal .choose-modal__items__content {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000000; }
+  #chooseWalletModal .choose-modal__items .checkmark {
+    opacity: 0;
+    transition: .3s; }
+  #chooseWalletModal .choose-modal__items input:checked ~ .checkmark {
+    opacity: 1; }

@@ -97,5 +97,8 @@
   "Turnover": "Turnover",
   "Turnover_Requirement": "Turnover_Requirement",
   "Select_Payment_Gateway_Method": "Select_Payment_Gateway_Method",
-  "Select_Bank": "Select_Bank"
+  "Select_Bank": "Select_Bank",
+  "Main_Wallet": "Main_Wallet",
+  "Game_Wallet": "Game_Wallet",
+  "Hide": "Hide"
 }
