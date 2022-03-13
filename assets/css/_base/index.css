@@ -89,7 +89,7 @@ a {
     -o-transform: translate(0, 100vh);
     transform: translate(0, 100vh);
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     margin: auto;
     height: 100%; }
     .modal.slide-up.fade .modal-dialog .modal-content {
