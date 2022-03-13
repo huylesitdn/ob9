@@ -2,14 +2,17 @@
   <div class="container-fluid content @@if (!context.back_url && !context.help_url) {justify-content-center}">
     @@if (!!context.back_url) {
       <a class="" href="@@back_url">
-        <img src="./icons/icon_back.png" alt="" />
+        <img src="/icons/icon_back.png" alt="" />
       </a>
     }
     <div class="title">@@title</div>
     @@if (!!context.help_url) {
       <div class="">
-        <img src="./icons/help.png" alt="" />
+        <img src="/icons/help.png" alt="" />
       </div>
+    }
+    @@if (!!context.right_expand_icon) {
+      @@include('@@right_expand_icon')
     }
   </div>
   @@if (!!context.nav_expand_url) {

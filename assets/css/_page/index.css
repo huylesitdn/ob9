@@ -863,6 +863,37 @@
           .deposit__content__tab_content .deposit-items__content ul li::marker {
             padding-right: 5px; }
 
+.select-promotion__items {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 15px; }
+  .select-promotion__items > img {
+    max-height: 180px;
+    object-fit: cover; }
+  .select-promotion__items__content {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px; }
+    .select-promotion__items__content__text {
+      width: 100%; }
+    .select-promotion__items__content__input {
+      width: 30px; }
+      .select-promotion__items__content__input .checkmark {
+        width: 30px;
+        height: 30px;
+        background-image: url(/images/wallet/deposit/check-none.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block; }
+      .select-promotion__items__content__input input:checked ~ .checkmark {
+        background-image: url(/images/wallet/deposit/checked.png); }
+
 .promotion {
   background-color: #F2F2F2;
   min-height: 100vh; }
@@ -1070,13 +1101,13 @@
 .my-account {
   padding: 0;
   background-color: #fff; }
-  .my-account__content {
-    background-image: url(../images/my-account/my-account-bg.png);
+  .my-account__content__topcontent {
+    background-image: url(../images/my-account/my-account-bg-1.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
     min-height: 400px; }
-    .my-account__content__nav {
+    .my-account__content__topcontent__nav {
       display: flex;
       place-content: flex-end;
       place-items: center;
@@ -1088,16 +1119,16 @@
       padding: 20px;
       gap: 8px;
       padding-bottom: 10px; }
-    .my-account__content__top {
+    .my-account__content__topcontent__top {
       display: flex;
       place-content: flex-start;
       place-items: center;
       padding: 20px;
       padding-left: 40px;
       gap: 15px; }
-      .my-account__content__top__avatar {
+      .my-account__content__topcontent__top__avatar {
         max-width: 65px; }
-      .my-account__content__top__user-info {
+      .my-account__content__topcontent__top__user-info {
         display: flex;
         place-content: space-between;
         width: 100%;
@@ -1107,14 +1138,14 @@
         font-size: 12px;
         line-height: 14px;
         color: rgba(255, 255, 255, 0.5); }
-        .my-account__content__top__user-info h4 {
+        .my-account__content__topcontent__top__user-info h4 {
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
           line-height: 14px;
           color: #FFFFFF;
           margin-bottom: 10px; }
-    .my-account__content__balance {
+    .my-account__content__topcontent__balance {
       background-image: url(../images/my-account/wallet-bg.png);
       background-repeat: no-repeat;
       background-size: cover;
@@ -1131,18 +1162,18 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       overflow: hidden; }
-      .my-account__content__balance h4 {
+      .my-account__content__topcontent__balance h4 {
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 14px;
         margin: 0; }
-    .my-account__content__wallet {
+    .my-account__content__topcontent__wallet {
       margin: 0 20px;
       padding: 10px;
       background: #FFFFFF;
       border-radius: 10px; }
-      .my-account__content__wallet__top {
+      .my-account__content__topcontent__wallet__top {
         display: flex;
         place-content: space-between;
         place-items: center;
@@ -1151,7 +1182,7 @@
         font-size: 16px;
         line-height: 20px;
         color: #000000; }
-      .my-account__content__wallet__bottom {
+      .my-account__content__topcontent__wallet__bottom {
         display: flex;
         place-content: space-between;
         place-items: center;
@@ -1162,77 +1193,81 @@
         text-align: center;
         color: #000000;
         padding: 20px 0 15px 15px; }
-        .my-account__content__wallet__bottom > div {
+        .my-account__content__topcontent__wallet__bottom > a {
           display: flex;
           flex-direction: column;
           place-content: center;
-          place-items: center; }
-          .my-account__content__wallet__bottom > div p {
+          place-items: center;
+          color: #000000; }
+          .my-account__content__topcontent__wallet__bottom > a > div {
             max-width: 70%;
             margin-bottom: 0; }
-    .my-account__content__navbar {
-      list-style: none;
-      border-top: 7px solid #f2f2f2;
-      padding: 0px 20px 20px; }
-      .my-account__content__navbar li a {
+  .my-account__content__navbar {
+    list-style: none;
+    border-top: 7px solid #f2f2f2;
+    padding: 0px 20px 20px; }
+    .my-account__content__navbar li a {
+      display: flex;
+      place-items: center;
+      place-content: space-between;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      color: #000000;
+      border-bottom: 1px solid #f1f1f1;
+      padding-bottom: 5px;
+      padding-top: 30px; }
+      .my-account__content__navbar li a > div {
         display: flex;
         place-items: center;
         place-content: space-between;
-        font-style: normal;
+        gap: 10px; }
+        .my-account__content__navbar li a > div .icon {
+          min-width: 30px;
+          text-align: center; }
+      .my-account__content__navbar li a span {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 14px;
-        color: #000000;
-        border-bottom: 1px solid #f1f1f1;
-        padding-bottom: 5px;
-        padding-top: 30px; }
-        .my-account__content__navbar li a > div {
-          display: flex;
-          place-items: center;
-          place-content: space-between;
-          gap: 10px; }
-          .my-account__content__navbar li a > div .icon {
-            min-width: 30px;
-            text-align: center; }
-        .my-account__content__navbar li a span {
-          font-weight: 400;
-          font-size: 12px;
-          line-height: 14px;
-          text-align: right;
-          color: rgba(0, 0, 0, 0.5); }
+        text-align: right;
+        color: rgba(0, 0, 0, 0.5); }
 
 @media only screen and (max-width: 425px) {
   .my-account {
     padding: 0;
     background-color: #fff; }
-    .my-account__content {
+    .my-account__content__topcontent {
       background-image: url(../images/my-account/my-account-bg.png);
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: top;
-      min-height: 400px; }
-      .my-account__content__nav {
+      min-height: 390px; }
+      .my-account__content__topcontent__nav {
         display: flex;
         place-content: flex-end;
         place-items: center;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 13px;
+        line-height: 14px;
         color: #FFFFFF;
         padding: 20px;
+        padding-top: 15px;
         gap: 8px;
         padding-bottom: 10px; }
-      .my-account__content__top {
+        .my-account__content__topcontent__nav img {
+          max-width: 33px; }
+      .my-account__content__topcontent__top {
         display: flex;
         place-content: flex-start;
         place-items: center;
         padding: 20px;
         padding-left: 40px;
         gap: 15px; }
-        .my-account__content__top__avatar {
+        .my-account__content__topcontent__top__avatar {
           max-width: 65px; }
-        .my-account__content__top__user-info {
+        .my-account__content__topcontent__top__user-info {
           display: flex;
           place-content: space-between;
           width: 100%;
@@ -1242,14 +1277,14 @@
           font-size: 12px;
           line-height: 14px;
           color: rgba(255, 255, 255, 0.5); }
-          .my-account__content__top__user-info h4 {
+          .my-account__content__topcontent__top__user-info h4 {
             font-style: normal;
             font-weight: 400;
             font-size: 20px;
             line-height: 14px;
             color: #FFFFFF;
             margin-bottom: 10px; }
-      .my-account__content__balance {
+      .my-account__content__topcontent__balance {
         background-image: url(../images/my-account/wallet-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -1266,28 +1301,30 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         overflow: hidden; }
-        .my-account__content__balance h4 {
+        .my-account__content__topcontent__balance h4 {
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
           line-height: 14px;
           margin: 0; }
-      .my-account__content__wallet {
+      .my-account__content__topcontent__wallet {
         margin: 0 20px;
         padding: 10px;
         background: #FFFFFF;
         border-radius: 10px; }
-        .my-account__content__wallet__top {
+        .my-account__content__topcontent__wallet__top {
           display: flex;
           place-content: space-between;
           place-items: center;
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 20px;
           color: #000000;
           padding-right: 10px; }
-        .my-account__content__wallet__bottom {
+          .my-account__content__topcontent__wallet__top img {
+            max-width: 60px; }
+        .my-account__content__topcontent__wallet__bottom {
           display: flex;
           place-content: space-between;
           place-items: center;
@@ -1298,41 +1335,136 @@
           text-align: center;
           color: #000000;
           padding: 20px 0 15px 15px; }
-          .my-account__content__wallet__bottom > div {
+          .my-account__content__topcontent__wallet__bottom > a {
             display: flex;
             flex-direction: column;
             place-content: center;
             place-items: center; }
-            .my-account__content__wallet__bottom > div p {
+            .my-account__content__topcontent__wallet__bottom > a img {
+              max-width: 35px; }
+            .my-account__content__topcontent__wallet__bottom > a > div {
               max-width: 70%;
               margin-bottom: 0; }
-      .my-account__content__navbar {
-        list-style: none;
-        border-top: 7px solid #f2f2f2;
-        padding: 0px 20px 20px; }
-        .my-account__content__navbar li a {
+    .my-account__content__navbar {
+      list-style: none;
+      border-top: 7px solid #f2f2f2;
+      padding: 0px 20px 20px; }
+      .my-account__content__navbar li a {
+        display: flex;
+        place-items: center;
+        place-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+        border-bottom: 1px solid #f1f1f1;
+        padding-bottom: 5px;
+        padding-top: 30px; }
+        .my-account__content__navbar li a > div {
           display: flex;
           place-items: center;
           place-content: space-between;
-          font-style: normal;
+          gap: 8px; }
+          .my-account__content__navbar li a > div .icon {
+            min-width: 30px;
+            text-align: center; }
+        .my-account__content__navbar li a span {
           font-weight: 400;
-          font-size: 14px;
+          font-size: 10px;
           line-height: 14px;
-          color: #000000;
-          border-bottom: 1px solid #f1f1f1;
-          padding-bottom: 5px;
-          padding-top: 30px; }
-          .my-account__content__navbar li a > div {
-            display: flex;
-            place-items: center;
-            place-content: space-between;
-            gap: 8px; }
-            .my-account__content__navbar li a > div .icon {
-              min-width: 30px;
-              text-align: center; }
-          .my-account__content__navbar li a span {
-            font-weight: 400;
-            font-size: 10px;
-            line-height: 14px;
+          text-align: right;
+          color: rgba(0, 0, 0, 0.5); } }
+
+.wallet {
+  background: #f2f2f2; }
+  .wallet .navbar .fixed-top {
+    font-size: 14px;
+    line-height: 14px;
+    color: #597EF7; }
+  .wallet__content__top {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px; }
+    .wallet__content__top h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: #000000;
+      margin-top: 5px; }
+    .wallet__content__top__icons {
+      display: flex;
+      place-content: space-between;
+      place-items: flex-start;
+      text-align: center; }
+      .wallet__content__top__icons p {
+        margin-bottom: 0;
+        margin-top: -8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #000000; }
+  .wallet__content__bottom {
+    padding: 30px 0; }
+    .wallet__content__bottom h4 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: #000000;
+      border-bottom: 2px solid #DCDCDC;
+      padding-bottom: 10px;
+      margin-bottom: 15px; }
+    .wallet__content__bottom__items {
+      display: flex;
+      place-items: center;
+      gap: 12px;
+      padding: 15px;
+      filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
+      background: #FFFFFF;
+      margin-bottom: 20px; }
+      .wallet__content__bottom__items_img {
+        min-width: 30px; }
+      .wallet__content__bottom__items__content {
+        width: 100%; }
+        .wallet__content__bottom__items__content__title {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 16px;
+          color: #000000; }
+          .wallet__content__bottom__items__content__title span {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000000; }
+        .wallet__content__bottom__items__content__subtitle {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          border-bottom: 1px solid #000000;
+          padding-bottom: 6px;
+          margin-bottom: 8px; }
+          .wallet__content__bottom__items__content__subtitle__time {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            color: #000000; }
+          .wallet__content__bottom__items__content__subtitle__status {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
             text-align: right;
-            color: rgba(0, 0, 0, 0.5); } }
+            color: #0F9214; }
+        .wallet__content__bottom__items__content__description {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 12px;
+          color: #000000; }
