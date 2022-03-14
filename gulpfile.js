@@ -105,5 +105,8 @@ exports.default = async function() {
   // watch('./src/assets/js/vendor.js',  series(compileVendorJS));
   watch(['./src/assets/js/*.js'],  series(compileJS));
   // Watch task
-  watch(["./src/pages/*.html", "assets/**/*"], series(buildAndReload));
+  watch([
+    "./src/pages/**/*",
+    "assets/**/*"
+  ], series(buildAndReload));
 };

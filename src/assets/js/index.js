@@ -195,6 +195,18 @@ $(".select-bank-modal__items").on("click", function (e) {
     // $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
   }, 500);
 });
+$(".add-bank-account .select-bank-modal__items").on("click", function (e) {
+  setTimeout(() => {
+    selectBankModal.hide();
+    const bank_input = $('.add-bank-account .add-bank-account__content__input__select-bank__input__placeholder');
+    bank_input.html('MAYBANK');
+    bank_input.addClass('fw-bold');
+    const submit_btn = $('.add-bank-account .add-bank-account__content__submit .btn');
+    submit_btn.removeClass("disabled");
+    // submit_btn.prop("disabled", false);
+  }, 500);
+});
+
 const successModalElm = $("#successModal")
 if (successModalElm.length > 0) {
   var successModal = new bootstrap.Modal(successModalElm, {});

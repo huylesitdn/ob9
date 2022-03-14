@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../../components/base/header.html', {title: 'MANAGE BANK ACCOUNT'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main manage-bank-account ">
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'MANAGE BANK ACCOUNT', help_url: '/'})
+      <div class="manage-bank-account__content container-fluid">
+
+        <div class="manage-bank-account__content__img">
+          <img src="/images/wallet/no-bank.png" />
+        </div>
+        <a href="/wallet/manage-add-bank-account.html" class="manage-bank-account__content__add-btn" data-i18n="Add_bank_account">
+          + Add bank account
+        </a>
+        <div class="manage-bank-account__content__description">
+          Up to 10 bank accounts can be added
+        </div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+    
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

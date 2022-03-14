@@ -100,5 +100,15 @@
   "Select_Bank": "Select_Bank",
   "Main_Wallet": "Main_Wallet",
   "Game_Wallet": "Game_Wallet",
-  "Hide": "Hide"
+  "Hide": "Hide",
+  "CANCEL": "CANCEL",
+  "CONFIRM": "CONFIRM",
+  "Wallet_Balance": "Wallet_Balance",
+  "Bank_Account": "Bank_Account",
+  "Full_Name": "Full_Name",
+  "Please_select_your_bank": "Please_select_your_bank",
+  "Phone_Number": "Phone_Number",
+  "Authentication_Number": "Authentication_Number",
+  "SUBMIT": "SUBMIT",
+  "Bank": "Bank"
 }
