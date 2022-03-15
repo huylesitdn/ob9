@@ -1,0 +1,411 @@
+.sponsors-article {
+  background: #EEEEEE;
+  padding-top: 50px;
+  padding-bottom: 200px;
+
+  .navbar {
+    &.nav-child {
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+      }
+    }
+  }
+
+  &__content {
+    &__top-carousel {
+      .carousel-indicators {
+        margin-bottom: 0px;
+
+        button {
+          background-color: #A5A9B3;
+          width: 24px;
+
+          &.active {
+            background-color: #333;
+          }
+        }
+      }
+
+      .carousel-inner {
+        .carousel-item {
+          img {
+            min-height: 200px;
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .back-to-top {
+      padding: 20px;
+      text-align: center;
+      display: flex;
+
+      a {
+        background: #fff;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        margin: auto;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #7E8796;
+        min-width: 130px;
+        border-radius: 50px;
+        -webkit-box-shadow: 0px 4px 10px 2px rgba(1, 1, 1, 0.1);
+        box-shadow: 0px 4px 10px 2px rgba(1, 1, 1, 0.1);
+      }
+    }
+
+    &__items {
+      padding: 15px;
+      // margin-bottom: 15px;
+      border-bottom: 15px solid #A5A9B3;
+      background: #FFFFFF;
+
+      &.no-boder,
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #595959;
+        margin-bottom: 0;
+        padding: 10px;
+        padding-left: 20px;
+        background-image: url(/images/sponsors/article/border-left.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-bottom: 15px;
+      }
+
+      &__description {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: justify;
+        color: #7E8796;
+        padding: 10px 0;
+        text-align: justify;
+      }
+
+      #carouselSposorship {
+
+        .carousel-indicators {
+          bottom: auto;
+          top: 215px;
+          place-items: center;
+
+          button {
+            border: 1px solid #727272;
+            box-sizing: border-box;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            opacity: 1;
+            margin-right: 5px;
+            margin-left: 5px;
+
+            &.active {
+              background: #727272;
+            }
+
+            &.carousel-control-next,
+            &.carousel-control-prev {
+              width: 20px;
+              height: 20px;
+              border: 2px solid #000000;
+              position: initial;
+
+              .carousel-control-next-icon,
+              .carousel-control-prev-icon {
+                background-size: 6px;
+              }
+
+              .carousel-control-prev-icon {
+                background-image: url(/images/sponsors/article/left.png);
+              }
+
+              .carousel-control-next-icon {
+                background-image: url(/images/sponsors/article/right.png);
+              }
+            }
+
+          }
+        }
+
+        .carousel-inner {
+          .carousel-item {
+            &-video {
+              width: 100%;
+
+              video {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+              }
+            }
+
+            &-caption {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: justify;
+              color: #7E8796;
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+
+      #carouselSportsHighlights {
+        margin-bottom: 10px;
+
+        .carousel-indicators {
+          margin: 0;
+          gap: 10px;
+          margin-top: 10px;
+          position: initial;
+
+          button {
+            padding: 0;
+            border: none;
+            position: relative;
+            width: auto;
+            height: auto;
+            flex: 1;
+            text-indent: initial;
+
+            &.active {
+              background: #727272;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                border: 3px solid #727272;
+              }
+            }
+          }
+        }
+
+        .carousel-inner {
+          .carousel-item {
+            &-video {
+              width: 100%;
+              height: 220px;
+
+              video {
+                width: 100%;
+                height: 220px;
+                object-fit: cover;
+              }
+            }
+
+            &-caption {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: justify;
+              color: #7E8796;
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+
+      #carouselSponsorInformation {
+        padding: 40px 0;
+
+        .carousel-indicators {
+          bottom: auto;
+          top: 205px;
+          place-items: center;
+
+          button {
+            border: 1px solid #727272;
+            box-sizing: border-box;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            opacity: 1;
+            margin-right: 5px;
+            margin-left: 5px;
+
+            &.active {
+              background: #727272;
+            }
+          }
+        }
+
+        .carousel-inner {
+          img {
+            height: 145px;
+            object-fit: cover;
+          }
+        }
+      }
+
+      #carouselSponsoredEventPhotos {
+        .carousel-indicators {
+          bottom: auto;
+          top: 245px;
+          place-items: center;
+
+          button {
+            border: 1px solid #727272;
+            box-sizing: border-box;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            opacity: 1;
+            margin-right: 5px;
+            margin-left: 5px;
+
+            &.active {
+              background: #727272;
+            }
+          }
+        }
+
+        .carousel-inner {
+          .carousel-item {
+            &-image {
+              width: 100%;
+
+              img {
+                width: 100%;
+                height: 230px;
+                object-fit: cover;
+              }
+            }
+
+            &-caption {
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 16px;
+              text-align: justify;
+              color: #7E8796;
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+
+      &.industry {
+        .industry-bottom {
+          display: flex;
+          place-content: space-between;
+          place-items: flex-start;
+          text-align: center;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+          color: #7E8796;
+          padding-top: 30px;
+          padding-bottom: 15px;
+
+          div {
+            padding-top: 70px;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              right: 0;
+              top: 0;
+              bottom: 0;
+              margin: 0 auto;
+              height: 60px;
+              width: 60px;
+              background-image: url(/images/sponsors/article/juventus/industry-lisence.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+
+            &.img-1 {
+              &::after {
+                background-position: left;
+              }
+            }
+
+            &.img-2 {
+              &::after {
+                background-position: center;
+              }
+            }
+
+            &.img-3 {
+              &::after {
+                background-position: right;
+              }
+            }
+          }
+        }
+
+        .industry__title {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          color: #000000;
+          margin-bottom: 5px;
+        }
+
+        .industry__description {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          color: #7E8796;
+          margin-bottom: 15px;
+        }
+
+        .items {
+          margin-bottom: 15px;
+
+          &__img {
+            width: 42px;
+            margin-bottom: 5px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          &__title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #4E7FFF;
+            margin-bottom: 5px;
+          }
+
+          &__description {
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            color: #7E8796;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

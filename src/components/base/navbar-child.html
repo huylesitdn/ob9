@@ -6,11 +6,9 @@
       </a>
     }
     <div class="title">@@title</div>
-    @@if (!!context.help_url) {
-      <div class="">
-        <img src="/icons/help.png" alt="" />
-      </div>
-    }
+    <div class="@@if (!context.help_url) {opacity-0}">
+      <img src="/icons/help.png" alt="" />
+    </div>
     @@if (!!context.right_expand_icon) {
       @@include('@@right_expand_icon')
     }
