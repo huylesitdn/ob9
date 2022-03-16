@@ -2011,7 +2011,7 @@
       padding: 10px 0;
       text-align: justify; }
     .sponsors-article__content__items #carouselSposorship .carousel-indicators {
-      bottom: 130px;
+      bottom: 140px;
       place-items: center; }
       .sponsors-article__content__items #carouselSposorship .carousel-indicators button {
         border: 1px solid #727272;
@@ -2048,7 +2048,7 @@
       line-height: 16px;
       text-align: justify;
       color: #7E8796;
-      margin-top: 50px;
+      margin-top: 60px;
       min-height: 130px; }
     .sponsors-article__content__items #carouselSportsHighlights {
       margin-bottom: 10px; }
@@ -2109,7 +2109,7 @@
         object-fit: cover; }
     .sponsors-article__content__items #carouselSponsoredEventPhotos .carousel-indicators {
       bottom: auto;
-      bottom: 80px;
+      bottom: 85px;
       place-items: center; }
       .sponsors-article__content__items #carouselSponsoredEventPhotos .carousel-indicators button {
         border: 1px solid #727272;
@@ -2133,7 +2133,7 @@
       line-height: 16px;
       text-align: justify;
       color: #7E8796;
-      margin-top: 40px;
+      margin-top: 50px;
       min-height: 80px; }
     .sponsors-article__content__items.industry .industry-bottom {
       display: flex;
