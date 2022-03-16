@@ -1960,8 +1960,9 @@
       .sponsors-article__content__top-carousel .carousel-indicators button.active {
         background-color: #333; }
   .sponsors-article__content__top-carousel .carousel-inner .carousel-item img {
+    width: 100%;
     object-fit: cover;
-    height: 100%; }
+    height: auto; }
   .sponsors-article__content .back-to-top {
     padding: 20px;
     text-align: center;
