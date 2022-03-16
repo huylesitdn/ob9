@@ -251,4 +251,15 @@ $("#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]").on("
   }, 500);
 });
 
+if($('.transaction-history-dropdown').length > 0) {
+  $('.transaction-history-dropdown').each(function( index ) {
+    this.addEventListener('hidden.bs.dropdown', function () {
+      $('.transaction-history').removeClass('backdrop')
+    })
+    this.addEventListener('shown.bs.dropdown', function () {
+      $('.transaction-history').addClass('backdrop')
+    })
+  });
+}
+
 console.log("--- index.jsaaa");

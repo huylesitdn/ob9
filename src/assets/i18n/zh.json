@@ -111,5 +111,12 @@
   "Authentication_Number": "Authentication_Number",
   "SUBMIT": "SUBMIT",
   "Bank": "Bank",
-  "Add_bank_account": "Add_bank_account"
+  "Add_bank_account": "Add_bank_account",
+  "DEPOSIT_NOW": "DEPOSIT_NOW",
+  "Last_7_Days": "Last_7_Days",
+  "Transfer": "Transfer",
+  "Today": "Today",
+  "Last_15_Days": "Last_15_Days",
+  "This_Month": "This_Month",
+  "Custom": "Custom"
 }

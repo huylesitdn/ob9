@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('../../components/base/header.html', {title: 'Transaction History'})
+  @@include('../../components/base/header.html', {title: 'Transaction History '})
   <body>
     
     <!-- Content -->
-    <section class="main transaction-history">
-      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Transaction History', help_url: '/'})
+    <section class="main transaction-history ">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/wallet', 
+        title: 'Transaction History ', 
+        help_url: '/',
+        nav_expand_url: '../wallet/transaction/nav-expand.html',
+        nav_expand_active_btn: 1,
+      })
       <div class="transaction-history__content container-fluid">
 
-        transaction-history.html
-        
+        <div class="transaction-history__content__img">
+          <img src="/images/wallet/transaction/imgDefaultNoData.png" />
+        </div>
+        <div class="transaction-history__content__description">
+          No latest transaction record
+        </div>
+        <a href="/wallet/deposit.html" class="btn btn-primary" data-i18n="DEPOSIT_NOW">
+          DEPOSIT NOW
+        </a>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
       </div>
       @@include('../../components/base/navbar-bottom.html', {active: 1})
     </section>

@@ -6,15 +6,15 @@
       </a>
     }
     <div class="title">@@title</div>
-    <div class="@@if (!context.help_url) {opacity-0}">
+    <div class="@@if (!context.help_url) {opacity-0} @@if (!!context.right_expand_icon && !!context.right_expand_icon_url){d-none}">
       <img src="/icons/help.png" alt="" />
     </div>
-    @@if (!!context.right_expand_icon) {
-      @@include('@@right_expand_icon')
+    @@if (!!context.right_expand_icon && !!context.right_expand_icon_url) {
+      @@include('@@right_expand_icon', {right_expand_icon_url: '@@right_expand_icon_url'})
     }
   </div>
-  @@if (!!context.nav_expand_url) {
-    @@include('@@nav_expand_url')
+  @@if (!!context.nav_expand_url && !!context.nav_expand_active_btn) {
+    @@include('@@nav_expand_url', {nav_expand_active_btn: '@@nav_expand_active_btn'})
   }
   
 </nav>
