@@ -2237,7 +2237,7 @@ a {
       padding: 10px 0;
       text-align: justify; }
     .sponsors-article__content__items #carouselSposorship .carousel-indicators {
-      bottom: 140px;
+      bottom: 145px;
       place-items: center; }
       .sponsors-article__content__items #carouselSposorship .carousel-indicators button {
         border: 1px solid #727272;
@@ -2335,7 +2335,7 @@ a {
         object-fit: cover; }
     .sponsors-article__content__items #carouselSponsoredEventPhotos .carousel-indicators {
       bottom: auto;
-      bottom: 85px;
+      bottom: 90px;
       place-items: center; }
       .sponsors-article__content__items #carouselSponsoredEventPhotos .carousel-indicators button {
         border: 1px solid #727272;
