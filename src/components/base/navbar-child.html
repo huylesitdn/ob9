@@ -13,7 +13,7 @@
       @@include('@@right_expand_icon', {right_expand_icon_url: '@@right_expand_icon_url'})
     }
   </div>
-  @@if (!!context.nav_expand_url && !!context.nav_expand_active_btn) {
+  @@if (!!context.nav_expand_url || !!context.nav_expand_active_btn) {
     @@include('@@nav_expand_url', {nav_expand_active_btn: '@@nav_expand_active_btn'})
   }
   

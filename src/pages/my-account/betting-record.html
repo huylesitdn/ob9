@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('../../components/base/header.html', {title: 'Betting Record'})
+  <body>
+    
+    <!-- Content -->
+    <section class="main betting-record">
+      @@include('../../components/base/navbar-child.html', {
+        back_url: '/my-account.html', 
+        title: 'Betting Record', 
+        help_url: '/',
+        nav_expand_url: '../my-account/betting-record-nav-expand.html',
+        nav_expand_active_btn: 1,
+      })
+      <div class="betting-record__content container-fluid betting-record-items">
+
+        <div class="title">02-23-2022</div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title">
+              EVO CLUB
+            </h3>
+            <div class="items__content__info">Baccarat</div>
+            <div class="items__content__subtitle">
+              <span>Turnovers (MYR):  40.00</span>
+              <span>Win/Lose (MYR):  -40.00</span>
+            </div>
+            <div class="items__content__description">
+              Betting time: 2022-02-23 10:36:08
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title">
+              SEXY CLUB
+            </h3>
+            <div class="items__content__info">Baccarat</div>
+            <div class="items__content__subtitle">
+              <span>Turnovers (MYR):  40.00</span>
+              <span>Win/Lose (MYR):  -40.00</span>
+            </div>
+            <div class="items__content__description">
+              Betting time: 2022-02-23 10:36:08
+            </div>
+          </div>
+        </div>
+
+        <div class="title mt-4">02-24-2022</div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title">
+              IGKBET SPORTS
+            </h3>
+            <div class="items__content__info">Baccarat</div>
+            <div class="items__content__subtitle">
+              <span>Turnovers (MYR):  40.00</span>
+              <span>Win/Lose (MYR):  -40.00</span>
+            </div>
+            <div class="items__content__description">
+              Betting time: 2022-02-23 10:36:08
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="items__content">
+            <h3 class="items__content__title">
+              QTECH SLOTS
+            </h3>
+            <div class="items__content__info">Baccarat</div>
+            <div class="items__content__subtitle">
+              <span>Turnovers (MYR):  40.00</span>
+              <span>Win/Lose (MYR):  -40.00</span>
+            </div>
+            <div class="items__content__description">
+              Betting time: 2022-02-23 10:36:08
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        @@include('../../components/select-bank-modal.html')
+
+
+      </div>
+      @@include('../../components/base/navbar-bottom.html', {active: 1})
+    </section>
+
+    @@include('../../components/base/footer.html')
+  </body>
+</html>

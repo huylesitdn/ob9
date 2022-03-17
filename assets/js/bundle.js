@@ -211,6 +211,9 @@ if (successModalElm.length > 0) {
 $("#payment-gateway .btn-submit").on("click", function (e) {
   successModal.show();
 });
+$("#online-banking .btn-submit").on("click", function (e) {
+  successModal.show();
+});
 
 const transferConfirmModalElm = $("#transferConfirmModal");
 if (transferConfirmModalElm.length > 0) {
@@ -260,6 +263,17 @@ if ($(".transaction-history-dropdown").length > 0) {
     });
     this.addEventListener("shown.bs.dropdown", function () {
       $(".transaction-history").addClass("backdrop");
+    });
+  });
+}
+
+if ($(".betting-record-dropdown").length > 0) {
+  $(".betting-record-dropdown").each(function (index) {
+    this.addEventListener("hidden.bs.dropdown", function () {
+      $(".betting-record").removeClass("backdrop");
+    });
+    this.addEventListener("shown.bs.dropdown", function () {
+      $(".betting-record").addClass("backdrop");
     });
   });
 }
