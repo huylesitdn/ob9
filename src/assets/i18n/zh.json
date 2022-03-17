@@ -118,5 +118,7 @@
   "Today": "Today",
   "Last_15_Days": "Last_15_Days",
   "This_Month": "This_Month",
-  "Custom": "Custom"
+  "Custom": "Custom",
+  "Start_Date": "Start_Date",
+  "End_Date": "End_Date"
 }

@@ -21,7 +21,26 @@
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 7) {active}" data-i18n="Last_7_Days">Last 7 Days</button>
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 8) {active}" data-i18n="Last_15_Days">Last 15 Days</button>
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 9) {active}" data-i18n="This_Month">This Month</button>
-      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 10) {active}" data-i18n="Custom">Custom</button>
+      <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 10) {active}" data-bs-toggle="collapse" href="#collapseCustomDate" data-i18n="Custom">Custom</button>
+      <div class="pb-2 w-100"></div>
+      <div class="collapse" id="collapseCustomDate">
+        <div class="row">
+          <label for="Start_Date" class="col-6 col-form-label" data-i18n="Start_Date">Start Date</label>
+          <div class="col-6">
+            <input type="text" class="form-control date-picker" id="Start_Date" value="2022-01-30">
+          </div>
+        </div>
+        <div class="row">
+          <label for="End_Date" class="col-6 col-form-label" data-i18n="End_Date">End Date</label>
+          <div class="col-6">
+            <input type="text" class="form-control date-picker" id="End_Date" value="2022-01-30">
+          </div>
+        </div>
+        <div class="action">
+          <button class="btn btn-cancel">Cancel</button>
+          <button class="btn btn-confirm">confirm</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

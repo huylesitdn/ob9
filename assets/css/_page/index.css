@@ -2245,6 +2245,7 @@
         left: 0;
         right: 0;
         padding: 15px;
+        padding-bottom: 0;
         display: flex;
         place-content: space-between;
         place-items: center;
@@ -2266,10 +2267,51 @@
           padding-right: 5px; }
           .transaction-history .nav-expand .dropdown .dropdown-menu.show .btn-outline-secondary {
             border-color: #A5A9B3; }
+            .transaction-history .nav-expand .dropdown .dropdown-menu.show .btn-outline-secondary:hover, .transaction-history .nav-expand .dropdown .dropdown-menu.show .btn-outline-secondary:active {
+              background-color: #597EF7;
+              border-color: #597EF7;
+              color: #FFFFFF;
+              box-shadow: none; }
           .transaction-history .nav-expand .dropdown .dropdown-menu.show .btn.active {
             background-color: #597EF7;
             border-color: #597EF7;
             color: #FFFFFF; }
+        .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate {
+          width: 100%; }
+          .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div {
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 16px;
+            color: #000000;
+            place-items: center;
+            margin-top: 5px;
+            padding: 0; }
+            .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div:first-child {
+              border-bottom: 2px solid #EEEEEE; }
+            .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div .form-control {
+              border: none;
+              text-align: right; }
+              .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div .form-control[readonly] {
+                background-color: transparent; }
+            .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div.action {
+              margin-left: -15px;
+              margin-right: -15px;
+              display: flex;
+              place-content: space-between;
+              place-items: center;
+              margin-top: 5px; }
+              .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div.action .btn {
+                min-height: 50px;
+                width: 50%;
+                border-radius: 0; }
+                .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div.action .btn-cancel {
+                  background-color: #E9F6FF;
+                  color: #597EF7; }
+                .transaction-history .nav-expand .dropdown .dropdown-menu.show #collapseCustomDate > div.action .btn-confirm {
+                  background-color: #597EF7;
+                  color: #fff; }
   .transaction-history__content {
     padding-left: 15px;
     padding-right: 15px;
