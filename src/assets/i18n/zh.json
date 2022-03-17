@@ -138,5 +138,16 @@
   "ESPORTS": "ESPORTS",
   "TF_GAMING": "TF_GAMING",
   "4D_LOTTERY": "4D_LOTTERY",
-  "Unsettlement": "Unsettlement"
+  "Unsettlement": "Unsettlement",
+  "profile": {
+    "Username": "Username",
+    "Name": "Name",
+    "Date_of_Birth": "Date_of_Birth",
+    "Phone_Number": "Phone_Number",
+    "Email_Address": "Email_Address",
+    "Profile_Picture": "Profile_Picture",
+    "Please_select_from_album": "Please_select_from_album",
+    "Request_Code": "Request_Code",
+    "Verify_Email_Address": "Verify_Email_Address"
+  }
 }

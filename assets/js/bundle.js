@@ -282,6 +282,15 @@ $(".dropdown-menu").on("click", function (e) {
   e.stopPropagation();
 });
 
+$('.profile #exampleFormControlEmailAddressInput').on('input', function () {
+  const value = $(this).val();
+  if (!!value) {
+    $('.profile .btn-request_code').prop('disabled', false);
+  } else {
+    $('.profile .btn-request_code').prop('disabled', true);
+  }
+})
+
 /**
  * mobiscroll
  *
