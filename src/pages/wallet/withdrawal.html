@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   @@include('../../components/base/header.html', {title: 'Withdrawal'})
   <body>
     
@@ -43,7 +43,7 @@
             </label>
           </div>
           <a href="/wallet/add-bank-account.html" class="withdrawal__content__bank-account__add-bank">
-            <img src="/images/wallet/plus.png" /> Add Bank Account
+            <img src="/images/wallet/plus.png" /> <span data-i18n="wallet_page.withdrawal.Add_Bank_Account">Add Bank Account</span>
           </a>
         </div>
 
@@ -55,18 +55,18 @@
         <div class="withdrawal__content__input input-group">
           <span class="input-group-text left">MYR</span>
           <input type="text" class="form-control" placeholder="Please enter withdrawal amount (100 - 50,000)" />
-          <span class="input-group-text right"><img src="/images/wallet/max.png" /> Max</span>
+          <span class="input-group-text right"><img src="/images/wallet/max.png" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
         </div>
 
         <div class="withdrawal__content__submit">
           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT">SUBMIT</button>
         </div>
 
-        <div class="withdrawal__content__description pt-0">
+        <div class="withdrawal__content__description pt-0" data-i18n="wallet_page.withdrawal.description">
           Please transfer all balances to the main wallet before withdrawal request. 
         </div>
 
-        <div class="withdrawal__content__help">
+        <div class="withdrawal__content__help" data-i18n="wallet_page.withdrawal.help">
           Need assistance? Please contact <a href="#">Customer Service</a>
         </div>
         

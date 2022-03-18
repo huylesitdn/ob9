@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   @@include('../../components/base/header.html', {title: 'Deposit'})
   <body>
     
@@ -11,17 +11,17 @@
         <ul class="nav nav-tabs nav-fill deposit__content__tab" id="myTab" role="tablist">
           <li class="nav-item deposit__content__tab__item" role="presentation">
             <button class="nav-link deposit__content__tab__item__link active" id="online-banking-tab" data-bs-toggle="tab" data-bs-target="#online-banking" type="button" role="tab" aria-controls="online-banking" aria-selected="true">
-              Online Banking
+              <span data-i18n="wallet_page.Online_Banking">Online Banking</span>
             </button>
           </li>
           <li class="nav-item deposit__content__tab__item" role="presentation">
             <button class="nav-link deposit__content__tab__item__link mid" id="payment-gateway-tab" data-bs-toggle="tab" data-bs-target="#payment-gateway" type="button" role="tab" aria-controls="payment-gateway" aria-selected="false">
-              Payment Gateway
+              <span data-i18n="wallet_page.Payment_Gateway">Payment Gateway</span>
             </button>
           </li>
           <li class="nav-item deposit__content__tab__item" role="presentation">
             <button class="nav-link deposit__content__tab__item__link" id="crypto-currency-tab" data-bs-toggle="tab" data-bs-target="#crypto-currency" type="button" role="tab" aria-controls="crypto-currency" aria-selected="false">
-              Crypto Currency
+              <span data-i18n="wallet_page.Crypto_Currency">Crypto Currency</span>
             </button>
           </li>
         </ul>

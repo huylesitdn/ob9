@@ -11,14 +11,15 @@ var translator = new Translator({
   selector: "[data-i18n]",
   debug: false,
   registerGlobally: "__",
-  persist: false,
+  persist: true,
   persistKey: "preferred_language",
   filesLocation: "/i18n",
 });
 
-translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
+translator.fetch([LANGUAGES.EN, LANGUAGES.ZH])
+.then(() => {
   // -> Translations are ready...
-  translator.translatePageTo(LANGUAGES.EN);
+  translator.translatePageTo(LANGUAGES.ZH);
 });
 
 /**
@@ -42,8 +43,14 @@ var selectLanguageModal = new bootstrap.Modal(
   {}
 );
 $(".choose-language").on("click", function (e) {
-  selectLanguageModal.hide();
-  $("#mySidenav").removeClass("active");
+  const select_language = $(this).data('language');
+  if(LANGUAGES[select_language]) {
+    translator.translatePageTo(LANGUAGES[select_language]);
+    selectLanguageModal.hide();
+    $("#mySidenav").removeClass("active");
+  } else {
+    console.log('No language setup')
+  }
 });
 /**
  * MENU SLIDE

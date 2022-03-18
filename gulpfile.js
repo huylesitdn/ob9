@@ -5,6 +5,7 @@ const { watch, series } = require('gulp');
 const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 
 const paths = {
   scripts: {
@@ -53,6 +54,10 @@ async function compileJS() {
 async function compileI18n() {
   gulp.src([paths.i18n.src])
     .pipe(gulp.dest(paths.i18n.dest_dir));
+
+  // gulp.src([paths.i18n.src])
+  //   .pipe(rename('zh.json'))
+  //   .pipe(gulp.dest(paths.i18n.dest_dir));
 }
 
 // Copy assets after build

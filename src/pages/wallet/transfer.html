@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   @@include('../../components/base/header.html', {title: 'Tranfer'})
   <body>
     
@@ -10,7 +10,7 @@
 
         <div class="transfer__content__wallet">
           <div class="transfer__content__wallet__title">
-            <div>Wallet Balance <img src="/images/wallet/refresh.png" /></div>
+            <div><span data-i18n="Wallet_Balance"></span> <img src="/images/wallet/refresh.png" /></div>
             <a href="#"><img src="/images/wallet/restore.png" /> Restore</a>
           </div>
           
@@ -111,7 +111,7 @@
 
 
         <div class="transfer__content__auto-switch">
-          Auto Transfer
+          <span data-i18n="wallet_page.transfer.Auto_Transfer">Auto Transfer</span>
           <div class="form-check form-switch">
             <label class="form-check-label" for="flexSwitchCheckDefault">Enable this button for auto transfer balance</label>
             <input class="form-check-input" type="checkbox" role="switch" id="autoTransferCheck" checked="checked">
@@ -130,7 +130,7 @@
               <img src="/images/wallet/right.png" class="ms-1" />
             </div>
           </div>
-          <div class="transfer__content__auto-switch-off__transfer">
+          <div class="transfer__content__auto-switch-off__transfer" data-i18n="wallet_page.transfer.No_transfer_between_game_wallets">
             No transfer between game wallets
           </div>
           <div class="transfer__content__auto-switch-off__input input-group">
@@ -141,7 +141,7 @@
         </div>
 
         <div class="transfer__content__action d-none">
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferSuccessModal">TRANSFER NOW</button>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transferSuccessModal" data-i18n="wallet_page.transfer.TRANSFER_NOW">TRANSFER NOW</button>
         </div>
 
 

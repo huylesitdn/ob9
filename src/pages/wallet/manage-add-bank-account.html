@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   @@include('../../components/base/header.html', {title: 'MANAGE - ADD BANK ACCOUNT'})
   <body>
     
@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <div class="add-bank-account__content__description">
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description">
           Please make sure your name on OB and your bank account is matched.
         </div>
 
@@ -29,22 +29,22 @@
           </div>
           <div class="items">
             <label class="form-label" data-i18n="Bank_Account_Number">Bank Account Number</label>
-            <input type="text" class="form-control" placeholder="Please enter bank account number" />
+            <input type="text" class="form-control" data-i18n-attr="placeholder" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" placeholder="Please enter bank account number" />
           </div>
           <div class="items">
             <label class="form-label" data-i18n="Phone_Number">Phone Number</label>
-            <input type="text" class="form-control" placeholder="Please enter bank Phone Number" value="0123338888" />
+            <input type="text" class="form-control" data-i18n-attr="placeholder" data-i18n="wallet_page.add-bank-account.Please_enter_bank_Phone_Number" placeholder="Please enter bank Phone Number" value="0123338888" />
           </div>
           <div class="items">
             <label class="form-label" data-i18n="Authentication_Number">Authentication Number</label>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Please enter authentication code" />
+              <input type="text" class="form-control" data-i18n-attr="placeholder" data-i18n="wallet_page.add-bank-account.Please_enter_authentication_code" placeholder="Please enter authentication code" />
               <a href="/wallet/manage-add-bank-account-after-enter-detail.html" class="btn btn-primary" type="button">Request Code</a>
             </div>
           </div>
         </div>
 
-        <div class="add-bank-account__content__description">
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description2">
           Please make sure your name on OB and your bank account is matched.
         </div>
 
@@ -55,7 +55,7 @@
           </div>
         </div>
 
-        <div class="add-bank-account__content__help">
+        <div class="add-bank-account__content__help" data-i18n="wallet_page.add-bank-account.help">
           Need assistance? Please contact <a href="#">Customer Service</a>
         </div>
         
