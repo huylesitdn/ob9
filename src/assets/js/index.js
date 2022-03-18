@@ -19,7 +19,9 @@ var translator = new Translator({
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH])
 .then(() => {
   // -> Translations are ready...
-  translator.translatePageTo(LANGUAGES.EN);
+  const _get_translator_config = translator.config.persistKey || "preferred_language";
+  const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+  translator.translatePageTo(_get_language);
 });
 
 /**

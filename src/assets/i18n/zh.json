@@ -43,7 +43,7 @@
     "fishing_game": "fishing_game zh",
     "e_sports": "e_sports zh",
     "lottery_game": "lottery_game zh",
-    "highest_return": "highest_return zh"
+    "highest_return": "highest_return"
   },
   "wallet_page": {
     "Approve": "Approve zh",
@@ -66,7 +66,7 @@
       },
       "payment_gateway": {
         "Line_1": "Fund deposited from a 3rd party bank account that are <strong class='text-danger'>NOT</strong> in your own name or <strong class='text-danger'>NOT</strong> registered with OB will <strong class='text-danger'>NOT</strong> be accepted. zh",
-        "Line_2": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed.. zh"
+        "Line_2": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed. zh"
       }
     },
     "withdrawal": {
@@ -113,9 +113,9 @@
   },
   "my_account_page": {
     "Customer_Service": "Customer <br /> Service zh",
-    "Referral_Program": "Referral_Program zh",
-    "Refer_your_friends_": "Refer_your_friends_ zh",
-    "Bonus_Center": "Bonus_Center zh",
+    "Referral_Program": "Referral Program zh",
+    "Refer_your_friends_get_rewards": "Refer your friends & get rewards zh",
+    "Bonus_Center": "Bonus Center zh",
     "Help": "Help zh"
   },
   "promotion_page": {
