@@ -52,7 +52,7 @@
           font-size: 14px;
           line-height: 14px;
           color: #000000;
-          border-radius: none;
+          border-radius: 0 !important;
           border: none;
           border-bottom: 1px solid #EEEEEE;
           padding: 0px 0 15px;
@@ -76,7 +76,7 @@
         .input-group-text {
           background: transparent;
           border: none;
-          border-radius: 0;
+          border-radius: 0 !important;
           border-bottom: 1px solid #EEEEEE;
           padding-top: 0;
         }

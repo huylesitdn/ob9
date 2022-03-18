@@ -3,7 +3,7 @@
     "malaysia": "Malaysia zh",
     "singapore": "Singapore zh",
     "vietnam": "Vietnam zh",
-    "international": "International zh"
+    "international": "International"
   },
   "login": "Login zh",
   "username": "Username zh",
@@ -33,6 +33,8 @@
   "promotion": "Promotion zh",
   "sponsors": "Sponsors zh",
   "my_account": "My Account zh",
+  "Approve": "Approve zh",
+  "Rejected": "Rejected zh",
   "index": {
     "notification_run": "The announcement message will runs here. The announcement message will runs here. The announcement message will runs here zh",
     "sports_events": "sports_events zh",
@@ -44,15 +46,15 @@
     "highest_return": "highest_return"
   },
   "wallet_page": {
-    "Approve": "Approve",
-    "Online_Banking": "Online Banking",
-    "Payment_Gateway": "Payment Gateway",
-    "Crypto_Currency": "Crypto Currency",
-    "Having_problem_text": "Having problem to deposit? Our <a href='#'>Customer Service</a> representative can assist you.",
-    "Having_problem_to_deposit": "Having problem to deposit?",
-    "Our": "Our",
-    "Customer_Service": "Customer Service",
-    "representative_can_assist_you": "representative_can_assist_you.",
+    "Approve": "Approve zh",
+    "Online_Banking": "Online Banking zh",
+    "Payment_Gateway": "Payment Gateway zh",
+    "Crypto_Currency": "Crypto Currency zh",
+    "Having_problem_text": "Having problem to deposit? Our <a href='#'>Customer Service</a> representative can assist you. zh",
+    "Having_problem_to_deposit": "Having problem to deposit? zh",
+    "Our": "Our zh",
+    "Customer_Service": "Customer Service zh",
+    "representative_can_assist_you": "representative_can_assist_you. zh",
     "Attention": {
       "online_banking": {
         "Line_1": "Fund deposited from a 3rd party bank account that are <strong class='text-danger'>NOT</strong> in your own name or <strong class='text-danger'>NOT</strong> registered with OB will <strong class='text-danger'>NOT</strong> be accepted. zh",
@@ -60,18 +62,18 @@
         "Line_3": "Please <strong class='text-danger'>DO NOT</strong> key in any sensitive words in “Recipient Reference/ Other Payment Details” when making transfer.<br/>Example : OB Entertainment, OB9, BET, Casino and etc. zh",
         "Line_4": "Please submit the deposit form after the transfer so that we can process your deposit more quickly once we receive your fund. zh",
         "Line_5": "Please upload receipt to enjoy faster and bettter experiences. zh",
-        "Line_6": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed."
+        "Line_6": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed. zh"
       },
       "payment_gateway": {
         "Line_1": "Fund deposited from a 3rd party bank account that are <strong class='text-danger'>NOT</strong> in your own name or <strong class='text-danger'>NOT</strong> registered with OB will <strong class='text-danger'>NOT</strong> be accepted. zh",
-        "Line_2": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed."
+        "Line_2": "Please take note that at least 1x rollover is required for all deposits made before any withdrawal can be processed. zh"
       }
     },
     "withdrawal": {
       "Add_Bank_Account": "Add Bank Account zh",
       "Max": "Max zh",
       "description": "Please transfer all balances to the main wallet before withdrawal request. zh",
-      "help": "Need assistance? Please contact <a href='#'>Customer Service</a>"
+      "help": "Need assistance? Please contact <a href='#'>Customer Service</a> zh"
     },
     "add-bank-account": {
       "description": "Please make sure your name on OB and your bank account is matched. zh",
@@ -80,23 +82,98 @@
       "Request_Code": "Request Code zh",
       "Please_enter_bank_account_number": "Please enter bank account number zh",
       "Please_enter_bank_Phone_Number": "Please enter bank Phone Number zh",
-      "Please_enter_authentication_code": "Please enter authentication code  zh"
+      "Please_enter_authentication_code": "Please enter authentication code zh"
+    },
+    "transaction-history": {
+      "No_latest_transaction_record": "No_latest_transaction_record zh",
+      "Deposit": "Deposit zh",
+      "New_member_30_free_30": "New member 30 free 30 zh",
+      "Cash_Rebate": "Cash Rebate zh",
+      "Fail_to_meet_turnover": "Fail to meet turnover zh",
+      "Withdraw_successful": "Withdraw_successful zh"
+    },
+    "transfer": {
+      "Auto_Transfer": "AutoTransfer zh",
+      "No_transfer_between_game_wallets": "No transfer between game wallets zh",
+      "TRANSFER_NOW": "TRANSFER NOW zh"
     }
   },
   "menu": {
-    "home": "Home zh zh",
-    "my_account": "My account zh zh",
-    "vip": "Vip zh zh",
-    "sponsor": "Sponsor zh zh",
-    "faq": "Faq zh zh",
-    "info": "Info zh zh",
-    "about_us": "About us zh zh",
-    "contact_us": "Contact us zh zh",
-    "region_language": "Region language zh zh",
-    "logout": "Logout zh zh",
+    "home": "Home zh",
+    "my_account": "My account zh",
+    "vip": "Vip zh",
+    "sponsor": "Sponsor zh",
+    "faq": "Faq zh",
+    "info": "Info zh",
+    "about_us": "About us zh",
+    "contact_us": "Contact us zh",
+    "region_language": "Region language zh",
+    "logout": "Logout zh",
     "follow_us": "Follow us zh"
   },
-  "total_balance": "Total balance zh zh",
+  "my_account_page": {
+    "Customer_Service": "Customer <br /> Service zh",
+    "Referral_Program": "Referral Program zh",
+    "Refer_your_friends_get_rewards": "Refer your friends & get rewards zh",
+    "Bonus_Center": "Bonus Center zh",
+    "Help": "Help zh"
+  },
+  "promotion_page": {
+
+  },
+  "sponsors_page": {
+    "jv": {
+      "Sponsorship_Events_Videos": "Sponsorship Events Videos zh",
+      "Sponsorship_Events_Videos_caption_1": "OB Sports and some of your favourite Juventus Stars are here to wish you a prosperous Chinese New Year of the Tiger. zh",
+      "Sponsorship_Events_Videos_caption_2": "Look at the highlights brought to you by OB Sports and Juventus on our parnership anniversary conference. Through a comprehensive cooperation, OB Sports and Juventus have worked together towards the mutual goal in providing users with an exemplary sports and entertainment experience. zh",
+      "Sponsorship_Events_Videos_caption_3": "Juventus players were taught how to play our favourite pass time during the celebration of Chinese New Year 2021! zh",
+      "Sponsorship_Events_Videos_caption_4": "Serie A giant Juventus Football Club and OB Sports, one of Asia's leading sports and entertainment platforms, officially announce their partnership. The partnership will see OB Sports and Juventus launch joint online and offline entertainment activities, in concurrence with professional sports with the aim of further expanding each other’s international presence. zh",
+      "Sports_Highlights": "Sports Highlights zh",
+      "Sports_Highlights_description": "Juventus, the leading club in Italian football, has won a record nine consecutive Serie A championships in the ten years ending in 2021, completing the feat of winning the Serie A championship 38 times in team history. In the European competition, Juventus is the first team in Europe to win the three major European Cups (European Champions Cup, UEFA Cup, and European Cup Winners' Cup).  Juventus is not only the champion team in Italy, but also a strong team in the European war. zh",
+      "Sponsor_Information": "Sponsor_Information zh",
+      "Sponsor_Information_1": "One of Asia's leading sports and entertainment platforms, OB Sports, has today become the latest Juventus Official Regional Partner, in what is a collaboration between two renowned brands. OB Sports has long been committed to their goal of providing diversified and high-quality interactive entertainment experience for their audience, receiving wide-praise and industry recognition as a result. zh",
+      "Sponsor_Information_2": "Federico Palomba, Managing Director of Juventus APAC commented: “We are pleased to officially announce the regional partnership with OB Sports, one of Asia's most reputable sports and entertainment brands. The two aspirational and impactful brands will create more experience and engagement to each other's fans and generate mutual success throughout the partnership.” zh",
+      "Sponsor_Information_3": "William Robert, Global Development Director and Spokesperson of OB Sports added: “Juventus' fighting until the end value and Live Ahead lifestyle share a great synergy with OB Sports' entrepreneurial spirit of striving for excellence. I believe that our partnership will be OB Sports’ most exciting crossover cooperation in 2020 which will generate a great number of unique sparks.  zh",
+      "Sponsor_Information_4": "Together with Juventus, we will bring more glamour and international influence on OB Sports and bring luxury entertainment experience to Asian customers at hand. zh",
+      "Sponsored_event_photos": "Sponsored event photos zh",
+      "Sponsored_event_photos_1": "William Robert, Global Relations Development Director of OB Sports, and Federico Palomba, Managing Director of Juventus Asia Pacific, signed on the signature wall at the official press conference zh",
+      "Sponsored_event_photos_2": "Exchange of OB Sports and Juventus's silk banner during the celebration of Partnership Anniversary Conference. Witnessed by Juventus legend Ravanelli and Torricelli. zh",
+      "Sponsored_event_photos_3": "Our favourite photo! OB Sports Europe Public Relations Director Damon Eduardo, taken with Juventus Chief Revenue Officer Giorgio Ricci, Juventus legend Ravanelli and Torricelli at the Partnership Anniversary Conference. zh",
+      "Best_in_the_Industry": "Best in the Industry zh",
+      "Best_in_the_Industry_title": "Professional Native Entertainment Platform zh",
+      "Best_in_the_Industry_description": "High efficiency, Safest, Ultimate User Experience zh",
+      "item_title_1": "Safer zh",
+      "item_description_1": "Exclusive network technology Super anti-hijacking zh",
+      "item_title_2": "Stability zh",
+      "item_description_2": "Exclusive network technology Provide the most stable products zh",
+      "item_title_3": "Diversify zh",
+      "item_description_3": "Variety game products We have everything you need zh",
+      "item_title_4": "Privacy zh",
+      "item_description_4": "Triple data encryption Keep your data safe zh",
+      "bottom1": "Polo He License (MGA) Certification zh",
+      "bottom2": "British Virgin Islands (BVI) certification zh",
+      "bottom3": "Philippine PAGCOR Regulatory Responsibilities zh"
+    },
+    "av": {
+      "Sponsored_Gala_Special": "Sponsored Gala Special zh",
+      "Sponsored_Gala_Special1": "In celebration of Lunar New Year of Tiger in 2022, OB Sports and its partner Premier League powerhouse Aston Villa and some of the football stars wishing you Gong Xi Fatt Cai! We wish you a prosperous year of the tiger! zh",
+      "Sponsored_Gala_Special2": "Premier League Aston Villa Football Club and OB Sports Official Signing Ceremony & Press Conference was grandly held at Villa Park Stadium in Birmingham, UK zh",
+      "Sponsored_Gala_Special3": "22 June 2021, OB Sports, Asia's leading sports and entertainment brand, officially signed a contract with Aston Villa as a new Principal Partner and new Exclusive Official Sleeve Partner. zh",
+      "Sports_Highlights": "Sports Highlights zh",
+      "Sports_Highlights1": "Aston Villa Football Club (nicknamed Villars) is a football club located in Birmingham, central England. It was founded in 1874 and currently competes in the English Premier League. Aston Villa is also one of the oldest teams in the Premier League, and its home is at Villa Park in Birmingham. zh",
+      "Sports_Highlights2": "In the early years, Aston Villa won the top league seven times and the FA Cup seven times, and won the UEFA Champions League and the European Super Cup in 1982. zh",
+      "Sponsor_Information": "Sponsor Information zh",
+      "Sponsor_Information1": "The OB Sports brand logo will exclusively feature on the sleeve of Villa’s new 2021/22 kits for the first team playing squad at all home and away first team fixtures including all Premier League and cup games. zh",
+      "Sponsor_Information2": "OB Sports is a leader in sports and entertainment and widely recognized as one of the most trustworthy and reliable platforms in Asia. OB Sports devotes its efforts to not only establish a secured platform for its users but also to provide a diversified high-quality interactive entertainment experience for football fans. OB has received fervent support from millions of users as well as trust and broad recognition from within the industry and is widely regarded as the leading force in Asia in the fields of sports and entertainment. zh",
+      "Sponsored_event_site": "Sponsored event site zh",
+      "Sponsored_event_site1": "Aston Villa star players Morgan Sanson, Ashley Young and Matt Targett wearing the new home kit for 21/22 season featuring OB Sports brand logo. zh",
+      "Sponsored_event_site2": "Premier League powerhouse Aston Villa proudly announced OB Sports partnership, the leading sports and entertainment platform in Asia! zh",
+      "Sponsored_event_site3": "Nicola Ibbetson, Chief Commercial Officer of Aston Villa presented the 21/22 home jersey during the signing ceremony to Kai Webb, President of international business of OB Group. zh",
+      "Sponsored_event_site4": "Aston Villa Chief Commercial Officer Nicola Ibbetson and OB Group's President of International Business Kai Webb in the Aston Villa players dressing room. zh"
+    }
+  },
+  "Back_to_top": "Back to top zh",
+  "total_balance": "Total balance zh",
   "deposit": "Deposit zh",
   "withdraw": "Withdraw zh",
   "rebate": "Rebate zh",
@@ -115,12 +192,12 @@
   "Attention": "Attention zh",
   "Attach_Receipt": "Attach Receipt zh",
   "Choose_Region": "Choose Region zh",
-  "promotion-all": "Promotion all zh",
-  "promotion-sports": "Promotion sports zh",
-  "promotion-live-casino": "Promotion live casino zh",
-  "promotion-e-sports": "Promotion e sports zh",
-  "promotion-lottery": "Promotion lottery zh",
-  "promotion-fishing": "Promotion fishing zh",
+  "promotion-all": "all zh",
+  "promotion-sports": "sports zh",
+  "promotion-live-casino": "live casino zh",
+  "promotion-e-sports": "e sports zh",
+  "promotion-lottery": "lottery zh",
+  "promotion-fishing": "fishing zh",
   "lean_more": "Lean more zh",
   "new": "New zh",
   "limited": "Limited zh",
@@ -151,6 +228,7 @@
   "Game_Wallet": "Game Wallet zh",
   "Hide": "Hide zh",
   "CANCEL": "CANCEL zh",
+  "REMOVE": "REMOVE zh",
   "CONFIRM": "CONFIRM zh",
   "Wallet_Balance": "Wallet_Balance zh",
   "Bank_Account": "Bank Account zh",
@@ -197,6 +275,12 @@
     "Profile_Picture": "Profile Picture zh",
     "Please_select_from_album": "Please select from album zh",
     "Request_Code": "Request Code zh",
-    "Verify_Email_Address": "Verify Email Address zh"
+    "Verify_Email_Address": "Verify Email Address zh",
+    "Date_of_Birth_Placeholder": "Add birthdate, Please make sure you’re above 18 years old zh",
+    "Email_address_Placeholder": "For your safety purposes, Please verify your email address zh",
+    "Email_address_Placeholder1": "Please enter your email address zh",
+    "Verify_Email_address_Placeholder": "Please enter verification code zh",
+    "description1": "For your safety purposes, some informations cannot be edited. zh",
+    "description2": "Need assistance? Please contact <a href=''#'>Customer Service</a> zh"
   }
 }

@@ -113,9 +113,9 @@
   },
   "my_account_page": {
     "Customer_Service": "Customer <br /> Service",
-    "Referral_Program": "Referral_Program",
-    "Refer_your_friends_": "Refer_your_friends_",
-    "Bonus_Center": "Bonus_Center",
+    "Referral_Program": "Referral Program",
+    "Refer_your_friends_get_rewards": "Refer your friends & get rewards",
+    "Bonus_Center": "Bonus Center",
     "Help": "Help"
   },
   "promotion_page": {
@@ -275,6 +275,12 @@
     "Profile_Picture": "Profile Picture",
     "Please_select_from_album": "Please select from album",
     "Request_Code": "Request Code",
-    "Verify_Email_Address": "Verify Email Address"
+    "Verify_Email_Address": "Verify Email Address",
+    "Date_of_Birth_Placeholder": "Add birthdate, Please make sure you’re above 18 years old",
+    "Email_address_Placeholder": "For your safety purposes, Please verify your email address",
+    "Email_address_Placeholder1": "Please enter your email address",
+    "Verify_Email_address_Placeholder": "Please enter verification code",
+    "description1": "For your safety purposes, some informations cannot be edited.",
+    "description2": "Need assistance? Please contact <a href=''#'>Customer Service</a>"
   }
 }

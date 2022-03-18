@@ -275,6 +275,12 @@
     "Profile_Picture": "Profile Picture zh",
     "Please_select_from_album": "Please select from album zh",
     "Request_Code": "Request Code zh",
-    "Verify_Email_Address": "Verify Email Address zh"
+    "Verify_Email_Address": "Verify Email Address zh",
+    "Date_of_Birth_Placeholder": "Add birthdate, Please make sure you’re above 18 years old zh",
+    "Email_address_Placeholder": "For your safety purposes, Please verify your email address zh",
+    "Email_address_Placeholder1": "Please enter your email address zh",
+    "Verify_Email_address_Placeholder": "Please enter verification code zh",
+    "description1": "For your safety purposes, some informations cannot be edited. zh",
+    "description2": "Need assistance? Please contact <a href=''#'>Customer Service</a> zh"
   }
 }
