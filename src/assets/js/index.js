@@ -19,7 +19,7 @@ var translator = new Translator({
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH])
 .then(() => {
   // -> Translations are ready...
-  translator.translatePageTo(LANGUAGES.ZH);
+  translator.translatePageTo(LANGUAGES.EN);
 });
 
 /**
