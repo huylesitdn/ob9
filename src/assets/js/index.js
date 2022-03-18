@@ -40,10 +40,10 @@ $("#mySidenav .backdrop, #mySidenav a.left-nav__top__nav__item__link").on(
   }
 );
 
-var selectLanguageModal = new bootstrap.Modal(
-  document.getElementById("selectLanguage"),
-  {}
-);
+const selectLanguageModalElm = $("#selectLanguage");
+if (selectLanguageModalElm.length > 0) {
+  var selectLanguageModal = new bootstrap.Modal(selectLanguageModalElm, {});
+}
 $(".choose-language").on("click", function (e) {
   const select_language = $(this).data('language');
   if(LANGUAGES[select_language]) {
@@ -54,6 +54,18 @@ $(".choose-language").on("click", function (e) {
     console.log('No language setup')
   }
 });
+
+
+$(".universal__content__language").on("click", function (e) {
+  const select_language = $(this).data('language');
+  if(LANGUAGES[select_language]) {
+    translator.translatePageTo(LANGUAGES[select_language]);
+    window.location.href = '/'
+  } else {
+    console.log('No language setup')
+  }
+});
+
 /**
  * MENU SLIDE
  *

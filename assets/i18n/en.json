@@ -35,15 +35,17 @@
   "my_account": "My Account",
   "Approve": "Approve",
   "Rejected": "Rejected",
+  "VIP_PRIVILEGE": "VIP <br/>PRIVILEGE",
+  "CAMPAIGN_BONANZA": "CAMPAIGN <br/>BONANZA",
   "index": {
     "notification_run": "The announcement message will runs here. The announcement message will runs here. The announcement message will runs here",
-    "sports_events": "sports_events",
-    "live_casino": "live_casino",
-    "slot_machines": "slot_machines",
-    "fishing_game": "fishing_game",
-    "e_sports": "e_sports",
-    "lottery_game": "lottery_game",
-    "highest_return": "highest_return"
+    "sports_events": "sports events",
+    "live_casino": "live casino",
+    "slot_machines": "slot machines",
+    "fishing_game": "fishing game",
+    "e_sports": "e sports",
+    "lottery_game": "lottery game",
+    "highest_return": "highest return"
   },
   "wallet_page": {
     "Approve": "Approve",
@@ -54,7 +56,11 @@
     "Having_problem_to_deposit": "Having problem to deposit?",
     "Our": "Our",
     "Customer_Service": "Customer Service",
-    "representative_can_assist_you": "representative_can_assist_you.",
+    "representative_can_assist_you": "representative can assist you.",
+    "Deposited_from_Maybank": "Deposited from Maybank.",
+    "Withdraw_successful": "Withdraw successful.",
+    "New_member_30_free_30": "New member 30 free 30.",
+    "Cash_Rebate": "Cash Rebate.",
     "Attention": {
       "online_banking": {
         "Line_1": "Fund deposited from a 3rd party bank account that are <strong class='text-danger'>NOT</strong> in your own name or <strong class='text-danger'>NOT</strong> registered with OB will <strong class='text-danger'>NOT</strong> be accepted.",
@@ -130,7 +136,7 @@
       "Sponsorship_Events_Videos_caption_4": "Serie A giant Juventus Football Club and OB Sports, one of Asia's leading sports and entertainment platforms, officially announce their partnership. The partnership will see OB Sports and Juventus launch joint online and offline entertainment activities, in concurrence with professional sports with the aim of further expanding each other’s international presence.",
       "Sports_Highlights": "Sports Highlights",
       "Sports_Highlights_description": "Juventus, the leading club in Italian football, has won a record nine consecutive Serie A championships in the ten years ending in 2021, completing the feat of winning the Serie A championship 38 times in team history. In the European competition, Juventus is the first team in Europe to win the three major European Cups (European Champions Cup, UEFA Cup, and European Cup Winners' Cup).  Juventus is not only the champion team in Italy, but also a strong team in the European war.",
-      "Sponsor_Information": "Sponsor_Information",
+      "Sponsor_Information": "Sponsor Information",
       "Sponsor_Information_1": "One of Asia's leading sports and entertainment platforms, OB Sports, has today become the latest Juventus Official Regional Partner, in what is a collaboration between two renowned brands. OB Sports has long been committed to their goal of providing diversified and high-quality interactive entertainment experience for their audience, receiving wide-praise and industry recognition as a result.",
       "Sponsor_Information_2": "Federico Palomba, Managing Director of Juventus APAC commented: “We are pleased to officially announce the regional partnership with OB Sports, one of Asia's most reputable sports and entertainment brands. The two aspirational and impactful brands will create more experience and engagement to each other's fans and generate mutual success throughout the partnership.”",
       "Sponsor_Information_3": "William Robert, Global Development Director and Spokesperson of OB Sports added: “Juventus' fighting until the end value and Live Ahead lifestyle share a great synergy with OB Sports' entrepreneurial spirit of striving for excellence. I believe that our partnership will be OB Sports’ most exciting crossover cooperation in 2020 which will generate a great number of unique sparks. ",

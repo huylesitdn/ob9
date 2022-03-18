@@ -28,6 +28,8 @@
       place-items: center;
       gap: 15px;
       color: #fff; }
+      #mySidenav.sidenav .left-nav__top__info__user-info {
+        color: #fff; }
       #mySidenav.sidenav .left-nav__top__info__avatar {
         max-width: 80px; }
       #mySidenav.sidenav .left-nav__top__info h3 {
@@ -37,7 +39,8 @@
         border-bottom: 1px solid #FFFFFF;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        padding-top: 5px; }
+        padding-top: 5px;
+        font-weight: 300; }
       #mySidenav.sidenav .left-nav__top__info p {
         font-size: 12px;
         line-height: 14px;

@@ -156,6 +156,8 @@ a {
       place-items: center;
       gap: 15px;
       color: #fff; }
+      #mySidenav.sidenav .left-nav__top__info__user-info {
+        color: #fff; }
       #mySidenav.sidenav .left-nav__top__info__avatar {
         max-width: 80px; }
       #mySidenav.sidenav .left-nav__top__info h3 {
@@ -165,7 +167,8 @@ a {
         border-bottom: 1px solid #FFFFFF;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        padding-top: 5px; }
+        padding-top: 5px;
+        font-weight: 300; }
       #mySidenav.sidenav .left-nav__top__info p {
         font-size: 12px;
         line-height: 14px;
@@ -2890,7 +2893,7 @@ a {
           font-size: 14px;
           line-height: 14px;
           color: #000000;
-          border-radius: none;
+          border-radius: 0 !important;
           border: none;
           border-bottom: 1px solid #EEEEEE;
           padding: 0px 0 15px; }
@@ -2906,7 +2909,7 @@ a {
         .profile__content form .items .input-group-text {
           background: transparent;
           border: none;
-          border-radius: 0;
+          border-radius: 0 !important;
           border-bottom: 1px solid #EEEEEE;
           padding-top: 0; }
     .profile__content > .description {
