@@ -91,12 +91,15 @@
       "Please_enter_authentication_code": "Please enter authentication code"
     },
     "transaction-history": {
-      "No_latest_transaction_record": "No_latest_transaction_record",
+      "No_latest_transaction_record": "No latest transaction record",
       "Deposit": "Deposit",
       "New_member_30_free_30": "New member 30 free 30",
       "Cash_Rebate": "Cash Rebate",
       "Fail_to_meet_turnover": "Fail to meet turnover",
-      "Withdraw_successful": "Withdraw_successful"
+      "Withdraw_successful": "Withdraw_successful",
+      "nav_expand_description": "You may find your last 30 days transactions here",
+      "Cancel": "Cancel",
+      "Confirm": "Confirm"
     },
     "transfer": {
       "Auto_Transfer": "AutoTransfer",

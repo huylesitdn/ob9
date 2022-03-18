@@ -17,7 +17,7 @@
       Last 7 Days
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLast7Days">
-      <div class="description">You may find your last 30 days transactions here</div>
+      <div class="description" data-i18n="transaction-history.nav_expand_description">You may find your last 30 days transactions here</div>
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 6) {active}" data-i18n="Today">Today</button>
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 7) {active}" data-i18n="Last_7_Days">Last 7 Days</button>
       <button class="btn btn-outline-secondary @@if(context.nav_expand_active_btn == 8) {active}" data-i18n="Last_15_Days">Last 15 Days</button>
@@ -38,8 +38,8 @@
           </div>
         </div>
         <div class="action">
-          <button class="btn btn-cancel" data-bs-toggle="collapse" href="#collapseCustomDate">Cancel</button>
-          <button class="btn btn-confirm" data-bs-toggle="collapse" href="#collapseCustomDate">confirm</button>
+          <button class="btn btn-cancel" data-bs-toggle="collapse" href="#collapseCustomDate" data-i18n="transaction-history.Cancel">Cancel</button>
+          <button class="btn btn-confirm" data-bs-toggle="collapse" href="#collapseCustomDate" data-i18n="transaction-history.Confirm">Confirm</button>
         </div>
       </div>
     </div>
