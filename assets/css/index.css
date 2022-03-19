@@ -796,7 +796,7 @@ a {
   .home__content .home-game__content .home-item__title-head {
     position: absolute;
     position: absolute;
-    top: -10px;
+    top: -7px;
     left: 0;
     right: 0;
     display: flex;
@@ -804,7 +804,7 @@ a {
     .home__content .home-game__content .home-item__title-head span {
       background-image: url(../images/home/title-head-bg.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       padding: 3px 45px;
       font-style: normal;
       font-weight: bold;
