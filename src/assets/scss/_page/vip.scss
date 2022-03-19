@@ -1,0 +1,431 @@
+.vip {
+  padding-top: 50px;
+  background: #fff;
+
+  .navbar.fixed-top {
+    .content {
+      background: #0D1A26;
+
+      #vipTab {
+        border-bottom: none;
+
+        .nav-item {
+          .nav-link {
+            padding-left: 0;
+            padding-right: 0;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 10px;
+            margin-right: 10px;
+            border: none;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 5px;
+
+            &.active {
+              background: transparent;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 21px;
+              color: #FFFFFF;
+              border-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+
+    .privilege-content {
+      &__head {
+        background: #0D1A26;
+        padding: 30px 50px;
+        position: relative;
+
+        &__bg {
+          width: 100%;
+        }
+
+        &__content {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 30px;
+          width: 100%;
+
+          display: flex;
+          place-content: flex-start;
+          place-items: center;
+          flex-direction: column;
+          gap: 7px;
+
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #597EF7;
+
+          img {
+            width: 30px;
+          }
+
+          &__avatar {
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #fff;
+          }
+        }
+      }
+
+      &__card {
+        background: #0D1A26;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+
+        #privilegeVipCard {
+          padding: 15px;
+          overflow: hidden;
+          position: relative;
+
+          .slick-arrow {
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            width: 50px;
+            -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+            z-index: 99;
+
+            &::before {
+              content: "" !important;
+              font-family: initial !important;
+            }
+
+            &.slick-prev {
+              left: 0;
+            }
+
+            &.slick-next {
+              right: 0;
+            }
+          }
+
+
+          .slick-list {
+            padding: 0 25px !important;
+
+            .slick-track {
+              .slick-slide {
+                // padding-right: 10px;
+                // padding-left: 10px;
+                display: flex;
+                place-content: center;
+                place-items: center;
+
+                .privilege-card {
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  min-height: 152px;
+                  position: relative;
+                  padding: 15px;
+                  width: 100%;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  // width: 310px;
+
+                  &.vip0 {
+                    background-image: url(/images/vip/privilege/vip-0-bg.png);
+                  }
+
+                  &.vip1 {
+                    background-image: url(/images/vip/privilege/vip-1-bg.png);
+                  }
+
+                  &.vip2 {
+                    background-image: url(/images/vip/privilege/vip-2-bg.png);
+                  }
+
+                  &.vip3 {
+                    background-image: url(/images/vip/privilege/vip-3-bg.png);
+                  }
+
+                  &.vip4 {
+                    background-image: url(/images/vip/privilege/vip-4-bg.png);
+                  }
+
+                  &.vip5 {
+                    background-image: url(/images/vip/privilege/vip-5-bg.png);
+                  }
+
+                  &.vip6 {
+                    background-image: url(/images/vip/privilege/vip-6-bg.png);
+                  }
+
+                  &.vip7 {
+                    background-image: url(/images/vip/privilege/vip-7-bg.png);
+                  }
+
+                  &.vip8 {
+                    background-image: url(/images/vip/privilege/vip-8-bg.png);
+                  }
+
+                  &.vip9 {
+                    background-image: url(/images/vip/privilege/vip-9-bg.png);
+                  }
+
+                  &.vip10 {
+                    background-image: url(/images/vip/privilege/vip-10-bg.png);
+                  }
+
+                  &__current {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #E0CDA1;
+                    border-radius: 7px 0px;
+                    padding: 3px 7px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-align: center;
+                    color: #000000;
+                  }
+
+                  &__title {
+                    font-style: italic;
+                    font-weight: 500;
+                    font-size: 26px;
+                    line-height: 30px;
+                    margin-top: 10px;
+                  }
+
+                  &__sub_title {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 20px;
+                  }
+
+                  &__description {}
+                }
+              }
+            }
+          }
+
+          @media only screen and (max-width: 420px) {
+            .slick-list {
+
+              .slick-track {
+                .slick-slide {
+                  // padding-right: 20px;
+
+                  .privilege-card {
+                    // padding: 0;
+                    min-height: 130px;
+                    padding-bottom: 0;
+
+                    &__current {
+                      font-size: 10px;
+                      line-height: 10px;
+                    }
+
+                    &__title {
+                      font-size: 20px;
+                      line-height: 25px;
+                    }
+
+                    &__sub_title {
+                      font-size: 13px;
+                      line-height: 16px;
+                      margin-bottom: 15px;
+                    }
+
+                    &__description {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__info {
+        #privilegeInfo {
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+
+                .my-vip-details {
+                  padding: 15px;
+                  border-top: 15px solid #F2F2F2;
+
+                  &__header {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000000;
+                    padding-left: 15px;
+                    background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    margin-bottom: 15px;
+                  }
+
+                  &__content {
+                    margin-left: -10px;
+                    margin-right: -10px;
+
+                    &__items {
+                      position: relative;
+
+                      &:after {
+                        content: "";
+                        position: absolute;
+                        top: 10px;
+                        bottom: 10px;
+                        right: 0;
+                        width: 1px;
+                        background: #DAE0E8;
+                      }
+
+                      &:nth-child(6),
+                      &:nth-child(3) {
+                        &::after {
+                          display: none;
+                        }
+                      }
+
+                      &__child {
+                        text-align: center;
+                        border-bottom: 1px solid #DAE0E8;
+                        padding: 10px 0;
+                        position: relative;
+
+                        &__title {
+                          font-weight: 500;
+                          font-size: 16px;
+                          line-height: 19px;
+                          text-align: center;
+                          color: #BE9E55;
+                        }
+
+                        &__description {
+                          font-weight: 300;
+                          font-size: 10px;
+                          line-height: 12px;
+                          text-align: center;
+                          color: #000000;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .privilege-info-items {
+                  padding: 15px;
+
+                  &__header {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #000000;
+                    padding-left: 15px;
+                    background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    margin-bottom: 15px;
+                  }
+
+                  &__content {
+                    margin-left: 0;
+                    margin-right: 0;
+
+
+                    &__item {
+                      position: relative;
+
+                      &:nth-child(odd) {
+                        padding-left: 0;
+
+                        &:after {
+                          content: "";
+                          position: absolute;
+                          top: 10px;
+                          bottom: 10px;
+                          right: 0;
+                          width: 1px;
+                          background: #DAE0E8;
+                        }
+                      }
+
+                      &:last-child {
+                        &:after {
+                          display: none;
+                        }
+                      }
+
+                      &:nth-child(even) {
+                        padding-right: 0;
+                      }
+
+                      &__child {
+                        display: flex;
+                        place-content: flex-start;
+                        place-items: center;
+                        gap: 5px;
+                        border-bottom: 1px solid #DAE0E8;
+                        padding: 10px 0;
+                        position: relative;
+
+                        &__img {
+                          min-width: 40px;
+                        }
+
+                        &__description {
+                          &__title {
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 14px;
+                            display: flex;
+                            place-items: center;
+                            gap: 5px;
+                            margin-bottom: 5px;
+
+                            span {
+                              font-size: 16px;
+                              line-height: 19px;
+                            }
+                          }
+
+                          &__info {
+                            font-weight: 300;
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: #000000;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}

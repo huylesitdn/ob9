@@ -2743,3 +2743,265 @@
         .profile .modal .modal-content .select-profile-picture-modal .action .btn-cancel {
           min-height: 60px;
           border-top: 10px solid #F2F2F2; }
+
+.vip {
+  padding-top: 50px;
+  background: #fff; }
+  .vip .navbar.fixed-top .content {
+    background: #0D1A26; }
+    .vip .navbar.fixed-top .content #vipTab {
+      border-bottom: none; }
+      .vip .navbar.fixed-top .content #vipTab .nav-item .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 10px;
+        margin-right: 10px;
+        border: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 5px; }
+        .vip .navbar.fixed-top .content #vipTab .nav-item .nav-link.active {
+          background: transparent;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          color: #FFFFFF;
+          border-color: #fff; }
+  .vip__content .privilege-content__head {
+    background: #0D1A26;
+    padding: 30px 50px;
+    position: relative; }
+    .vip__content .privilege-content__head__bg {
+      width: 100%; }
+    .vip__content .privilege-content__head__content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
+      width: 100%;
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      flex-direction: column;
+      gap: 7px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #597EF7; }
+      .vip__content .privilege-content__head__content img {
+        width: 30px; }
+      .vip__content .privilege-content__head__content__avatar {
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #fff; }
+  .vip__content .privilege-content__card {
+    background: #0D1A26;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF; }
+    .vip__content .privilege-content__card #privilegeVipCard {
+      padding: 15px;
+      overflow: hidden;
+      position: relative; }
+      .vip__content .privilege-content__card #privilegeVipCard .slick-arrow {
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 50px;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        z-index: 99; }
+        .vip__content .privilege-content__card #privilegeVipCard .slick-arrow::before {
+          content: "" !important;
+          font-family: initial !important; }
+        .vip__content .privilege-content__card #privilegeVipCard .slick-arrow.slick-prev {
+          left: 0; }
+        .vip__content .privilege-content__card #privilegeVipCard .slick-arrow.slick-next {
+          right: 0; }
+      .vip__content .privilege-content__card #privilegeVipCard .slick-list {
+        padding: 0 25px !important; }
+        .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide {
+          display: flex;
+          place-content: center;
+          place-items: center; }
+          .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            min-height: 152px;
+            position: relative;
+            padding: 15px;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            overflow: hidden; }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip0 {
+              background-image: url(/images/vip/privilege/vip-0-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip1 {
+              background-image: url(/images/vip/privilege/vip-1-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip2 {
+              background-image: url(/images/vip/privilege/vip-2-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip3 {
+              background-image: url(/images/vip/privilege/vip-3-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip4 {
+              background-image: url(/images/vip/privilege/vip-4-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip5 {
+              background-image: url(/images/vip/privilege/vip-5-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip6 {
+              background-image: url(/images/vip/privilege/vip-6-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip7 {
+              background-image: url(/images/vip/privilege/vip-7-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip8 {
+              background-image: url(/images/vip/privilege/vip-8-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip9 {
+              background-image: url(/images/vip/privilege/vip-9-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip10 {
+              background-image: url(/images/vip/privilege/vip-10-bg.png); }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__current {
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: #E0CDA1;
+              border-radius: 7px 0px;
+              padding: 3px 7px;
+              font-size: 12px;
+              line-height: 14px;
+              text-align: center;
+              color: #000000; }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__title {
+              font-style: italic;
+              font-weight: 500;
+              font-size: 26px;
+              line-height: 30px;
+              margin-top: 10px; }
+            .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__sub_title {
+              font-style: normal;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 20px; }
+      @media only screen and (max-width: 420px) {
+        .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card {
+          min-height: 130px;
+          padding-bottom: 0; }
+          .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__current {
+            font-size: 10px;
+            line-height: 10px; }
+          .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__title {
+            font-size: 20px;
+            line-height: 25px; }
+          .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__sub_title {
+            font-size: 13px;
+            line-height: 16px;
+            margin-bottom: 15px; } }
+  .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details {
+    padding: 15px;
+    border-top: 15px solid #F2F2F2; }
+    .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__header {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      padding-left: 15px;
+      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-bottom: 15px; }
+    .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content {
+      margin-left: -10px;
+      margin-right: -10px; }
+      .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items {
+        position: relative; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          bottom: 10px;
+          right: 0;
+          width: 1px;
+          background: #DAE0E8; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items:nth-child(6)::after, .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items:nth-child(3)::after {
+          display: none; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items__child {
+          text-align: center;
+          border-bottom: 1px solid #DAE0E8;
+          padding: 10px 0;
+          position: relative; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items__child__title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #BE9E55; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details__content__items__child__description {
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            text-align: center;
+            color: #000000; }
+  .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items {
+    padding: 15px; }
+    .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__header {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      padding-left: 15px;
+      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      margin-bottom: 15px; }
+    .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content {
+      margin-left: 0;
+      margin-right: 0; }
+      .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item {
+        position: relative; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item:nth-child(odd) {
+          padding-left: 0; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item:nth-child(odd):after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 0;
+            width: 1px;
+            background: #DAE0E8; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item:last-child:after {
+          display: none; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item:nth-child(even) {
+          padding-right: 0; }
+        .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child {
+          display: flex;
+          place-content: flex-start;
+          place-items: center;
+          gap: 5px;
+          border-bottom: 1px solid #DAE0E8;
+          padding: 10px 0;
+          position: relative; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__img {
+            min-width: 40px; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__description__title {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            display: flex;
+            place-items: center;
+            gap: 5px;
+            margin-bottom: 5px; }
+            .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__description__title span {
+              font-size: 16px;
+              line-height: 19px; }
+          .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__description__info {
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            color: #000000; }

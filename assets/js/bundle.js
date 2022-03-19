@@ -332,4 +332,21 @@ $(function () {
     });
 });
 
+
+$('#privilegeInfo').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  infinite: false,
+  fade: true,
+  asNavFor: '#privilegeVipCard'
+});
+
+$('#privilegeVipCard').slick({
+  centerMode: true,
+  infinite: false,
+  slidesToShow: 1,
+  asNavFor: '#privilegeInfo',
+});
+
 console.log("--- index.jsaaa");
