@@ -3120,7 +3120,6 @@ a {
               margin-bottom: 20px; }
       @media only screen and (max-width: 420px) {
         .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card {
-          min-height: 130px;
           padding-bottom: 0; }
           .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__current {
             font-size: 10px;
@@ -3129,9 +3128,9 @@ a {
             font-size: 20px;
             line-height: 25px; }
           .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__sub_title {
-            font-size: 13px;
+            font-size: 14px;
             line-height: 16px;
-            margin-bottom: 15px; } }
+            margin-bottom: 30px; } }
   .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .my-vip-details {
     padding: 15px;
     border-top: 15px solid #F2F2F2; }
