@@ -127,9 +127,7 @@
     "Bonus_Center": "Bonus Center",
     "Help": "Help"
   },
-  "promotion_page": {
-
-  },
+  "promotion_page": {},
   "sponsors_page": {
     "jv": {
       "Sponsorship_Events_Videos": "Sponsorship Events Videos",
@@ -388,10 +386,23 @@
       "title8": "VIP Cash Rebate",
       "description8": "The VIP cash rebate will be calculated based on the valid bets made by members between 00:00 and 23:59 Malaysia time on the day. Proceed to bonus centre under wallet for manual collection. (The VIP cash rebate can be withdrawn anytime without turnover requirement).",
       "description": "OB Entertainment reserves the right to revise, stop and final interpretation of the event."
-    },
-    "": "",
-    "": "",
+    }
+  },
+  "ACCOUNT_SECURITY": "ACCOUNT SECURITY",
+  "account_setting_page": {
+    "info": "Complete informations to secure your account",
+    "Complete_Profile": "Complete Profile",
+    "Complete_Profile_description": "Complete information for better services and experiences",
+    "Email_Address": "Email Address",
+    "Email_Address_description": "Receive our latest promotion and update",
+    "Add_Bank_Account": "Add Bank Account",
+    "Add_Bank_Account_description": "Add your bank account for faster withdrawal process",
+    "Manage_Password": "Manage Password",
+    "Manage_Password_description": "Changing your password regularly helps improve account security",
     "": "",
     "": ""
-  }
+  },
+  "": "",
+  "": "",
+  "": ""
 }
