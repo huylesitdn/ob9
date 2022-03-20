@@ -1415,6 +1415,8 @@ a {
         font-size: 16px;
         line-height: 20px;
         color: #000000; }
+        .my-account__content__topcontent__wallet__top a {
+          color: #000000; }
       .my-account__content__topcontent__wallet__bottom {
         display: flex;
         place-content: space-between;
