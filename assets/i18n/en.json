@@ -398,11 +398,16 @@
     "Add_Bank_Account": "Add Bank Account",
     "Add_Bank_Account_description": "Add your bank account for faster withdrawal process",
     "Manage_Password": "Manage Password",
-    "Manage_Password_description": "Changing your password regularly helps improve account security",
-    "": "",
-    "": ""
+    "Manage_Password_description": "Changing your password regularly helps improve account security"
   },
-  "": "",
+  "Current_Password": "Current Password",
+  "Please_enter_current_password": "Please enter current password",
+  "New_Password": "New Password",
+  "Please_enter_your_new_password": "Please enter your new password",
+  "Re_enter_New_Password": "Re-enter New Password",
+  "Please_re_enter_your_new_password": "Please re-enter your new password",
+  "LOGIN_NOW": "LOGIN NOW",
+  "manage_password_success_modal_content": "Your password has been <br/>sucessfully updated!<br/>Please relogin your account.",
   "": "",
   "": ""
 }
