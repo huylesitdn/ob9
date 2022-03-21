@@ -1,6 +1,8 @@
 .vip {
-  padding-top: 50px;
   background: #fff;
+  &#vipPage {
+    padding-top: 50px;
+  }
 
   .navbar.fixed-top {
     .content {

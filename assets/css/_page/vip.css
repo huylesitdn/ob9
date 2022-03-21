@@ -1,6 +1,7 @@
 .vip {
-  padding-top: 50px;
   background: #fff; }
+  .vip#vipPage {
+    padding-top: 50px; }
   .vip .navbar.fixed-top .content {
     background: #0D1A26; }
     .vip .navbar.fixed-top .content #vipTab {
