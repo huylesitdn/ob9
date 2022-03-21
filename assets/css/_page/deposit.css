@@ -46,7 +46,7 @@
       .deposit__content__tab_content .deposit-items__content ul {
         padding-right: 15px;
         padding-left: 15px;
-        list-style: auto; }
+        list-style: decimal; }
         .deposit__content__tab_content .deposit-items__content ul li {
           font-style: normal;
           font-weight: 400;

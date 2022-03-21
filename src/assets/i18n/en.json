@@ -443,7 +443,24 @@
   },
   "CAMPAIGN BONANZA": "CAMPAIGN BONANZA",
   "FIRST DEPOSIT BONUS": "FIRST DEPOSIT BONUS",
-  "Referral Program": "Referral Program",
+  "INVITE YOUR FRIEND NOW": "INVITE YOUR FRIEND NOW",
+  "referral_program": {
+    "3_simple_steps_to_get_rewarded": "3 simple steps to get rewarded",
+    "step1": "Introduce OB<br/> to your friends<br/> and family",
+    "step2": "Upon their<br/> registration<br/> and deposit",
+    "step3": "Contact <br/>customer <br/>service",
+    "Referee_First_Deposit": "Referee First Deposit",
+    "Referral_Bonus": "Referral Bonus",
+    "note": "*Referral bonus required x3 turnover or realbet for withdrawal",
+    "term": "Term & Conditions",
+    "term1": "The reward will be credited into your account as soon as  your referee completes the first deposit requirement.",
+    "term2": "You are required to make a bet amount of x3 turnover or realbet of the REFERRAL BONUS before withdrawal can be made.",
+    "term3": "There is no limit to the number of friends you can refer to, although we do reserve the right to adjust or change the referral program rules at any time.",
+    "term4": "All offer is restricted to only one free account per individual, family, household address, email address, telephone number, bank account and IP address.",
+    "term5": "OB Entertainment will check for duplicate or fake accounts and will not pay out referral bonuses on these accounts. Duplicate or shared finances will result in disqualification.",
+    "term6": "This bonus cannot be used in conjunction with any other bonuses offer.",
+    "term7": "Draw results, betting both sides, voided/cancelled games or bet placed containing selections of odds less than 0.5 or 1.50 (Decimal Odds) and any bets on 3 Pictures, Casino Hold'em/Poker, Blackjack, RNG games or 4D Lottery are excluded in the turnover calculation."
+  },
   "": "",
   "": ""
 }

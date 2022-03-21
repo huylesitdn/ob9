@@ -173,7 +173,7 @@
       color: #000000;
       margin-bottom: 20px; }
     .campaign-bonanza-detail__content__terms__items {
-      list-style: auto;
+      list-style: decimal;
       padding-left: 15px; }
       .campaign-bonanza-detail__content__terms__items li {
         padding-bottom: 15px; }
