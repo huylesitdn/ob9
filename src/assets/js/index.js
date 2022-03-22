@@ -299,6 +299,17 @@ if ($(".betting-record-dropdown").length > 0) {
   });
 }
 
+if ($(".bonus-history-dropdown").length > 0) {
+  $(".bonus-history-dropdown").each(function (index) {
+    this.addEventListener("hidden.bs.dropdown", function () {
+      $(".bonus-history").removeClass("backdrop");
+    });
+    this.addEventListener("shown.bs.dropdown", function () {
+      $(".bonus-history").addClass("backdrop");
+    });
+  });
+}
+
 $(".dropdown-menu").on("click", function (e) {
   e.stopPropagation();
 });

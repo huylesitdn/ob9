@@ -614,15 +614,30 @@
       "des5": "1. Winning<span>- Predict who will win the match, any form of overtime or stoppage time will be taken into account;</span>2. Handicap<span>- The handicap of e-sports competitions can be rounds/games or other measurement methods according to different competitions;</span><span>E.g: If Player A wins two or more rounds, the player who bets on Player A wins and the player who bets on Player B loses. If Player A wins only one more round or Player B wins, the player who bets on Player B wins and the player who bets on Player A loses.</span>3. Large/Small Plate<span>- Predict if the total number of maps/rounds in the match is greater or less than the line, any form of overtime or overtime will be counted.</span>",
       "6": "6. Types of special bets",
       "des6": "1. The first tower<span>- The first team to destroy a tower loses this bet;</span>2. First blood <span>- Declare the winner of the bet on the team that has won the \"First Blood\" in the game;</span>3. Be the first to get 10 kills <span>- The first team to get 10 kills on the in-game scoreboard is the winner of this bet;</span>4. First round <span>- The team that wins the first round is the winner of this bet;</span>5. Be the first to win the first 5 rounds <span>- The team that wins the first 5 rounds is the winner of this bet;</span>6. Duration <span>- The total duration of the map match, according to the in-game timer;</span>7. Matching the highest number of deaths/kills <span>- Get the player with the highest number of deaths/kills;</span>8. GODLIKE will appear <span>- 9 kills by any team member;</span>9. The Messenger is Killed <span>- Any courier is killed by one of the teams;</span>10. Winner of Round 1 (Pistol Round) <span>- The winner of the first round in a map (pistol round);</span>11. Winner of Round 16 (Pistol Round) <span>- Winner of round 16 on a map (pistol round);</span>12. First Baron Kill <span>- The first team to kill the first baron;</span>13. The first dragon kill <span>- The first team to kill the first dragon;</span>14. The first Luoshan kill <span>- The first to kill the first Luoshan team;</span>15. Destroy the first tower <span>- The team that destroys the opposing team's towers first, including the opposing team's self-destructing towers;</span>16. Destroy the first turret <span>- The first team to destroy the opposing turret.</span>"
-    },
-    "des1": "<ul><li></li></ul>",
-    "": "<span></span>",
-    "": "",
-    "": ""
+    }
   },
-  "": "",
-  "": "",
-  "": "",
+  "Bonus_History": "Bonus History",
+  "bonus_history_page": {
+    "No_record_found": "No record found",
+    "Unclaim": "Unclaim",
+    "Claim": "Claim",
+    "Total_Claim": "Total Claim",
+    "Cash_Rebate": "Cash Rebate",
+    "Claim_Now": "Claim Now",
+    "VIP_Tier_Upgrade_Bonus": "VIP Tier Upgrade Bonus",
+    "Birthday_Bonus": "Birthday Bonus",
+    "CLAIM_SUCCESSFUL": "CLAIM SUCCESSFUL",
+    "claim_success_notification": "You have successfully redeemed the bonus.<br/>You can check it later at the bonus center.",
+    "ok": "OK"
+  },
+  "ABOUT_US": "ABOUT US",
+  "about_us_page": {
+    "Legal_Licenses": "Legal Licenses",
+    "Legal_Licenses1": "Polo He License<br/>(MGA) Certification",
+    "Legal_Licenses2": "British Virgin Islands<br/>(BVI) certification",
+    "Legal_Licenses3": "Philippine PAGCOR<br/>Regulatory<br/>Responsibilities",
+    "description": "We have legal licenses issued by European Malta MGA and Philippine Government (PAGCOR). Registered in the British Virgin Islands, a legal company recognized by international industry associations. Please make sure you are at least 18 years old before register and enjoy!"
+  },
   "": "",
   "": "",
   "": ""
