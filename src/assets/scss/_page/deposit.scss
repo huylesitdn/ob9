@@ -1,5 +1,12 @@
 .deposit {
+  background: #f2f2f2;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
   &__content {
+    background: #FFFFFF;
+    padding-top: 10px;
+
     &__tab {
       background: #EEEEEE;
       border-radius: 10px;
@@ -7,6 +14,8 @@
       // border: none;
 
       &__item {
+        flex: 1 1 0 !important;
+
         &__link {
           font-weight: 400;
           font-size: 13px;
@@ -33,6 +42,126 @@
 
     &__tab_content {
       padding: 20px 0;
+      padding-bottom: 0;
+
+      .deposit-complete {
+        background-color: #f2f2f2;
+        padding: 50px 15px;
+        margin: 0 -15px;
+
+        .btn {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          width: 100%;
+          height: 50px;
+          margin-bottom: 15px;
+        }
+
+        div {
+          font-weight: 300;
+          font-size: 10px;
+          line-height: 12px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+
+      .deposit-qr {
+        padding: 15px 0;
+        text-align: center;
+
+        &__title {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #000000;
+          padding-bottom: 15px;
+        }
+
+        &>.btn {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 14px;
+          text-align: center;
+          color: #A5A9B4;
+          border: 1px solid #EEEEEE;
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 15px;
+          margin-top: 15px;
+        }
+
+        &__copy {
+          display: flex;
+          place-content: space-between;
+          place-items: center;
+          padding-top: 15px;
+          text-align: left;
+          margin-top: 15px;
+
+          &__item {
+            &__title {
+              font-weight: 300;
+              font-size: 12px;
+              line-height: 14px;
+              color: #597EF7;
+              margin-bottom: 5px;
+            }
+
+            &__code {
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 14px;
+              color: #000000;
+            }
+          }
+        }
+      }
+
+      .best-stable {
+        padding: 0 15px 15px;
+        display: flex;
+        place-content: space-between;
+        place-items: center;
+        margin: 0 -15px;
+        border-bottom: 10px solid #f2f2f2;
+
+        span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          color: #000000;
+        }
+
+        a {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: right;
+          color: #597EF7;
+        }
+      }
+
+      .deposit-minimun-crypto {
+        margin: 0 -15px;
+        background: #f2f2f2;
+        padding: 10px 15px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #A5A9B3;
+
+        span {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 14px;
+          color: #FF0000;
+        }
+      }
 
       .deposit-items {
         margin-bottom: 20px;
@@ -49,8 +178,6 @@
         }
 
         &__content {
-          font-family: 'Roboto';
-          font-style: normal;
           font-weight: 400;
           font-size: 12px;
           line-height: 14px;
