@@ -583,7 +583,7 @@
                   background-repeat: no-repeat;
                   background-position: center;
                   background-size: cover;
-                  min-height: 152px;
+                  min-height: 300px;
                   position: relative;
                   padding: 15px;
                   width: 100%;
@@ -663,10 +663,48 @@
                     font-weight: 300;
                     font-size: 14px;
                     line-height: 18px;
-                    margin-bottom: 20px;
+                    margin-bottom: 145px;
                   }
 
                   &__description {}
+                }
+              }
+            }
+          }
+
+          @media only screen and (max-width: 600px) {
+            .slick-list {
+
+              .slick-track {
+                .slick-slide {
+                  // padding-right: 20px;
+
+                  .privilege-card {
+                    // padding: 0;
+                    min-height: 220px;
+
+                    &__sub_title {
+                      margin-bottom: 80px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          @media only screen and (max-width: 530px) {
+            .slick-list {
+
+              .slick-track {
+                .slick-slide {
+
+                  .privilege-card {
+                    min-height: 180px;
+
+                    &__sub_title {
+                      margin-bottom: 50px;
+                    }
+                  }
                 }
               }
             }
@@ -681,7 +719,7 @@
 
                   .privilege-card {
                     // padding: 0;
-                    // min-height: 130px;
+                    min-height: 155px;
                     padding-bottom: 0;
 
                     &__current {
