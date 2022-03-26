@@ -225,7 +225,34 @@ $(".add-bank-account .select-bank-modal__items").on("click", function (e) {
   }, 500);
 });
 
-const successModalElm = $("#successModal");
+$(".deposit .deposit-amount__item input[name='depositAmount']").change(function() {
+  const amount =  $(this).data('amount');
+  $('#deposit-amount-input').val(amount);
+});
+
+$('#deposit-amount-input').on('input',function(e){
+  const value = $(this).val()
+  if (value > 50 && value < 50000) {
+    $('.deposit .btn-submit').prop('disabled', false);
+    $('#deposit-amount-input-label').hide();
+  } else {
+    $('.deposit .btn-submit').prop('disabled', true);
+    $('#deposit-amount-input-label').show();
+  }
+ });
+
+$('.withdrawal #withdrawal-input').on('input',function(e){
+  const value = $(this).val()
+  if (value > 50 && value < 50000) {
+    $('.withdrawal .withdrawal-submit').prop('disabled', false);
+    $('#withdrawal-amount-input-label').hide();
+  } else {
+    $('.withdrawal .withdrawal-submit').prop('disabled', true);
+    $('#withdrawal-amount-input-label').show();
+  }
+ });
+
+const successModalElm = $("#depositSuccessModal");
 if (successModalElm.length > 0) {
   var successModal = new bootstrap.Modal(successModalElm, {});
 }

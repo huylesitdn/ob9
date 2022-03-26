@@ -1,6 +1,8 @@
 .help-page {
   background-color: #f2f2f2;
   padding-top: 50px; }
+  .help-page.contact-us {
+    background-color: #fff; }
   .help-page.help-index {
     padding-top: 0; }
     .help-page.help-index .navbar.nav-child {
@@ -12,6 +14,21 @@
         line-height: 21px;
         text-align: center;
         color: #FFFFFF; }
+  .help-page__content__contact {
+    padding: 15px 30px; }
+    .help-page__content__contact .title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: justify;
+      color: #4E7FFF;
+      margin-bottom: 5px; }
+    .help-page__content__contact .description {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: justify;
+      color: #7E8796; }
   .help-page__content__top {
     overflow: hidden;
     display: flex;

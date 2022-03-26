@@ -16,7 +16,7 @@
   "confirm_password": "Confirm password",
   "back_to_login_page": "Back to login page",
   "captcha_code": "Captcha code",
-  "register_long_text": "Register long text",
+  "register_long_text": "By clicking the REGISTER button, I hereby acknowledge that <br/>I am above 18 years old and have read and accepted your<br/>terms & conditions.",
   "register_second_long_text": "Register second long text",
   "full_name": "Full name",
   "date_of_birth": "Date of birth",
@@ -118,6 +118,7 @@
     "contact_us": "Contact us",
     "region_language": "Region language",
     "logout": "Logout",
+    "Help_Center": "Help Center",
     "follow_us": "Follow us"
   },
   "my_account_page": {
@@ -222,7 +223,7 @@
   "Rebate": "Rebate",
   "Manage_Bank_Account": "Manage <br/>Bank Account",
   "Recent_Transaction": "Recent Transaction",
-  "Select_Promotion": "SUCCESSFUL",
+  "Select_Promotion": "Select Promotion",
   "Please_select_available_promotion": "Please select available promotion",
   "Deposit_Summary": "Deposit Summary",
   "Deposit_Method": "Deposit Method",
@@ -465,6 +466,7 @@
   },
   "help_page": {
     "HELP_CENTER": "HELP CENTER",
+    "ONLINE_CUSTOMER_SERVICE": "ONLINE CUSTOMER SERVICE",
     "hi": "Hi, Dear VIP member",
     "welcome": "Welcome to Help Centre",
     "problem": "Problem not resolved? Please contact<br/>Customer Service for assistance",
@@ -727,9 +729,18 @@
     "description32": "Fees and speed are consider medium",
     "warning": "*The USDT addresses corresponding to the two protocols do not communicate with each other. When performing operations such as transfer and reload, you should carefully check the correct address."
   },
-  "": "",
-  "": "",
-  "": "",
+  "Login_to_view": "Login to view",
+  "Log_in_now_to_enjoy_better_experiences": "Log in now to enjoy better experiences",
+  "Login_Register": "Login/Register",
+  "SUCCESSFUL": "SUCCESSFUL",
+  "contact_us_page": {
+    "title": "1. OB Information",
+    "description": "Facebook<br/>Youtube<br/>Twitter<br/>Instagram",
+    "title1": "2. Customer Service Contact",
+    "description1": "Marketing department: ob9cshelp@gmail.com<br/>Help Department: OBhelp@gmail.com",
+    "title2": "3. Online Customer Service",
+    "description2": "Our customer service staff upholding conscientious service attitude, 24 hours online customer service to provide you inquiries and help services"
+  },
   "": "",
   "": ""
 }

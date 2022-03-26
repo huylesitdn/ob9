@@ -2,9 +2,10 @@
 
   <!-- INPUT   -->
   <div class="input-group deposit-amount__input-group">
-    <span class="input-group-text" id="deposit-amount-input">MYR</span>
-    <input type="text" class="form-control" placeholder="Per Deposit Amount: MYR50-MYR50,000" aria-label="Username" aria-describedby="deposit-amount-input">
+    <span class="input-group-text">MYR</span>
+    <input type="number" id="deposit-amount-input" class="form-control" placeholder="Per Deposit Amount: MYR50-MYR50,000">
   </div>
+  <div id="deposit-amount-input-label" class="mb-3 text-danger" style="font-size: 11px; margin-left: 50px;">Min/Max Limit:50/50000</div>
   <!-- END INPUT  -->
 
 
@@ -12,7 +13,7 @@
   <div class="col-3 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title">200</div>
-      <input class="deposit-amount__item__label__checkbox" type="checkbox" />
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="200" />
       <span class="checkmark"></span>
     </label>
   </div>
@@ -20,7 +21,7 @@
   <div class="col-3 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title">500</div>
-      <input class="deposit-amount__item__label__checkbox" type="checkbox" />
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="500" />
       <span class="checkmark"></span>
     </label>
   </div>
@@ -28,7 +29,7 @@
   <div class="col-3 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title">1000</div>
-      <input class="deposit-amount__item__label__checkbox" type="checkbox" />
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="1000" />
       <span class="checkmark"></span>
     </label>
   </div>
@@ -36,7 +37,7 @@
   <div class="col-3 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title">5000</div>
-      <input class="deposit-amount__item__label__checkbox" type="checkbox" />
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="5000" />
       <span class="checkmark"></span>
     </label>
   </div>
@@ -44,7 +45,7 @@
   <div class="col-3 deposit-amount__item">
     <label class="deposit-amount__item__label">
       <div class="deposit-amount__item__label__title">10000</div>
-      <input class="deposit-amount__item__label__checkbox" type="checkbox" />
+      <input class="deposit-amount__item__label__checkbox" type="radio" name="depositAmount" data-amount="10000" />
       <span class="checkmark"></span>
     </label>
   </div>

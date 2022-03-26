@@ -52,14 +52,18 @@
           amount: MYR50,000, Max Per Transaction Amount: MYR50,000
         </div>
         
-        <div class="withdrawal__content__input input-group">
-          <span class="input-group-text left">MYR</span>
-          <input type="text" class="form-control" placeholder="Please enter withdrawal amount (100 - 50,000)" />
-          <span class="input-group-text right"><img src="/images/wallet/max.png" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+        <div class="withdrawal__content__input">
+          <div class="input-group">
+            <span class="input-group-text left">MYR</span>
+            <input type="number" class="form-control" id="withdrawal-input" placeholder="Please enter withdrawal amount (100 - 50,000)" />
+            <span class="input-group-text right"><img src="/images/wallet/max.png" /> <span data-i18n="wallet_page.withdrawal.Max">Max</span></span>
+          </div>
+          <div id="withdrawal-amount-input-label" class="text-danger mt-1" style="font-size: 11px; margin-left: 60px;">Min/Max Limit:50/50000</div>
         </div>
 
+
         <div class="withdrawal__content__submit">
-          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT">SUBMIT</button>
+          <button class="btn btn-primary withdrawal-submit" disabled data-bs-toggle="modal" data-bs-target="#withdrawalSuccessModal" data-i18n="SUBMIT">SUBMIT</button>
         </div>
 
         <div class="withdrawal__content__description pt-0" data-i18n="wallet_page.withdrawal.description">
