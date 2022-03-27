@@ -40,7 +40,7 @@
         color: #597EF7; }
       .navbar.fixed-top .content__logo {
         max-width: 145px;
-        margin-left: 15px; }
+        margin-left: 50px; }
   .navbar.fixed-bottom {
     min-height: 60px;
     background-color: #FFFFFF;
@@ -192,7 +192,8 @@
       font-size: 18px;
       line-height: 16px;
       text-align: center;
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      text-transform: uppercase; }
       .deposit-amount__action .btn-choose {
         min-height: 40px;
         font-style: normal;
@@ -282,7 +283,7 @@
         color: #000000; }
 
 #selectLanguage .modal-dialog {
-  max-width: 300px;
+  padding: 0 30px;
   margin: auto; }
   #selectLanguage .modal-dialog .modal-content {
     border-radius: 0;
@@ -298,24 +299,27 @@
       color: #FFFFFF;
       text-align: center;
       border-radius: 0 !important; }
-    #selectLanguage .modal-dialog .modal-content .modal-body img {
-      max-width: 40px; }
-    #selectLanguage .modal-dialog .modal-content .modal-body .title {
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 12px;
-      text-align: center;
-      color: #000000;
-      margin-top: 7px; }
-    #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
-      display: flex;
-      place-items: center;
-      place-content: space-between;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 16px;
-      color: #000000;
-      padding-bottom: 25px; }
+    #selectLanguage .modal-dialog .modal-content .modal-body {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      #selectLanguage .modal-dialog .modal-content .modal-body img {
+        max-width: 40px; }
+      #selectLanguage .modal-dialog .modal-content .modal-body .title {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+        margin-top: 7px; }
+      #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
+        display: flex;
+        place-items: center;
+        place-content: space-between;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        padding-bottom: 25px; }
 
 #selectBankModal .select-bank-modal__items {
   display: flex;
@@ -372,7 +376,8 @@
 .mbsc-popup .mbsc-ios.mbsc-scroller-wheel-item.mbsc-selected {
   background: #fff; }
 
-.mbsc-popup .mbsc-ios.mbsc-scroller-wheel-overlay-bottom, .mbsc-popup .mbsc-ios.mbsc-scroller-wheel-overlay-top {
+.mbsc-popup .mbsc-ios.mbsc-scroller-wheel-overlay-bottom,
+.mbsc-popup .mbsc-ios.mbsc-scroller-wheel-overlay-top {
   background: transparent !important; }
 
 .mbsc-popup .mbsc-ios.mbsc-scroller-wheel-item {

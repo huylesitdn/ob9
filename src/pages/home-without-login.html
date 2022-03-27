@@ -33,7 +33,7 @@
           <div class="text-animated">
             <span class="text-overflow" data-i18n="index.notification_run">The announcement message will runs here. The announcement message will runs here. The announcement message will runs here</span>
           </div>
-          <div class="notification__hot-matches"><img src="./icons/hot-matches.png" alt="" /></div>
+          <div data-bs-toggle="modal" data-bs-target="#hotMatchModal" class="notification__hot-matches"><img src="./icons/hot-matches.png" alt="" /></div>
         </div>
 
         <div class="balance">
@@ -166,6 +166,11 @@
         </div>
         
       </div>
+      <!-- MODAL -->
+      @@include('../components/home/hot-match-modal.html')
+      <!-- MODAL -->
+
+
       @@include('../components/base/navbar-bottom-without-login.html', {active: 0})
     </section>
     

@@ -1,3 +1,17 @@
+function getUrlVars() {
+  var vars = [],
+    hash;
+  var hashes = window.location.href
+    .slice(window.location.href.indexOf("?") + 1)
+    .split("&");
+  for (var i = 0; i < hashes.length; i++) {
+    hash = hashes[i].split("=");
+    vars.push(hash[0]);
+    vars[hash[0]] = hash[1];
+  }
+  return vars;
+}
+
 // Translator
 
 const LANGUAGES = {
@@ -16,11 +30,12 @@ var translator = new Translator({
   filesLocation: "/i18n",
 });
 
-translator.fetch([LANGUAGES.EN, LANGUAGES.ZH])
-.then(() => {
+translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
-  const _get_translator_config = translator.config.persistKey || "preferred_language";
-  const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+  const _get_translator_config =
+    translator.config.persistKey || "preferred_language";
+  const _get_language =
+    localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
   translator.translatePageTo(_get_language);
 });
 
@@ -45,24 +60,23 @@ if (selectLanguageModalElm.length > 0) {
   var selectLanguageModal = new bootstrap.Modal(selectLanguageModalElm, {});
 }
 $(".choose-language").on("click", function (e) {
-  const select_language = $(this).data('language');
-  if(LANGUAGES[select_language]) {
+  const select_language = $(this).data("language");
+  if (LANGUAGES[select_language]) {
     translator.translatePageTo(LANGUAGES[select_language]);
     selectLanguageModal.hide();
     $("#mySidenav").removeClass("active");
   } else {
-    console.log('No language setup')
+    console.log("No language setup");
   }
 });
 
-
 $(".universal__content__language").on("click", function (e) {
-  const select_language = $(this).data('language');
-  if(LANGUAGES[select_language]) {
+  const select_language = $(this).data("language");
+  if (LANGUAGES[select_language]) {
     translator.translatePageTo(LANGUAGES[select_language]);
-    window.location.href = '/'
+    window.location.href = "/";
   } else {
-    console.log('No language setup')
+    console.log("No language setup");
   }
 });
 
@@ -225,42 +239,59 @@ $(".add-bank-account .select-bank-modal__items").on("click", function (e) {
   }, 500);
 });
 
-$(".deposit .deposit-amount__item input[name='depositAmount']").change(function() {
-  const amount =  $(this).data('amount');
-  $('#deposit-amount-input').val(amount);
+$(".deposit .deposit-amount__item input[name='depositAmount']").change(
+  function () {
+    const amount = $(this).data("amount");
+    $(".deposit-amount-input").val(amount);
+    $(".deposit-amount-input-label").hide();
+  }
+);
+
+$(".deposit-amount-input").on("input", function (e) {
+  const value = $(this).val();
+  if (value > 50 && value < 50000) {
+    $(".deposit .btn-submit").prop("disabled", false);
+    $(".deposit-amount-input-label").hide();
+  } else {
+    $(".deposit .btn-submit").prop("disabled", true);
+    $(".deposit-amount-input-label").show();
+  }
 });
 
-$('#deposit-amount-input').on('input',function(e){
-  const value = $(this).val()
+$(".withdrawal #withdrawal-input").on("input", function (e) {
+  const value = $(this).val();
   if (value > 50 && value < 50000) {
-    $('.deposit .btn-submit').prop('disabled', false);
-    $('#deposit-amount-input-label').hide();
+    $(".withdrawal .withdrawal-submit").prop("disabled", false);
+    $("#withdrawal-amount-input-label").hide();
   } else {
-    $('.deposit .btn-submit').prop('disabled', true);
-    $('#deposit-amount-input-label').show();
+    $(".withdrawal .withdrawal-submit").prop("disabled", true);
+    $("#withdrawal-amount-input-label").show();
   }
- });
+});
 
-$('.withdrawal #withdrawal-input').on('input',function(e){
-  const value = $(this).val()
-  if (value > 50 && value < 50000) {
-    $('.withdrawal .withdrawal-submit').prop('disabled', false);
-    $('#withdrawal-amount-input-label').hide();
-  } else {
-    $('.withdrawal .withdrawal-submit').prop('disabled', true);
-    $('#withdrawal-amount-input-label').show();
-  }
- });
+$(".withdrawal .withdrawal-max-value").on("click", function (e) {
+  $(".withdrawal #withdrawal-input").val(5800);
+  $("#withdrawal-amount-input-label").hide();
+  $(".withdrawal .withdrawal-submit").prop("disabled", false);
+});
 
 const successModalElm = $("#depositSuccessModal");
 if (successModalElm.length > 0) {
   var successModal = new bootstrap.Modal(successModalElm, {});
 }
-$("#payment-gateway .btn-submit").on("click", function (e) {
-  successModal.show();
-});
 $("#online-banking .btn-submit").on("click", function (e) {
   successModal.show();
+});
+
+const paymentGatewaySuccessModalElm = $("#paymentGatewaySuccessModal");
+if (paymentGatewaySuccessModalElm.length > 0) {
+  var paymentGatewaySuccessModal = new bootstrap.Modal(
+    paymentGatewaySuccessModalElm,
+    {}
+  );
+}
+$("#payment-gateway .btn-submit").on("click", function (e) {
+  paymentGatewaySuccessModal.show();
 });
 
 const transferConfirmModalElm = $("#transferConfirmModal");
@@ -304,6 +335,15 @@ $("#chooseWalletModal .choose-modal__items input[name=choose-modal-radio]").on(
   }
 );
 
+$(
+  "#selectProfilePictureModal .select-profile-picture-modal__items__item input[name=select-profile-picture-modal-radio]"
+).on("change", function (e) {
+  const current_value = $(
+    "#selectProfilePictureModal .select-profile-picture-modal__items__item input[name=select-profile-picture-modal-radio]:checked"
+  ).data("src");
+  $(".profile .avatar > div > img").attr("src", current_value);
+});
+
 if ($(".transaction-history-dropdown").length > 0) {
   $(".transaction-history-dropdown").each(function (index) {
     this.addEventListener("hidden.bs.dropdown", function () {
@@ -341,14 +381,14 @@ $(".dropdown-menu").on("click", function (e) {
   e.stopPropagation();
 });
 
-$('.profile #exampleFormControlEmailAddressInput').on('input', function () {
+$(".profile #exampleFormControlEmailAddressInput").on("input", function () {
   const value = $(this).val();
   if (!!value) {
-    $('.profile .btn-request_code').prop('disabled', false);
+    $(".profile .btn-request_code").prop("disabled", false);
   } else {
-    $('.profile .btn-request_code').prop('disabled', true);
+    $(".profile .btn-request_code").prop("disabled", true);
   }
-})
+});
 
 /**
  * mobiscroll
@@ -366,25 +406,61 @@ $(function () {
     .datepicker({
       controls: ["date"],
       touchUi: true,
-      display: 'bottom',
+      display: "bottom",
     });
 });
 
-
-$('#privilegeInfo').slick({
+$("#privilegeInfo").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   infinite: false,
   fade: true,
-  asNavFor: '#privilegeVipCard'
+  asNavFor: "#privilegeVipCard",
 });
 
-$('#privilegeVipCard').slick({
+$("#privilegeVipCard").slick({
   centerMode: true,
   infinite: false,
   slidesToShow: 1,
-  asNavFor: '#privilegeInfo',
+  asNavFor: "#privilegeInfo",
 });
+
+$(".universal #selectLanguage").slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 3,
+});
+
+$("#carouselSposorshipEventVideo").slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 1,
+  arrows: true,
+  dots: true,
+});
+
+$("#carouselSponsoredEventPhotos1").slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 1,
+  arrows: false,
+  dots: true,
+});
+
+// active deposit tab when active params ?active=1
+const is_deposit_route = location.pathname === "/wallet/deposit.html";
+if (is_deposit_route) {
+  const get_params = getUrlVars();
+  if (get_params && get_params["active"]) {
+    const tab_names = [
+      "#online-banking-tab",
+      "#payment-gateway-tab",
+      "#crypto-currency-tab",
+    ];
+    var sel = document.querySelector(tab_names[get_params["active"]]);
+    bootstrap.Tab.getOrCreateInstance(sel).show();
+  }
+}
 
 console.log("--- index.jsaaa");

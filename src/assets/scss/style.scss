@@ -53,7 +53,7 @@
 
       &__logo {
         max-width: 145px;
-        margin-left: 15px;
+        margin-left: 50px;
       }
     }
   }
@@ -270,6 +270,7 @@
       line-height: 16px;
       text-align: center;
       color: #FFFFFF;
+      text-transform: uppercase;
 
       &-choose {
         min-height: 40px;
@@ -392,7 +393,8 @@
 
 #selectLanguage {
   .modal-dialog {
-    max-width: 300px;
+    // max-width: 300px;
+    padding: 0 30px;
     margin: auto;
 
     .modal-content {
@@ -413,14 +415,17 @@
       }
 
       .modal-body {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
         img {
           max-width: 40px;
         }
 
         .title {
-          font-weight: 600;
-          font-size: 10px;
-          line-height: 12px;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
           text-align: center;
           color: #000000;
           margin-top: 7px;
@@ -430,9 +435,9 @@
           display: flex;
           place-items: center;
           place-content: space-between;
-          font-weight: 600;
-          font-size: 14px;
-          line-height: 16px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
           color: #000000;
           padding-bottom: 25px;
         }
@@ -532,9 +537,12 @@
   .mbsc-ios.mbsc-scroller-wheel-item.mbsc-selected {
     background: #fff;
   }
-  .mbsc-ios.mbsc-scroller-wheel-overlay-bottom, .mbsc-ios.mbsc-scroller-wheel-overlay-top {
+
+  .mbsc-ios.mbsc-scroller-wheel-overlay-bottom,
+  .mbsc-ios.mbsc-scroller-wheel-overlay-top {
     background: transparent !important;
   }
+
   .mbsc-ios.mbsc-scroller-wheel-item {
     font-weight: 300;
     font-size: 16px;

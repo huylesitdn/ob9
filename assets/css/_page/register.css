@@ -35,7 +35,8 @@
         line-height: 21px;
         text-align: center;
         color: #FFFFFF;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        text-transform: uppercase; }
       .register__form form h4 {
         font-style: normal;
         font-size: 14px;
@@ -80,7 +81,8 @@
         color: #FFFFFF;
         display: flex;
         place-content: center;
-        place-items: center; }
+        place-items: center;
+        text-transform: uppercase; }
       .register__form form .font-small {
         font-style: normal;
         font-size: 10px;
@@ -92,7 +94,6 @@
       .register__form__left-button .register_link {
         display: flex;
         place-content: center;
-        place-items: center;
         writing-mode: tb-rl;
         text-orientation: mixed;
         background: rgba(255, 255, 255, 0.4);
@@ -142,7 +143,7 @@
     background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .register.register-thank-you h5 {
     font-weight: 300;
     font-size: 12px;

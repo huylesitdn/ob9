@@ -47,6 +47,7 @@
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 30px;
+        text-transform: uppercase;
       }
 
       h4 {
@@ -110,6 +111,7 @@
         display: flex;
         place-content: center;
         place-items: center;
+        text-transform: uppercase;
       }
 
       .font-small {
@@ -127,7 +129,7 @@
       .register_link {
         display: flex;
         place-content: center;
-        place-items: center;
+        // place-items: center;
         writing-mode: tb-rl;
         text-orientation: mixed;
         background: rgba(255, 255, 255, 0.4);
@@ -196,7 +198,7 @@
       background: -webkit-linear-gradient(#E5D6C3, #C9AF92);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     h5 {

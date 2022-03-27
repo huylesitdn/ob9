@@ -67,6 +67,140 @@
       color: #7E8796;
       padding: 10px 0;
       text-align: justify; }
+    .sponsors-article__content__items .slider-flip {
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 0; }
+      .sponsors-article__content__items .slider-flip .slick-dots {
+        bottom: 180px;
+        z-index: 1; }
+        .sponsors-article__content__items .slider-flip .slick-dots li button {
+          border: 1px solid #727272;
+          box-sizing: border-box;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          opacity: 1; }
+          .sponsors-article__content__items .slider-flip .slick-dots li button:before {
+            display: none; }
+        .sponsors-article__content__items .slider-flip .slick-dots li.slick-active button {
+          background: #727272; }
+      .sponsors-article__content__items .slider-flip .slick-arrow {
+        z-index: 2;
+        width: 22px;
+        height: 22px;
+        top: auto;
+        bottom: 170px; }
+        .sponsors-article__content__items .slider-flip .slick-arrow:before {
+          content: "";
+          background-size: 6px;
+          background-repeat: no-repeat;
+          background-position: center center;
+          border: 2px solid #000000;
+          box-sizing: border-box;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          opacity: 1;
+          display: block; }
+        .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev {
+          left: 25%; }
+          .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev:before {
+            background-image: url(/images/sponsors/article/left.png); }
+        .sponsors-article__content__items .slider-flip .slick-arrow.slick-next {
+          right: 25%; }
+          .sponsors-article__content__items .slider-flip .slick-arrow.slick-next:before {
+            background-image: url(/images/sponsors/article/right.png); }
+      .sponsors-article__content__items .slider-flip .slick-list .slick-track {
+        display: flex;
+        place-content: center;
+        place-items: center; }
+        .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide {
+          opacity: 0.5;
+          transition: opacity .3s ease-out;
+          display: flex;
+          place-content: center;
+          place-items: center;
+          transform: scale(0.95);
+          flex-direction: column; }
+          .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-images, .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-video {
+            width: 100%;
+            margin-bottom: 60px; }
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-images img,
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-images video, .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-video img,
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-video video {
+              width: 100%;
+              object-fit: cover;
+              padding-top: 30px; }
+          .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-caption {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: justify;
+            color: #7E8796;
+            margin-top: 60px;
+            min-height: 130px;
+            margin-left: -20px;
+            margin-right: -20px;
+            opacity: 0;
+            transition: opacity .3s ease-out; }
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide .carousel-item-caption p {
+              margin-bottom: 0; }
+          .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current {
+            opacity: 1 !important;
+            transition: opacity .3s ease-in;
+            transform: scale(1.1);
+            z-index: 99;
+            padding-top: 0; }
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-images, .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-video {
+              width: 100%;
+              margin-bottom: 0; }
+              .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-images img,
+              .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-images video, .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-video img,
+              .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-video video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding-top: 0; }
+            .sponsors-article__content__items .slider-flip .slick-list .slick-track .slick-slide.slick-current .carousel-item-caption {
+              opacity: 1;
+              transition: opacity .3s ease-in; }
+    .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-dots {
+      bottom: 105px;
+      z-index: 1; }
+    .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-images, .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-video {
+      width: 100%;
+      margin-bottom: 40px; }
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-images img,
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-images video, .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-video img,
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-video video {
+        width: 100%;
+        object-fit: cover;
+        padding-top: 30px; }
+    .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-caption {
+      margin-top: 30px;
+      min-height: 70px; }
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-caption p {
+        margin-bottom: 0; }
+    .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current {
+      opacity: 1 !important;
+      transition: opacity .3s ease-in;
+      transform: scale(1.1);
+      z-index: 99;
+      padding-top: 0; }
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-images, .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-video {
+        width: 100%;
+        margin-bottom: 0; }
+        .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-images img,
+        .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-images video, .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-video img,
+        .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-video video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          padding-top: 0; }
+      .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide.slick-current .carousel-item-caption {
+        opacity: 1;
+        transition: opacity .3s ease-in; }
     .sponsors-article__content__items #carouselSposorship .carousel-indicators {
       bottom: 145px;
       place-items: center; }

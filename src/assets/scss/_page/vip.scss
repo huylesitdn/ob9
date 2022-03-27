@@ -1,5 +1,6 @@
 .vip {
   background: #fff;
+
   &#vipPage {
     padding-top: 50px;
   }
@@ -306,6 +307,7 @@
 
         .nav-item {
           // margin-bottom: 10px;
+          width: 18%;
 
           .nav-link {
             background: #FFFFFF;
@@ -345,8 +347,9 @@
           }
         }
 
-        @media only screen and (max-width: 425px) {
+        @media only screen and (max-width: 430px) {
           .nav-item {
+            width: 16%;
 
             .nav-link {
               width: 68px;
@@ -915,4 +918,30 @@
 
   }
 
+}
+
+
+
+.vip-cash-rebate-rules {
+  background-color: #F2F2F2;
+
+  &__content {
+    background-color: #fff;
+    padding: 15px 15px 15px 30px;
+    list-style: decimal;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+    color: #000000;
+
+    li {
+      padding-bottom: 20px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
 }

@@ -25,6 +25,23 @@
 
 
   &__content {
+
+    &__contact-us {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      margin: 15px;
+      padding: 15px;
+      display: flex;
+      place-content: space-between;
+      place-items: center;
+
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 14px;
+      color: #000000;
+    }
+
     &__contact {
       padding: 15px 30px;
 
@@ -212,5 +229,186 @@
       text-align: center;
       color: #000000;
     }
+
+    &__customer-service-center {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      margin: -30px 15px 0 15px;
+      width: 100%;
+      z-index: 99;
+      padding: 15px;
+
+
+      &__content {
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 15px;
+        z-index: 1;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #EEEEEE;
+
+        &__img {}
+
+        &__text {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 14px;
+          color: #CACED9;
+
+          h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #333;
+          }
+        }
+      }
+
+      &__btn {
+        padding-top: 15px;
+
+        .btn {
+          width: 100%;
+          height: 50px;
+
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 16px;
+          text-align: center;
+          color: #FFFFFF;
+
+          display: flex;
+          place-content: center;
+          place-items: center;
+          gap: 5px;
+        }
+      }
+
+
+      &__subtext {
+        z-index: 1;
+        width: 100%;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #333;
+        padding-top: 15px;
+        border-top: 1px solid #fff;
+      }
+
+    }
+
+
+    &__card {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      margin: 15px;
+      padding: 15px;
+
+      .title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #333333;
+      }
+
+      &.faq {
+
+        .content {
+          list-style: none;
+          padding: 15px 0;
+
+          li {
+            &.line {
+              border-bottom: 1px solid #7F7F7F;
+              height: 5px;
+              margin: 15px -15px 10px -15px;
+            }
+
+            a {
+              display: flex;
+              place-content: flex-start;
+              place-items: center;
+              gap: 0;
+              width: 100%;
+
+              div {
+                border-bottom: 1px solid #ddd;
+                height: 50px;
+
+                &.img {
+                  width: 45px;
+                  display: flex;
+                  place-items: center;
+
+                  &.no-border {
+                    border: none;
+                  }
+                }
+
+                &.text {
+                  width: 100%;
+                  display: flex;
+                  place-items: center;
+                  place-content: space-between;
+                  font-weight: 300;
+                  font-size: 16px;
+                  line-height: 14px;
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.tutorial-guides {
+        margin-top: 0;
+
+        .content {
+          text-align: center;
+          padding-top: 20px;
+
+          &>a {
+            padding: 0;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #333333;
+
+            img {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+
+
+
   }
+
+
+  &.customer-service {
+
+    .navbar.nav-child {
+      background: linear-gradient(90deg, #7696FF 0%, #557BF7 100%) !important;
+    }
+
+    .help-page__content__top {
+      padding: 100px 15px 0 15px;
+
+      // min-height: 150px !important;
+      &::before {
+        height: 300px;
+      }
+    }
+  }
+
+
 }

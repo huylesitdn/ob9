@@ -14,6 +14,19 @@
         line-height: 21px;
         text-align: center;
         color: #FFFFFF; }
+  .help-page__content__contact-us {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000000; }
   .help-page__content__contact {
     padding: 15px 30px; }
     .help-page__content__contact .title {
@@ -146,3 +159,115 @@
     line-height: 12px;
     text-align: center;
     color: #000000; }
+  .help-page__content__customer-service-center {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: -30px 15px 0 15px;
+    width: 100%;
+    z-index: 99;
+    padding: 15px; }
+    .help-page__content__customer-service-center__content {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      gap: 15px;
+      z-index: 1;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #EEEEEE; }
+      .help-page__content__customer-service-center__content__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        color: #CACED9; }
+        .help-page__content__customer-service-center__content__text h3 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          color: #333; }
+    .help-page__content__customer-service-center__btn {
+      padding-top: 15px; }
+      .help-page__content__customer-service-center__btn .btn {
+        width: 100%;
+        height: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        gap: 5px; }
+    .help-page__content__customer-service-center__subtext {
+      z-index: 1;
+      width: 100%;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #333;
+      padding-top: 15px;
+      border-top: 1px solid #fff; }
+  .help-page__content__card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px; }
+    .help-page__content__card .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      color: #333333; }
+    .help-page__content__card.faq .content {
+      list-style: none;
+      padding: 15px 0; }
+      .help-page__content__card.faq .content li.line {
+        border-bottom: 1px solid #7F7F7F;
+        height: 5px;
+        margin: 15px -15px 10px -15px; }
+      .help-page__content__card.faq .content li a {
+        display: flex;
+        place-content: flex-start;
+        place-items: center;
+        gap: 0;
+        width: 100%; }
+        .help-page__content__card.faq .content li a div {
+          border-bottom: 1px solid #ddd;
+          height: 50px; }
+          .help-page__content__card.faq .content li a div.img {
+            width: 45px;
+            display: flex;
+            place-items: center; }
+            .help-page__content__card.faq .content li a div.img.no-border {
+              border: none; }
+          .help-page__content__card.faq .content li a div.text {
+            width: 100%;
+            display: flex;
+            place-items: center;
+            place-content: space-between;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 14px;
+            color: #000000; }
+    .help-page__content__card.tutorial-guides {
+      margin-top: 0; }
+      .help-page__content__card.tutorial-guides .content {
+        text-align: center;
+        padding-top: 20px; }
+        .help-page__content__card.tutorial-guides .content > a {
+          padding: 0;
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          color: #333333; }
+          .help-page__content__card.tutorial-guides .content > a img {
+            margin-bottom: 5px; }
+  .help-page.customer-service .navbar.nav-child {
+    background: linear-gradient(90deg, #7696FF 0%, #557BF7 100%) !important; }
+  .help-page.customer-service .help-page__content__top {
+    padding: 100px 15px 0 15px; }
+    .help-page.customer-service .help-page__content__top::before {
+      height: 300px; }

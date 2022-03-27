@@ -103,6 +103,236 @@
         text-align: justify;
       }
 
+      .slider-flip {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+
+        .slick-dots {
+          bottom: 180px;
+          z-index: 1;
+
+          li {
+
+            button {
+
+              border: 1px solid #727272;
+              box-sizing: border-box;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              opacity: 1;
+
+              &:before {
+                display: none;
+              }
+            }
+
+            &.slick-active {
+              button {
+                background: #727272;
+              }
+            }
+          }
+        }
+
+        .slick-arrow {
+          z-index: 2;
+          width: 22px;
+          height: 22px;
+          top: auto;
+          bottom: 170px;
+
+          &:before {
+            content: "";
+            background-size: 6px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border: 2px solid #000000;
+            box-sizing: border-box;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            opacity: 1;
+            display: block;
+          }
+
+          &.slick-prev {
+            left: 25%;
+
+            &:before {
+              background-image: url(/images/sponsors/article/left.png);
+            }
+          }
+
+          &.slick-next {
+            right: 25%;
+
+            &:before {
+              background-image: url(/images/sponsors/article/right.png);
+            }
+          }
+        }
+
+        .slick-list {
+          .slick-track {
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            .slick-slide {
+              opacity: 0.5;
+              transition: opacity .3s ease-out;
+              display: flex;
+              place-content: center;
+              place-items: center;
+              transform: scale(0.95);
+              // padding-top: 30px;
+              flex-direction: column;
+
+              .carousel-item {
+                &-images,
+                &-video {
+                  width: 100%;
+                  margin-bottom: 60px;
+
+                  img,
+                  video {
+                    width: 100%;
+                    // height: 170px;
+                    object-fit: cover;
+                    padding-top: 30px;
+                  }
+                }
+
+                &-caption {
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 16px;
+                  text-align: justify;
+                  color: #7E8796;
+                  margin-top: 60px;
+                  min-height: 130px;
+                  margin-left: -20px;
+                  margin-right: -20px;
+                  opacity: 0;
+                  transition: opacity .3s ease-out;
+
+                  p {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              &.slick-current {
+                opacity: 1 !important;
+                transition: opacity .3s ease-in;
+                transform: scale(1.1);
+                z-index: 99;
+                padding-top: 0;
+
+                .carousel-item {
+                  &-images,
+                  &-video {
+                    width: 100%;
+                    margin-bottom: 0;
+
+                    img,
+                    video {
+                      width: 100%;
+                      // height: 200px;
+                      height: 100%;
+                      object-fit: cover;
+                      padding-top: 0;
+                    }
+                  }
+
+                  &-caption {
+                    opacity: 1;
+                    transition: opacity .3s ease-in;
+                  }
+                }
+
+              }
+
+            }
+          }
+        }
+      }
+
+
+      #carouselSponsoredEventPhotos1 {
+
+        .slick-dots {
+          bottom: 105px;
+          z-index: 1;
+        }
+
+        .slick-list {
+          .slick-track {
+            
+            .slick-slide {
+             
+              .carousel-item {
+                &-images,
+                &-video {
+                  width: 100%;
+                  margin-bottom: 40px;
+
+                  img,
+                  video {
+                    width: 100%;
+                    object-fit: cover;
+                    padding-top: 30px;
+                  }
+                }
+
+                &-caption {
+                  margin-top: 30px;
+                  min-height: 70px;
+
+                  p {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+
+              &.slick-current {
+                opacity: 1 !important;
+                transition: opacity .3s ease-in;
+                transform: scale(1.1);
+                z-index: 99;
+                padding-top: 0;
+
+                .carousel-item {
+                  &-images,
+                  &-video {
+                    width: 100%;
+                    margin-bottom: 0;
+
+                    img,
+                    video {
+                      width: 100%;
+                      // height: 200px;
+                      height: 100%;
+                      object-fit: cover;
+                      padding-top: 0;
+                    }
+                  }
+
+                  &-caption {
+                    opacity: 1;
+                    transition: opacity .3s ease-in;
+                  }
+                }
+
+              }
+
+            }
+          }
+        }
+      }
+
       #carouselSposorship {
 
         .carousel-indicators {
