@@ -247,6 +247,36 @@ $(".deposit .deposit-amount__item input[name='depositAmount']").change(
   }
 );
 
+$(".deposit .deposit-items__content input[name='crypto_option']").change(
+  function () {
+
+    const current_value = $(
+      ".deposit .deposit-items__content input[name='crypto_option']:checked"
+    ).val();
+    if(current_value === 'USDT') {
+      $('#TRC_20').show();
+    } else {
+      $('#TRC_20').hide();
+    }
+  }
+);
+
+
+$('#Memo_copy').hide();
+$(".deposit .deposit-items__content input[name='network_option']").change(
+  function () {
+
+    const current_value = $(
+      ".deposit .deposit-items__content input[name='network_option']:checked"
+    ).val();
+    if(current_value === 'BEP 20') {
+      $('#Memo_copy').show();
+    } else {
+      $('#Memo_copy').hide();
+    }
+  }
+);
+
 $(".deposit-amount-input").on("input", function (e) {
   const value = $(this).val();
   if (value > 50 && value < 50000) {
@@ -379,7 +409,28 @@ if ($(".bonus-history-dropdown").length > 0) {
 
 $(".dropdown-menu").on("click", function (e) {
   e.stopPropagation();
-});
+}); 
+
+// $(document).on('click', '.mbsc-popup-wrapper, .mbsc-popup', function (e) {
+//   e.stopPropagation();
+//   e.preventDefault();
+//   console.log('hahaha')
+//   $('.dropdown').on('hide.bs.dropdown', function (e) {
+//     console.log('--0-0')
+//     // var target = $(e.target);
+//     // if(target.hasClass("keepopen") || target.parents(".keepopen").length){
+//     //     return false; // returning false should stop the dropdown from hiding.
+//     // }else{
+//     //     return true;
+//     // }
+//   });
+// })
+
+$('#back_url').on('click', function (e) {
+  e.preventDefault();
+  window.history.back();
+  // console.log('-=-=-')
+})
 
 $(".profile #exampleFormControlEmailAddressInput").on("input", function () {
   const value = $(this).val();
@@ -461,6 +512,13 @@ if (is_deposit_route) {
     var sel = document.querySelector(tab_names[get_params["active"]]);
     bootstrap.Tab.getOrCreateInstance(sel).show();
   }
+}
+
+const is_register_thank_you_route = location.pathname === "/register-thank-you.html";
+if (is_register_thank_you_route) {
+  setTimeout(() => {
+    window.location.href = '/wallet/deposit.html';
+  }, 5000)
 }
 
 console.log("--- index.jsaaa");

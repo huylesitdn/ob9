@@ -128,7 +128,6 @@
     "Bonus_Center": "Bonus Center",
     "Help": "Help"
   },
-  "promotion_page": {},
   "sponsors_page": {
     "jv": {
       "Sponsorship_Events_Videos": "Sponsorship Events Videos",
@@ -180,7 +179,12 @@
       "Sponsored_event_site2": "Premier League powerhouse Aston Villa proudly announced OB Sports partnership, the leading sports and entertainment platform in Asia!",
       "Sponsored_event_site3": "Nicola Ibbetson, Chief Commercial Officer of Aston Villa presented the 21/22 home jersey during the signing ceremony to Kai Webb, President of international business of OB Group.",
       "Sponsored_event_site4": "Aston Villa Chief Commercial Officer Nicola Ibbetson and OB Group's President of International Business Kai Webb in the Aston Villa players dressing room."
-    }
+    },
+    "JUVENTUS_FC": "JUVENTUS FC",
+    "Official_Regional_Partner": "Official Regional Partner",
+    "ASTON_VILLA_FC": "ASTON VILLA FC",
+    "Official_Global_Top_Partner": "Official Global Top Partner",
+    "": ""
   },
   "Back_to_top": "Back to top",
   "total_balance": "Total balance",
@@ -813,10 +817,33 @@
     "Alladdin": "Alladdin",
     "": ""
   },
-  "": "",
-  "": "",
-  "": "",
-  "": "",
-  "": "",
+  "promotion-slot": "SLOTS",
+  "promotion_page": {
+    "title1": "Montly VIP Red Packet Giveaway",
+    "description1": "Long term promotion",
+    "title2": "Enjoy Extra Bonus On Top Of Your Winnings",
+    "description2": "Long term promotion",
+    "title3": "UEFA Champions League Final",
+    "description3": "Long term promotion",
+    "title4": "First Deposit Reward",
+    "description4": "Long term promotion",
+    "title5": "Montly VIP Red Packet Giveaway",
+    "description5": "Long term promotion",
+    "title6": "Enjoy Extra Bonus On Top Of Your Winnings",
+    "description6": "Long term promotion",
+    "title7": "First Deposit Reward",
+    "description7": "Long term promotion",
+    "title8": "Enjoy Extra Bonus On Top Of Your Winnings",
+    "description8": "Long term promotion",
+    "title9": "UEFA Champions League Final",
+    "description9": "Long term promotion",
+    "": ""  
+  },
+  "BONUS_CENTER": "BONUS CENTER",
+  "Attach_Receipt_note": "*Attach receipt for faster processing time (Optional)",
+  "withdrawal_success_message": "Your withdrawal request has been submitted successfully. Kindly check the processing status in History page. If your withdrawal is not completed after 30 minutes, please contact Customer Service.",
+  "exchange_rate": "Exchange Rate:",
+  "For_Reference_Only": "(For Reference Only)",
+  "Memo": "Memo",
   "": ""
 }
