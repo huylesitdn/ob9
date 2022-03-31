@@ -1036,8 +1036,8 @@
           margin-bottom: 0;
           transition: .5s;
           position: relative;
-          padding-left: 5px;
-          padding-right: 5px; }
+          padding-left: 2px;
+          padding-right: 2px; }
           .deposit__content__tab__item__link:hover, .deposit__content__tab__item__link:focus, .deposit__content__tab__item__link.active {
             background: #FFFFFF;
             margin-bottom: 0; }
