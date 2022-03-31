@@ -30,12 +30,11 @@ var translator = new Translator({
   filesLocation: "/i18n",
 });
 
+const _get_translator_config = translator.config.persistKey || "preferred_language";
+const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
-  const _get_translator_config =
-    translator.config.persistKey || "preferred_language";
-  const _get_language =
-    localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
   translator.translatePageTo(_get_language);
 });
 
@@ -198,31 +197,67 @@ const selectPromotionModalElm = $("#selectPromotionModal");
 if (selectPromotionModalElm.length > 0) {
   var selectPromotionModal = new bootstrap.Modal(selectPromotionModalElm, {});
 }
-$(".select-promotion__items").on("click", function (e) {
-  setTimeout(() => {
-    selectPromotionModal.hide();
-    $(".deposit-amount__summary").removeClass("d-none");
-    $(".deposit-amount__action .btn-submit").attr("disabled", false);
-    $("#select-promotion-placeholder").text("Welcome Bonus up to 180%");
-    $("#select-promotion-placeholder").addClass("fw-bold");
-    $("#select-promotion-placeholder").css("color", "#000");
-  }, 500);
-});
+// $(".select-promotion__items").on("click", function (e) {
+//   setTimeout(() => {
+//     selectPromotionModal.hide();
+//     $(".deposit-amount__summary").removeClass("d-none");
+//     $(".deposit-amount__action .btn-submit").attr("disabled", false);
+//     $("#select-promotion-placeholder").addClass("fw-bold");
+//     $("#select-promotion-placeholder").css("color", "#000");
+//     $("#select-promotion-placeholder").text("Welcome Bonus up to 180%");
+//   }, 500);
+// });
+
+$(".select-promotion__items input[name='select-promotion-radio']").change(
+  function () {
+
+    const current_value = $(
+      ".select-promotion__items input[name='select-promotion-radio']:checked"
+    ).val();
+    setTimeout(() => {
+      if(current_value === '1') {
+        const Welcome_Bonus_up_to = translator.translateForKey('Welcome_Bonus_up_to', _get_language);
+        $('.Deposit_Summary_Promotion').text(Welcome_Bonus_up_to);
+        $('.Deposit_Summary_Bonus').text('MYR 500');
+        $('.Deposit_Summary_Turnover').text('x25');
+        $('.Deposit_Summary_Turnover_Requirement').text('MYR 10,000');
+        $(".select-promotion-placeholder").text(Welcome_Bonus_up_to);
+      } else {
+        const Don_want_to_claim_any_promotion = translator.translateForKey('Don_want_to_claim_any_promotion', _get_language);
+        $('.Deposit_Summary_Promotion').text(Don_want_to_claim_any_promotion);
+        $('.Deposit_Summary_Bonus').text('MYR 0');
+        $('.Deposit_Summary_Turnover').text('x1');
+        $('.Deposit_Summary_Turnover_Requirement').text('MYR 500');
+        $(".select-promotion-placeholder").text(Don_want_to_claim_any_promotion);
+      }
+      selectPromotionModal.hide();
+      $(".deposit-amount__summary").removeClass("d-none");
+      $(".deposit-amount__action .btn-submit").attr("disabled", false);
+      $(".select-promotion-placeholder").addClass("fw-bold");
+      $(".select-promotion-placeholder").css("color", "#000");
+    }, 500);
+  }
+);
 
 const selectBankModalElm = $("#selectBankModal");
 if (selectBankModalElm.length > 0) {
   var selectBankModal = new bootstrap.Modal(selectBankModalElm, {});
 }
-$(".select-bank-modal__items").on("click", function (e) {
-  setTimeout(() => {
-    selectBankModal.hide();
-    // $('.deposit-amount__summary').removeClass('d-none');
-    // $('.deposit-amount__action .btn-submit').attr('disabled', false);
-    // $('.deposit-amount__select-promotion__input__placeholder').text('Welcome Bonus up to 180%');
-    // $('.deposit-amount__select-promotion__input__placeholder').addClass('fw-bold');
-    // $('.deposit-amount__select-promotion__input__placeholder').css('color', '#000');
-  }, 500);
-});
+$(".select-bank-modal__items input[name='select-bank-modal-radio']").change(
+  function () {
+
+    const current_value = $(
+      ".select-bank-modal__items input[name='select-bank-modal-radio']:checked"
+    ).val();
+    setTimeout(() => {
+      selectBankModal.hide();
+      $(".select-bank-placeholder").text(current_value);
+      $(".select-bank-placeholder").addClass("fw-bold");
+      $(".select-bank-placeholder").css("color", "#000");
+    }, 500);
+  }
+);
+
 $(".add-bank-account .select-bank-modal__items").on("click", function (e) {
   setTimeout(() => {
     selectBankModal.hide();
@@ -407,29 +442,46 @@ if ($(".bonus-history-dropdown").length > 0) {
   });
 }
 
+
+$(".dropdown-menu[aria-labelledby='dropdownMenuLast7Days'] button").on("click", function (e) {
+  const text = $(this).text();
+  $('#dropdownMenuLast7Days').text(text);
+  $(".dropdown-menu[aria-labelledby='dropdownMenuLast7Days'] button").removeClass('active');
+  $(this).addClass("active");
+
+  // 
+  const is_data_bs_toggle = $(this).attr('data-bs-toggle');
+  var bsCollapse = new bootstrap.Collapse($('#collapseCustomDate'),{
+    toggle: false
+  });
+  if (!is_data_bs_toggle && bsCollapse) {
+    bsCollapse.hide()
+    // bootstrap.Collapse.getOrCreateInstance($('#collapseCustomDate')).hide();
+  }
+})
+
 $(".dropdown-menu").on("click", function (e) {
   e.stopPropagation();
-}); 
+});
 
-// $(document).on('click', '.mbsc-popup-wrapper, .mbsc-popup', function (e) {
-//   e.stopPropagation();
-//   e.preventDefault();
-//   console.log('hahaha')
-//   $('.dropdown').on('hide.bs.dropdown', function (e) {
-//     console.log('--0-0')
-//     // var target = $(e.target);
-//     // if(target.hasClass("keepopen") || target.parents(".keepopen").length){
-//     //     return false; // returning false should stop the dropdown from hiding.
-//     // }else{
-//     //     return true;
-//     // }
-//   });
-// })
+$('.dropdown').on('hide.bs.dropdown', function (e) {
+  if (e.clickEvent) {
+    const get_mbsc_popup_wrapper = $('.mbsc-popup-wrapper');
+    if(get_mbsc_popup_wrapper.length > 0) {
+      e.preventDefault();
+    }
+  }
+});
 
 $('#back_url').on('click', function (e) {
   e.preventDefault();
-  window.history.back();
-  // console.log('-=-=-')
+  const is_use_back_url = $(this).hasClass('use_back_url')
+  if(!!is_use_back_url) {
+    const href = $(this).attr('href');
+    window.location.href = href || '/';
+  } else {
+    window.history.back();
+  }
 })
 
 $(".profile #exampleFormControlEmailAddressInput").on("input", function () {

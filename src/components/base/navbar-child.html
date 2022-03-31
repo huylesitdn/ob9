@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-light nav-child">
   <div class="container-fluid content @@if (!context.back_url && !context.help_url) {justify-content-center}">
     @@if (!!context.back_url) {
-      <a id="back_url" class="" href="@@back_url">
+      <a id="back_url" class="@@if (!!context.use_back_url) {use_back_url}" href="@@back_url">
         @@if (!!context.icon_back_white) {
           <img src="/icons/icon_back_white.png" alt="" />
         }

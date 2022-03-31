@@ -576,8 +576,20 @@
   }
 }
 
-@media only screen and (max-width: 365px) {
-  .btn {
-    min-width: 50px;
+#collapseCustomDate {
+  .action {
+    a {
+      display: flex;
+      place-content: center;
+      place-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .dropdown-menu {
+    .btn {
+      min-width: 50px !important;
+    }
   }
 }
