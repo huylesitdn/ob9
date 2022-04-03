@@ -15,8 +15,11 @@
   padding: 15px 0; }
   .home__content .notification__sound {
     min-width: 20px; }
+    .home__content .notification__sound img {
+      width: 30px; }
   .home__content .notification__hot-matches {
-    min-width: 85px; }
+    width: 90px;
+    min-width: 80px; }
   .home__content .notification .text-animated {
     font-style: normal;
     font-size: 14px;
@@ -50,6 +53,8 @@
       color: #000000;
       margin-bottom: 0;
       margin-top: 5px; }
+    .home__content .balance__total .vip0 {
+      width: 30px; }
   .home__content .balance__icons {
     display: flex;
     place-items: center;
@@ -107,14 +112,14 @@
       display: flex;
       place-items: center;
       place-content: space-around;
-      gap: 10px;
+      gap: 8px;
       background: #FFFFFF;
       border: 1px solid #A5D9FF;
       box-sizing: border-box;
       box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
       border-radius: 10px;
       width: 100%;
-      min-height: 60px;
+      height: 50px;
       padding-left: 8px;
       padding-right: 8px;
       background-image: url(../icons/home/default-bg.png);
@@ -355,12 +360,13 @@
   .home__content #carouselHome .carousel-inner {
     border-radius: 10px; }
   .home__content .notification {
-    gap: 15px;
+    gap: 5px;
     padding: 15px 0; }
     .home__content .notification__sound {
       min-width: 20px; }
     .home__content .notification__hot-matches {
-      min-width: 85px; }
+      width: 85px;
+      min-width: 70px; }
     .home__content .notification .text-animated {
       font-size: 14px;
       line-height: 14px; }
@@ -396,26 +402,25 @@
       margin-bottom: 15px; }
       .home__content .home-game__nav__item__link {
         place-content: space-between;
-        gap: 10px;
+        gap: 0;
         box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
         border-radius: 10px;
         width: 100%;
-        min-height: 53px;
+        height: 40px;
         padding-left: 8px;
         padding-right: 8px; }
         .home__content .home-game__nav__item__link__img img {
-          min-width: 25px; }
+          width: 25px; }
           .home__content .home-game__nav__item__link__img img:last-child {
             display: none; }
         .home__content .home-game__nav__item__link__text {
           font-size: 12px;
           line-height: 16px; }
         .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
-          font-weight: bold;
           font-size: 12px;
           line-height: 16px; }
         .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
-          min-width: 25px; }
+          width: 30px; }
           .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
             display: block;
             min-width: 30px;

@@ -29,10 +29,14 @@
 
       &__sound {
         min-width: 20px;
+        img {
+          width: 30px;
+        }
       }
 
       &__hot-matches {
-        min-width: 85px;
+        width: 90px;
+        min-width: 80px;
       }
 
       .text-animated {
@@ -76,6 +80,10 @@
           color: #000000;
           margin-bottom: 0;
           margin-top: 5px;
+        }
+
+        .vip0 {
+          width: 30px;
         }
       }
 
@@ -153,7 +161,7 @@
             display: flex;
             place-items: center;
             place-content: space-around;
-            gap: 10px;
+            gap: 8px;
 
             background: #FFFFFF;
             border: 1px solid #A5D9FF;
@@ -161,7 +169,7 @@
             box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
             border-radius: 10px;
             width: 100%;
-            min-height: 60px;
+            height: 50px;
             padding-left: 8px;
             padding-right: 8px;
             background-image: url(../icons/home/default-bg.png);
@@ -515,7 +523,7 @@
       }
 
       .notification {
-        gap: 15px;
+        gap: 5px;
         padding: 15px 0;
 
         &__sound {
@@ -523,7 +531,8 @@
         }
 
         &__hot-matches {
-          min-width: 85px;
+          width: 85px;
+          min-width: 70px;
         }
 
         .text-animated {
@@ -585,18 +594,18 @@
 
             &__link {
               place-content: space-between;
-              gap: 10px;
+              gap: 0;
 
               box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
               border-radius: 10px;
               width: 100%;
-              min-height: 53px;
+              height: 40px;
               padding-left: 8px;
               padding-right: 8px;
 
               &__img {
                 img {
-                  min-width: 25px;
+                  width: 25px;
 
                   &:last-child {
                     display: none;
@@ -612,14 +621,14 @@
               &.active {
 
                 .home-game__nav__item__link__text {
-                  font-weight: bold;
+                  // font-weight: bold;
                   font-size: 12px;
                   line-height: 16px;
                 }
 
                 .home-game__nav__item__link__img {
                   img {
-                    min-width: 25px;
+                    width: 30px;
 
                     &:last-child {
                       display: block;

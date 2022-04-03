@@ -29,6 +29,7 @@
       min-height: 50px;
 
       #navMenu {
+        width: 30px;
         min-width: auto;
         padding-left: 0;
         padding-right: 0;
@@ -39,21 +40,25 @@
       }
 
       &__customer_service {
-        max-width: 100px;
+        max-width: 80px;
         font-style: normal;
         display: flex;
         place-content: center;
         place-items: center;
         gap: 5px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 14px;
         color: #597EF7;
+
+        img {
+          width: 28px;
+        }
       }
 
       &__logo {
         max-width: 145px;
-        margin-left: 50px;
+        margin-left: 45px;
       }
     }
   }
@@ -81,7 +86,13 @@
           display: flex;
           place-content: center;
           place-items: center;
-          filter: grayscale(90%);
+          width: 30px;
+          margin: auto;
+
+          // filter: grayscale(90%);
+          .active {
+            display: none;
+          }
         }
 
         .text {
@@ -94,7 +105,15 @@
 
         &.active {
           .img {
-            filter: grayscale(0%);
+
+            // filter: grayscale(0%);
+            img {
+              display: none;
+
+              &.active {
+                display: block;
+              }
+            }
           }
 
           .text {
@@ -420,6 +439,10 @@
 
         img {
           max-width: 40px;
+        }
+
+        .choose-language {
+          word-break: keep-all;
         }
 
         .title {

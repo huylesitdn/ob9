@@ -15,7 +15,8 @@ html {
   --bs-gutter-x: 20px;
   --bs-gutter-y: 20px;
   --bs-gutter-x-mobile: 15px;
-  --bs-gutter-y-mobile: 15px; }
+  --bs-gutter-y-mobile: 15px;
+  --bs-danger-rgb: 255,0,0; }
 
 html,
 body {
@@ -224,6 +225,7 @@ a {
       padding: 15px;
       list-style: none; }
       #mySidenav.sidenav .left-nav__top__nav__item a {
+        position: relative;
         display: flex;
         place-items: center;
         gap: 15px;
@@ -239,6 +241,9 @@ a {
           font-size: 14px;
           line-height: 14px;
           color: #000000; }
+        #mySidenav.sidenav .left-nav__top__nav__item a .badge {
+          position: absolute;
+          right: 0; }
     #mySidenav.sidenav .left-nav__bottom__follow-us {
       text-align: center; }
       #mySidenav.sidenav .left-nav__bottom__follow-us div {
@@ -775,8 +780,11 @@ a {
   padding: 15px 0; }
   .home__content .notification__sound {
     min-width: 20px; }
+    .home__content .notification__sound img {
+      width: 30px; }
   .home__content .notification__hot-matches {
-    min-width: 85px; }
+    width: 90px;
+    min-width: 80px; }
   .home__content .notification .text-animated {
     font-style: normal;
     font-size: 14px;
@@ -810,6 +818,8 @@ a {
       color: #000000;
       margin-bottom: 0;
       margin-top: 5px; }
+    .home__content .balance__total .vip0 {
+      width: 30px; }
   .home__content .balance__icons {
     display: flex;
     place-items: center;
@@ -867,14 +877,14 @@ a {
       display: flex;
       place-items: center;
       place-content: space-around;
-      gap: 10px;
+      gap: 8px;
       background: #FFFFFF;
       border: 1px solid #A5D9FF;
       box-sizing: border-box;
       box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
       border-radius: 10px;
       width: 100%;
-      min-height: 60px;
+      height: 50px;
       padding-left: 8px;
       padding-right: 8px;
       background-image: url(../icons/home/default-bg.png);
@@ -1115,12 +1125,13 @@ a {
   .home__content #carouselHome .carousel-inner {
     border-radius: 10px; }
   .home__content .notification {
-    gap: 15px;
+    gap: 5px;
     padding: 15px 0; }
     .home__content .notification__sound {
       min-width: 20px; }
     .home__content .notification__hot-matches {
-      min-width: 85px; }
+      width: 85px;
+      min-width: 70px; }
     .home__content .notification .text-animated {
       font-size: 14px;
       line-height: 14px; }
@@ -1156,26 +1167,25 @@ a {
       margin-bottom: 15px; }
       .home__content .home-game__nav__item__link {
         place-content: space-between;
-        gap: 10px;
+        gap: 0;
         box-shadow: 0px 2px 4px rgba(165, 217, 255, 0.3);
         border-radius: 10px;
         width: 100%;
-        min-height: 53px;
+        height: 40px;
         padding-left: 8px;
         padding-right: 8px; }
         .home__content .home-game__nav__item__link__img img {
-          min-width: 25px; }
+          width: 25px; }
           .home__content .home-game__nav__item__link__img img:last-child {
             display: none; }
         .home__content .home-game__nav__item__link__text {
           font-size: 12px;
           line-height: 16px; }
         .home__content .home-game__nav__item__link.active .home-game__nav__item__link__text {
-          font-weight: bold;
           font-size: 12px;
           line-height: 16px; }
         .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
-          min-width: 25px; }
+          width: 30px; }
           .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
             display: block;
             min-width: 30px;
@@ -1765,6 +1775,11 @@ a {
         color: #000000; }
         .my-account__content__topcontent__wallet__top a {
           color: #000000; }
+          .my-account__content__topcontent__wallet__top a > span > span {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 14px;
+            color: #94A6B7; }
       .my-account__content__topcontent__wallet__bottom {
         display: flex;
         place-content: space-between;
@@ -1783,8 +1798,8 @@ a {
           place-items: center;
           color: #000000; }
           .my-account__content__topcontent__wallet__bottom > a > div {
-            max-width: 70%;
-            margin-bottom: 0; }
+            margin-bottom: 0;
+            margin-top: 5px; }
   .my-account__content__navbar {
     list-style: none;
     border-top: 7px solid #f2f2f2;
@@ -1926,7 +1941,6 @@ a {
             .my-account__content__topcontent__wallet__bottom > a img {
               max-width: 35px; }
             .my-account__content__topcontent__wallet__bottom > a > div {
-              max-width: 70%;
               margin-bottom: 0; }
     .my-account__content__navbar {
       list-style: none;
@@ -3332,7 +3346,10 @@ a {
             font-weight: 300;
             font-size: 12px;
             line-height: 16px;
-            color: #A5A9B3; }
+            color: #A5A9B3;
+            display: flex;
+            place-content: space-between;
+            place-items: center; }
   .betting-record .withdrawal__content__bank-account__title {
     display: flex;
     place-content: space-between;
@@ -5207,3 +5224,158 @@ a {
             display: flex;
             place-content: space-between;
             place-items: center; }
+
+.access-denied {
+  background-image: url(/images/access-denied-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 15px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+  overflow: auto; }
+  .access-denied__content__logo {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 15px; }
+  .access-denied__content__image {
+    max-width: 80%;
+    margin: auto; }
+  .access-denied__content__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 5px; }
+  .access-denied__content__subtitle {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #4E7FFF;
+    margin-bottom: 15px; }
+  .access-denied__content__dear {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 7px; }
+  .access-denied__content__description {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #000000; }
+  .access-denied__content__action {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    margin-top: 30px; }
+    .access-denied__content__action .btn {
+      display: flex;
+      place-content: center;
+      place-items: center;
+      width: 49%;
+      height: 40px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px; }
+
+.inbox {
+  background-color: #F2F2F2; }
+  .inbox .nav-child .inbox_close img {
+    height: 25px; }
+  .inbox__detail {
+    background-color: #fff;
+    padding: 15px; }
+    .inbox__detail__top {
+      display: flex;
+      place-content: flex-start;
+      place-items: center;
+      gap: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #EBEBEB; }
+      .inbox__detail__top__img {
+        width: 35px; }
+      .inbox__detail__top__content__title {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 5px; }
+      .inbox__detail__top__content__date {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #94A6B7;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        /* number of lines to show */
+        line-clamp: 1;
+        -webkit-box-orient: vertical; }
+    .inbox__detail__bottom {
+      padding-top: 15px;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000; }
+  .inbox__items {
+    background-color: #fff;
+    display: flex;
+    place-content: flex-start;
+    place-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 10px; }
+    .inbox__items .inbox_checkbox {
+      border-radius: 50%;
+      width: 18px;
+      height: 18px; }
+    .inbox__items__img {
+      width: 35px; }
+    .inbox__items__content__title {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      margin-bottom: 5px; }
+    .inbox__items__content__description {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #94A6B7;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      /* number of lines to show */
+      line-clamp: 1;
+      -webkit-box-orient: vertical; }
+    .inbox__items__right {
+      height: 100%;
+      position: relative; }
+      .inbox__items__right__date {
+        min-width: 70px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        color: #94A6B7;
+        margin-bottom: 5px; }
+      .inbox__items__right .badge {
+        width: 8px;
+        height: 8px;
+        background-color: #ff0000;
+        border-radius: 50%;
+        display: block;
+        text-align: right;
+        float: right;
+        padding: 0; }

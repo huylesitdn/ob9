@@ -493,6 +493,27 @@ $(".profile #exampleFormControlEmailAddressInput").on("input", function () {
   }
 });
 
+
+// inbox follow
+$('.inbox .nav-child .inbox_edit, .inbox .nav-child .inbox_close').on('click', function () {
+  $(`
+    .inbox .nav-child .inbox_select_all, 
+    .inbox .nav-child .inbox_back, 
+    .inbox .nav-child .inbox_close, 
+    .inbox .nav-child .inbox_edit,
+    .inbox .inbox__items input[name="inbox_select"]
+  `).toggleClass('d-none');
+});
+
+let inbox_select_all = false;
+$(".inbox .nav-child .inbox_select_all").click(function(){
+  inbox_select_all = !inbox_select_all;
+  const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
+  const cancel_all_label = translator.translateForKey('inbox_page.cancel_all', _get_language);
+  $(this).text(inbox_select_all ? cancel_all_label : select_all_label)
+  $('.inbox .inbox__items input[name="inbox_select"]').prop('checked', inbox_select_all);
+});
+
 /**
  * mobiscroll
  *

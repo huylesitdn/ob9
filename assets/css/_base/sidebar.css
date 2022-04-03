@@ -53,6 +53,7 @@
       padding: 15px;
       list-style: none; }
       #mySidenav.sidenav .left-nav__top__nav__item a {
+        position: relative;
         display: flex;
         place-items: center;
         gap: 15px;
@@ -68,6 +69,9 @@
           font-size: 14px;
           line-height: 14px;
           color: #000000; }
+        #mySidenav.sidenav .left-nav__top__nav__item a .badge {
+          position: absolute;
+          right: 0; }
     #mySidenav.sidenav .left-nav__bottom__follow-us {
       text-align: center; }
       #mySidenav.sidenav .left-nav__bottom__follow-us div {

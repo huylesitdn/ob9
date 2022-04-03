@@ -213,7 +213,10 @@
             font-weight: 300;
             font-size: 12px;
             line-height: 16px;
-            color: #A5A9B3; }
+            color: #A5A9B3;
+            display: flex;
+            place-content: space-between;
+            place-items: center; }
   .betting-record .withdrawal__content__bank-account__title {
     display: flex;
     place-content: space-between;

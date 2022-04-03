@@ -292,6 +292,9 @@
             font-size: 12px;
             line-height: 16px;
             color: #A5A9B3;
+            display: flex;
+            place-content: space-between;
+            place-items: center;
           }
         }
       }

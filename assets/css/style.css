@@ -22,25 +22,28 @@
       display: flex;
       min-height: 50px; }
       .navbar.fixed-top .content #navMenu {
+        width: 30px;
         min-width: auto;
         padding-left: 0;
         padding-right: 0; }
         .navbar.fixed-top .content #navMenu:focus {
           box-shadow: none; }
       .navbar.fixed-top .content__customer_service {
-        max-width: 100px;
+        max-width: 80px;
         font-style: normal;
         display: flex;
         place-content: center;
         place-items: center;
         gap: 5px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 14px;
         color: #597EF7; }
+        .navbar.fixed-top .content__customer_service img {
+          width: 28px; }
       .navbar.fixed-top .content__logo {
         max-width: 145px;
-        margin-left: 50px; }
+        margin-left: 45px; }
   .navbar.fixed-bottom {
     min-height: 60px;
     background-color: #FFFFFF;
@@ -61,15 +64,20 @@
           display: flex;
           place-content: center;
           place-items: center;
-          filter: grayscale(90%); }
+          width: 30px;
+          margin: auto; }
+          .navbar.fixed-bottom .content .nav-item .img .active {
+            display: none; }
         .navbar.fixed-bottom .content .nav-item .text {
           font-style: normal;
           font-size: 12px;
           line-height: 14px;
           text-align: center;
           color: rgba(0, 0, 0, 0.5); }
-        .navbar.fixed-bottom .content .nav-item.active .img {
-          filter: grayscale(0%); }
+        .navbar.fixed-bottom .content .nav-item.active .img img {
+          display: none; }
+          .navbar.fixed-bottom .content .nav-item.active .img img.active {
+            display: block; }
         .navbar.fixed-bottom .content .nav-item.active .text {
           color: #597EF7; }
 
@@ -304,6 +312,8 @@
       padding-bottom: 30px; }
       #selectLanguage .modal-dialog .modal-content .modal-body img {
         max-width: 40px; }
+      #selectLanguage .modal-dialog .modal-content .modal-body .choose-language {
+        word-break: keep-all; }
       #selectLanguage .modal-dialog .modal-content .modal-body .title {
         font-weight: 300;
         font-size: 12px;
