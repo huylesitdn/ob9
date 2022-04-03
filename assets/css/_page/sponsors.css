@@ -21,7 +21,8 @@
         text-align: center;
         width: 35%; }
         .sponsors__content .sponsors_items__content__img {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          max-height: 47px; }
         .sponsors__content .sponsors_items__content__title {
           font-style: normal;
           font-weight: 700;

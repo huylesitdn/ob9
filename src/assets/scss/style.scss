@@ -15,6 +15,10 @@
       color: #000000;
       text-transform: uppercase;
     }
+
+    img {
+      max-width: 30px;
+    }
   }
 
   &.fixed-top {
@@ -29,18 +33,25 @@
       min-height: 50px;
 
       #navMenu {
-        width: 30px;
+        width: 80px;
+        // width: 30px;
         min-width: auto;
         padding-left: 0;
         padding-right: 0;
+        text-align: left;
 
         &:focus {
           box-shadow: none;
         }
+
+        img {
+          // width: 30px;
+          width: 20px;
+        }
       }
 
       &__customer_service {
-        max-width: 80px;
+        width: 80px;
         font-style: normal;
         display: flex;
         place-content: center;
@@ -52,13 +63,15 @@
         color: #597EF7;
 
         img {
-          width: 28px;
+          // width: 28px;
+          width: 25px;
         }
       }
 
       &__logo {
-        max-width: 145px;
-        margin-left: 45px;
+        max-width: 140px;
+        // max-width: 145px;
+        // margin-left: 45px;
       }
     }
   }
@@ -185,7 +198,10 @@
 
 
       &__img {
-        min-height: 30px;
+        img {
+          max-height: 30px;
+          max-width: 30px;
+        }
       }
 
       &__title {
@@ -311,6 +327,10 @@
         &:hover,
         &:active {
           background-color: #fff;
+        }
+
+        img {
+          max-width: 24px;
         }
       }
     }

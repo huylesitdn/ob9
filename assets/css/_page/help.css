@@ -67,6 +67,8 @@
       place-items: center;
       gap: 15px;
       z-index: 1; }
+      .help-page__content__top__content__img {
+        max-width: 65px; }
       .help-page__content__top__content__text {
         font-weight: 300;
         font-size: 14px;
@@ -111,6 +113,8 @@
           place-items: center;
           gap: 15px;
           position: relative; }
+          .help-page__content__content .list-group .list-group-item a .img-left {
+            max-width: 30px; }
           .help-page__content__content .list-group .list-group-item a .right {
             position: absolute;
             right: 0; }

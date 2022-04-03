@@ -42,6 +42,8 @@
       margin-top: 30px; }
       .referral-program__content__items__steps__item {
         position: relative; }
+        .referral-program__content__items__steps__item__img {
+          max-width: 45px; }
         .referral-program__content__items__steps__item__title {
           font-weight: 300;
           font-size: 12px;

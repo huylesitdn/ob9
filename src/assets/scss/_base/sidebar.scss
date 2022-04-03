@@ -23,6 +23,7 @@
       place-content: space-between;
       max-width: 300px;
       min-width: 300px;
+      overflow: auto;
 
       &__top {
         &__info {
@@ -81,8 +82,11 @@
               text-decoration: none;
 
               div {
-                min-width: 25px;
+                max-width: 25px;
                 text-align: center;
+                // img {
+                //   width: 100%;
+                // }
               }
 
               span {

@@ -59,6 +59,10 @@
             color: #000000;
             display: flex;
             place-content: space-between;
+
+            img {
+              max-width: 25px;
+            }
           }
 
           .description {

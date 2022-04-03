@@ -50,7 +50,7 @@
       background: #FFFFFF;
       margin-bottom: 20px; }
       .wallet__content__bottom__items_img {
-        min-width: 30px; }
+        max-width: 30px; }
       .wallet__content__bottom__items__content {
         width: 100%; }
         .wallet__content__bottom__items__content__title {

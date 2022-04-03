@@ -23,6 +23,9 @@
           position: relative;
           padding-left: 2px;
           padding-right: 2px; }
+          @media only screen and (max-width: 380px) {
+            .deposit__content__tab__item__link {
+              font-size: 12px; } }
           .deposit__content__tab__item__link:hover, .deposit__content__tab__item__link:focus, .deposit__content__tab__item__link.active {
             background: #FFFFFF;
             margin-bottom: 0; }

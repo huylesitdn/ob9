@@ -72,7 +72,7 @@
       position: relative;
       margin-bottom: 0; }
       .sponsors-article__content__items .slider-flip .slick-dots {
-        bottom: 180px;
+        bottom: 190px;
         z-index: 1; }
         .sponsors-article__content__items .slider-flip .slick-dots li button {
           border: 1px solid #727272;
@@ -90,7 +90,7 @@
         width: 22px;
         height: 22px;
         top: auto;
-        bottom: 170px; }
+        bottom: 180px; }
         .sponsors-article__content__items .slider-flip .slick-arrow:before {
           content: "";
           background-size: 6px;
@@ -104,11 +104,11 @@
           opacity: 1;
           display: block; }
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev {
-          left: 25%; }
+          left: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev:before {
             background-image: url(/images/sponsors/article/left.png); }
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-next {
-          right: 25%; }
+          right: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-next:before {
             background-image: url(/images/sponsors/article/right.png); }
       .sponsors-article__content__items .slider-flip .slick-list .slick-track {
@@ -166,7 +166,7 @@
               opacity: 1;
               transition: opacity .3s ease-in; }
     .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-dots {
-      bottom: 105px;
+      bottom: 115px;
       z-index: 1; }
     .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-images, .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-video {
       width: 100%;
@@ -178,7 +178,7 @@
         object-fit: cover;
         padding-top: 30px; }
     .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-caption {
-      margin-top: 30px;
+      margin-top: 50px;
       min-height: 70px; }
       .sponsors-article__content__items #carouselSponsoredEventPhotos1 .slick-list .slick-track .slick-slide .carousel-item-caption p {
         margin-bottom: 0; }

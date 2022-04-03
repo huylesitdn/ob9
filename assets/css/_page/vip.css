@@ -539,7 +539,7 @@
           padding: 10px 0;
           position: relative; }
           .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__img {
-            min-width: 40px; }
+            max-width: 40px; }
           .vip__content .privilege-content__info #privilegeInfo .slick-list .slick-track .slick-slide .privilege-info-items__content__item__child__description__title {
             font-weight: 500;
             font-size: 12px;

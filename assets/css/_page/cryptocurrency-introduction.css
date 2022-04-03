@@ -1,6 +1,8 @@
 .cryptocurrency-introduction {
   background-color: #f2f2f2;
   padding-bottom: 100px; }
+  .cryptocurrency-introduction .nav-child .title {
+    font-size: 15px !important; }
   .cryptocurrency-introduction__content__warning {
     font-weight: 300;
     font-size: 12px;

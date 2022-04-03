@@ -97,7 +97,9 @@
         gap: 15px;
         z-index: 1;
 
-        &__img {}
+        &__img {
+          max-width: 65px;
+        }
 
         &__text {
           font-weight: 300;
@@ -155,6 +157,10 @@
             place-items: center;
             gap: 15px;
             position: relative;
+
+            .img-left {
+              max-width: 30px;
+            }
 
             .right {
               position: absolute;

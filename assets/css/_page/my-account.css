@@ -24,6 +24,7 @@
       place-content: flex-start;
       place-items: center;
       padding: 20px;
+      padding-top: 0;
       padding-left: 40px;
       gap: 15px; }
       .my-account__content__topcontent__top__avatar {
@@ -132,13 +133,14 @@
         gap: 10px; }
         .my-account__content__navbar li a > div .icon {
           min-width: 30px;
+          max-width: 30px;
           text-align: center; }
       .my-account__content__navbar li a span {
         font-weight: 400;
         font-size: 12px;
         line-height: 14px;
         text-align: right;
-        color: rgba(0, 0, 0, 0.5); }
+        color: rgba(0, 0, 0, 0.2); }
 
 @media only screen and (max-width: 425px) {
   .my-account {
@@ -161,8 +163,8 @@
         color: #FFFFFF;
         padding: 20px;
         padding-top: 15px;
-        gap: 8px;
-        padding-bottom: 10px; }
+        padding-bottom: 0;
+        gap: 8px; }
         .my-account__content__topcontent__nav img {
           max-width: 33px; }
       .my-account__content__topcontent__top {
@@ -170,6 +172,7 @@
         place-content: flex-start;
         place-items: center;
         padding: 20px;
+        padding-top: 0;
         padding-left: 40px;
         gap: 15px; }
         .my-account__content__topcontent__top__avatar {
@@ -274,10 +277,12 @@
           gap: 8px; }
           .my-account__content__navbar li a > div .icon {
             min-width: 30px;
+            max-width: 30px;
+            max-width: 30px;
             text-align: center; }
         .my-account__content__navbar li a span {
           font-weight: 400;
           font-size: 10px;
           line-height: 14px;
           text-align: right;
-          color: rgba(0, 0, 0, 0.5); } }
+          color: rgba(0, 0, 0, 0.2); } }

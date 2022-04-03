@@ -12,6 +12,8 @@
       text-align: center;
       color: #000000;
       text-transform: uppercase; }
+    .navbar.nav-child img {
+      max-width: 30px; }
   .navbar.fixed-top {
     background-color: #FFFFFF;
     padding: 0;
@@ -22,14 +24,17 @@
       display: flex;
       min-height: 50px; }
       .navbar.fixed-top .content #navMenu {
-        width: 30px;
+        width: 80px;
         min-width: auto;
         padding-left: 0;
-        padding-right: 0; }
+        padding-right: 0;
+        text-align: left; }
         .navbar.fixed-top .content #navMenu:focus {
           box-shadow: none; }
+        .navbar.fixed-top .content #navMenu img {
+          width: 20px; }
       .navbar.fixed-top .content__customer_service {
-        max-width: 80px;
+        width: 80px;
         font-style: normal;
         display: flex;
         place-content: center;
@@ -40,10 +45,9 @@
         line-height: 14px;
         color: #597EF7; }
         .navbar.fixed-top .content__customer_service img {
-          width: 28px; }
+          width: 25px; }
       .navbar.fixed-top .content__logo {
-        max-width: 145px;
-        margin-left: 45px; }
+        max-width: 140px; }
   .navbar.fixed-bottom {
     min-height: 60px;
     background-color: #FFFFFF;
@@ -125,8 +129,9 @@
             bottom: 0;
             right: 0;
             z-index: 9; }
-      .select-bank__item__label__img {
-        min-height: 30px; }
+      .select-bank__item__label__img img {
+        max-height: 30px;
+        max-width: 30px; }
       .select-bank__item__label__title {
         font-size: 12px;
         line-height: 12px;
@@ -220,6 +225,8 @@
         gap: 5px; }
         .deposit-amount__action .btn-choose:hover, .deposit-amount__action .btn-choose:active {
           background-color: #fff; }
+        .deposit-amount__action .btn-choose img {
+          max-width: 24px; }
   .deposit-amount__input-group {
     margin-bottom: 15px; }
     .deposit-amount__input-group .form-control {

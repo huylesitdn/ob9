@@ -173,7 +173,8 @@
           place-content: center;
           place-items: center;
           margin: auto;
-          margin-bottom: 8px; }
+          margin-bottom: 8px;
+          min-width: 95px !important; }
         .bonus-history__items__item__right__description {
           font-weight: 300;
           font-size: 12px;

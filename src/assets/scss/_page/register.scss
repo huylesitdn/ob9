@@ -69,6 +69,12 @@
           border: none;
           padding-left: 20px;
 
+          &:first-child {
+            img {
+              width: 25px;
+            }
+          }
+
           &:not(:first-child) {
             padding-right: 20px;
           }
@@ -148,6 +154,7 @@
           -moz-transform: rotate(180deg);
           -o-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
+          width: 25px;
         }
       }
     }
@@ -165,7 +172,7 @@
       font-size: 14px;
       line-height: 14px;
       color: #FFFFFF;
-      padding-top: 20px;
+      padding: 10px 0;
       text-decoration: none;
     }
   }

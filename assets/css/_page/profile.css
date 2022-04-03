@@ -64,6 +64,7 @@
       text-align: center;
       color: #6C7C9D; }
   .profile .modal .modal-content {
+    min-height: 350px !important;
     height: 40vh !important;
     position: relative; }
     .profile .modal .modal-content .select-profile-picture-modal__items {

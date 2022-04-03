@@ -118,7 +118,6 @@
     "contact_us": "联系我们",
     "region_language": "区域及语言",
     "logout": "安全退出",
-    "Help_Center": "帮助中心",
     "follow_us": "关注我们"
   },
   "my_account_page": {
@@ -167,7 +166,7 @@
       "Sponsored_Gala_Special1": "正月十五元宵到，欧宝欧气跟随到！欧宝体育携手英超劲旅阿斯顿维拉众球星和传奇球星祝您元宵节快乐，心想事成！",
       "Sponsored_Gala_Special2": "英超阿斯顿维拉足球俱乐部与欧宝体育合作百日盛典&正式发布会在英国伯明翰维拉公园球场盛大举行！",
       "Sponsored_Gala_Special3": "2021年6月22日，亚洲领先体育娱乐品牌欧宝体育正式签约成为阿斯顿维拉足球俱乐部的全球顶级合作伙伴及官方球衣袖标合作伙伴！",
-      "Sponsored_Gala_Special4": "正月十五元宵到，欧宝欧气跟随到！欧宝体育携手英超劲旅阿斯顿维拉众星和传奇球星祝您元宵节快乐，心想事成！",
+      "Sponsored_Gala_Special4": "2022虎年新春到来之际，欧宝体育携手英超劲旅阿斯顿维拉俱乐部与众球星给您拜年啦！祝您虎年发虎财！财源滚滚来！",
       "Sports_Highlights": "精彩集锦",
       "Sports_Highlights1": "阿斯顿维拉足球俱乐部（绰号维拉人）是一家位于英格兰中部伯明翰市的足球俱乐部，于1874年创立，现时于英格兰足球超级联赛竞逐，是1888年甲组联赛及1992年英格兰足球超级联赛首届赛事球队，因此阿斯顿维拉也是英超之中历史最悠久的球队之一，其主场位于伯明翰市的维拉公园球场。",
       "Sports_Highlights2": "早年，阿斯顿维拉曾经七次赢得顶级联赛冠军和七次英格兰足总杯，更于1982年获得欧洲联赛冠军杯和欧洲超级杯冠军。",
@@ -298,6 +297,8 @@
     "description2": "如需帮忙，请<a href=''#'>联系客服</a>"
   },
   "vip_page": {
+    "View_Cash_Rebate_rules": "查看反水规则说明",
+    "vip_bg_img": "<img src=\"/images/vip/vip-bg-zh.jpeg\" />",
     "VIP_Privilege": "VIP 特权",
     "VIP_info": "VIP 详情",
     "Current": "当前",
@@ -403,7 +404,7 @@
       "Confirm": "确认"
     }
   },
-  "ACCOUNT SECURITY": "账户设置",
+  "ACCOUNT_SECURITY": "账户设置",
   "account_setting_page": {
     "info": "完善账户信息，更安全",
     "Complete_Profile": "完善个人资料",
@@ -647,7 +648,7 @@
   "bonus_history_page": {
     "No_record_found": "暂无记录",
     "Unclaim": "待领取",
-    "Claim": "领取",
+    "Claim": "已领取",
     "Total_Claim": "总领取",
     "Cash_Rebate": "现金返水",
     "Claim_Now": "立即领取",
@@ -897,7 +898,7 @@
     "description": "很抱歉，该游戏正在进行维修升级，给您造成不便，敬请谅解！如有任何疑问，请联系24小时在线客服，我们将竭诚为您服务。",
     "Contact_Customer_Service": "联系客服",
     "Back_to_Homepage": "回到主页",
-    "": ""
+    "logo_top": "<img src=\"/images/top-logo-zh.png\" />"
   },
   "inbox": "消息中心",
   "inbox_page": {
@@ -920,9 +921,9 @@
   "Sport_Betting_Guide_page_img4": "<img src=\"/images/help/sport-betting-guide-zh-4.png\" />",
   "Sport_Betting_Guide_page_img5": "<img src=\"/images/help/sport-betting-guide-zh-5.png\" />",
   "Sport_Betting_Guide_page_img6": "<img src=\"/images/help/sport-betting-guide-zh-6.png\" />",
-  "Sport_Betting_Guide_page_img7": "<img src=\"/images/help/sport-betting-guide-zh-7.png\" />",
+  "Sport_Betting_Guide_page_img7": "",
   "Sport_Betting_Guide_page_img8": "<img src=\"/images/help/sport-betting-guide-zh-8.png\" />",
-  "CURRENCY_KEY": "¥",
+  "CURRENCY_KEY": "MYR",
   "transaction_history_title": "交易记录",
   "Betting_Record_title": "投注记录",
   "Betting_Record_page": {
@@ -931,6 +932,7 @@
     "Win_Lose": "输赢",
     "Betting_time": "下注时间",
     "Betslip_ID": "下注单号",
+    "Realbet": "有效投注额",
     "": "",
     "": ""
   },
@@ -967,6 +969,11 @@
   },
   "BET_NOW": "立即投注",
   "RESULT": "结果",
+  "hot_matches_icon": "<img src=\"./icons/hot-matches-zh.png\" />",
+  "login_logo_img": "<img src=\"/images/login-logo-zh.png\" />",
+  "login_logo1_img": "<img src=\"/images/login-logo-1-zh.png\" />",
+  "login_logo2_img": "<img src=\"/images/login-logo-2-zh.png\" />",
+  "universal_logo_img": "<img src=\"/images/universal-logo-zh.png\" />",
   "": "",
   "": ""
 }

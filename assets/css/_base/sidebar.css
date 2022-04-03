@@ -17,7 +17,8 @@
     flex-direction: column;
     place-content: space-between;
     max-width: 300px;
-    min-width: 300px; }
+    min-width: 300px;
+    overflow: auto; }
     #mySidenav.sidenav .left-nav__top__info {
       background-image: url(../images/menu-bg.png);
       background-repeat: no-repeat;
@@ -59,7 +60,7 @@
         gap: 15px;
         text-decoration: none; }
         #mySidenav.sidenav .left-nav__top__nav__item a div {
-          min-width: 25px;
+          max-width: 25px;
           text-align: center; }
         #mySidenav.sidenav .left-nav__top__nav__item a span {
           width: 100%;

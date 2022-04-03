@@ -298,6 +298,8 @@
     "description2": "Need assistance? Please contact <a href=''#'>Customer Service</a>"
   },
   "vip_page": {
+    "View_Cash_Rebate_rules": "View Cash Rebate rules",
+    "vip_bg_img": "<img src=\"/images/vip/vip-bg.png\" />",
     "VIP_Privilege": "VIP Privilege",
     "VIP_info": "VIP info",
     "Current": "Current",
@@ -403,7 +405,7 @@
       "Confirm": "Confirm"
     }
   },
-  "ACCOUNT SECURITY": "ACCOUNT SECURITY",
+  "ACCOUNT_SECURITY": "ACCOUNT SECURITY",
   "account_setting_page": {
     "info": "Complete informations to secure your account",
     "Complete_Profile": "Complete Profile",
@@ -485,7 +487,7 @@
     "User_Guide": "User Guide",
     "Game_Guide": "Game Guide",
     "Contact_Us": "Contact Us",
-    "Need_assitance": "Need assitance? Please contact our <a href='#'>Customer Service</a>",
+    "Need_assitance": "Need assistance? Please contact our <a href='#'>Customer Service</a>",
     "NEW_USER_GUIDE": "NEW USER GUIDE",
     "GAME_GUIDE": "GAME GUIDE",
     "Lottery_Guide": "Lottery Guide",
@@ -882,7 +884,7 @@
   "Don_want_to_claim_any_promotion": "Don't want to claim any promotion",
   "Memo_note": "* Memo is mandatory for BEP 2 network.",
   "description__Turnovers": "Turnovers: 160.00",
-  "description__Realbet": "Realbet: 3,000.00",
+  "description__Realbet": "Real bet: 3,000.00",
   "description__Bets": "Bets: 4",
   "description__Win_Lose": "Win/Lose: -160.00",
   "access_denied_page": {
@@ -901,7 +903,7 @@
     "description": "Sorry for the inconvenience, the game platform is under maintenance. If you have any questions, please contact the 24hour online customer service, we will serve you with sincerity.",
     "Contact_Customer_Service": "Contact Customer Service",
     "Back_to_Homepage": "Back to Homepage",
-    "": ""
+    "logo_top": "<img src=\"/images/top-logo.png\" />"
   },
   "inbox": "Inbox",
   "inbox_page": {
@@ -935,7 +937,7 @@
     "Win_Lose": "Win/Lose",
     "Betting_time": "Betting time",
     "Betslip_ID": "Betslip ID",
-    "": "",
+    "Realbet": "Real bet",
     "": ""
   },
   "CAMPAIGN_BONANZA_title": "CAMPAIGN BONANZA",
@@ -971,7 +973,11 @@
   },
   "BET_NOW": "BET NOW",
   "RESULT": "RESULT",
-  "": "",
+  "hot_matches_icon": "<img src=\"./icons/hot-matches.png\" />",
+  "login_logo_img": "<img src=\"/images/login-logo.png\" />",
+  "login_logo1_img": "<img src=\"/images/login-logo-1.png\" />",
+  "login_logo2_img": "<img src=\"/images/login-logo-2.png\" />",
+  "universal_logo_img": "<img src=\"/images/universal-logo.png\" />",
   "": "",
   "": ""
 }
