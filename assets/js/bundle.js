@@ -496,13 +496,7 @@ $(".profile #exampleFormControlEmailAddressInput").on("input", function () {
 
 // inbox follow
 $('.inbox .nav-child .inbox_edit, .inbox .nav-child .inbox_close').on('click', function () {
-  $(`
-    .inbox .nav-child .inbox_select_all, 
-    .inbox .nav-child .inbox_back, 
-    .inbox .nav-child .inbox_close, 
-    .inbox .nav-child .inbox_edit,
-    .inbox .inbox__items input[name="inbox_select"]
-  `).toggleClass('d-none');
+  toggleInboxDisplayNone();
 });
 
 let inbox_select_all = false;
@@ -510,9 +504,78 @@ $(".inbox .nav-child .inbox_select_all").click(function(){
   inbox_select_all = !inbox_select_all;
   const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
   const cancel_all_label = translator.translateForKey('inbox_page.cancel_all', _get_language);
-  $(this).text(inbox_select_all ? cancel_all_label : select_all_label)
+  
   $('.inbox .inbox__items input[name="inbox_select"]').prop('checked', inbox_select_all);
+  if (inbox_select_all) {
+    $(this).text(cancel_all_label);
+    toggleInboxAction(true);
+  } else {
+    $(this).text(select_all_label);
+    toggleInboxAction();
+  }
 });
+
+
+$('.inbox .inbox__items input[name="inbox_select"]').on("input", function() {
+  let _is_check = false;
+  $('.inbox .inbox__items input[name="inbox_select"]').each(function() {
+    const checked = $(this).is(':checked');
+    if(checked) {
+      _is_check = true;
+    }
+  })
+  toggleInboxAction(_is_check)
+});
+
+$('.inbox__action__mark_all_read').on("click", function() {
+  const checked_value = $('.inbox .inbox__items input[name="inbox_select"]:checked');
+  checked_value.each(function() {
+    const parent = $(this).parent();
+    parent.find('.badge').remove();
+    $(this).prop('checked', false);
+  });
+  toggleInboxAction(false);
+  toggleInboxDisplayNone();
+  inbox_select_all = false;
+  const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
+  $('.inbox .nav-child .inbox_select_all').text(select_all_label);
+})
+
+
+$('.inbox__action__delete').on("click", function() {
+  const checked_value = $('.inbox .inbox__items input[name="inbox_select"]:checked');
+  checked_value.each(function() {
+    $(this).parent().remove();
+    $(this).prop('checked', false);
+  });
+  toggleInboxAction(false);
+  toggleInboxDisplayNone();
+  inbox_select_all = false;
+  const select_all_label = translator.translateForKey('inbox_page.select_all', _get_language);
+  $('.inbox .nav-child .inbox_select_all').text(select_all_label);
+
+  const inbox__items = $('.inbox__items');
+  if (inbox__items.length === 0) {
+    $('.inbox__empty').toggleClass('d-none')
+  }
+})
+
+function toggleInboxAction (show = false) {
+  $(".inbox .inbox__action button").prop("disabled", !show);
+}
+
+function toggleInboxDisplayNone () {
+  $(`
+    .inbox .nav-child .inbox_select_all, 
+    .inbox .nav-child .inbox_back, 
+    .inbox .nav-child .inbox_close, 
+    .inbox .nav-child .inbox_edit,
+    .inbox .inbox__items input[name="inbox_select"],
+    .inbox .inbox__action
+  `).toggleClass('d-none');
+}
+
+// end inbox follow
 
 /**
  * mobiscroll

@@ -913,9 +913,9 @@
     "edit": "Edit",
     "select_all": "Select All",
     "cancel_all": "Cancel All",
-    "": "",
-    "": "",
-    "": "",
+    "mark_all_read": "Mark All Read",
+    "delete": "Delete",
+    "Your_inbox_is_empty": "Your inbox is empty",
     "": "",
     "": "",
     "": ""

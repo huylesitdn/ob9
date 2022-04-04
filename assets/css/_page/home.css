@@ -126,6 +126,7 @@
       background-repeat: no-repeat;
       background-position: top; }
       .home__content .home-game__nav__item__link__img img {
+        width: 25px;
         min-width: 25px; }
         .home__content .home-game__nav__item__link__img img:last-child {
           display: none; }
@@ -151,6 +152,7 @@
           text-align: center;
           color: #FFFFFF; }
         .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img {
+          width: 25px;
           min-width: 25px; }
           .home__content .home-game__nav__item__link.active .home-game__nav__item__link__img img:last-child {
             display: block;

@@ -60,8 +60,10 @@
         gap: 15px;
         text-decoration: none; }
         #mySidenav.sidenav .left-nav__top__nav__item a div {
-          max-width: 25px;
           text-align: center; }
+          #mySidenav.sidenav .left-nav__top__nav__item a div img {
+            max-width: 25px;
+            max-height: 25px; }
         #mySidenav.sidenav .left-nav__top__nav__item a span {
           width: 100%;
           border-bottom: 1px solid #7F7F7F;

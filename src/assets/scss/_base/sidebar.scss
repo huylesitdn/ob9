@@ -82,11 +82,14 @@
               text-decoration: none;
 
               div {
-                max-width: 25px;
+                // max-width: 25px;
                 text-align: center;
-                // img {
-                //   width: 100%;
-                // }
+
+                img {
+                  max-width: 25px;
+                  max-height: 25px;
+                  // width: 100%;
+                }
               }
 
               span {
@@ -98,6 +101,7 @@
                 line-height: 14px;
                 color: #000000;
               }
+
               .badge {
                 position: absolute;
                 right: 0;

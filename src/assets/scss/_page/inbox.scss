@@ -9,6 +9,29 @@
     }
   }
 
+  &__empty {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    place-content: center;
+    place-items: center;
+  }
+
+  &__action {
+    display: flex;
+    place-content: space-between;
+    place-items: center;
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #fff;
+  }
+
   &__detail {
     background-color: #fff;
     padding: 15px;
@@ -79,6 +102,7 @@
     }
 
     &__content {
+        width: 100%;
       &__title {
         font-weight: 600;
         font-size: 14px;
