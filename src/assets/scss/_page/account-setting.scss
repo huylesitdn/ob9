@@ -2,6 +2,14 @@
   background: #f2f2f2;
   padding-top: 35px;
 
+  @media only screen and (max-width: 425px) {
+    padding-top: 30px;
+  }
+
+  @media only screen and (max-width: 370px) {
+    padding-top: 25px;
+  }
+
   &__content {
 
 
@@ -9,7 +17,7 @@
       background-image: url(/images/account-setting/bg.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       min-height: 310px;
       display: flex;
       place-content: center;

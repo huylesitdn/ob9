@@ -1791,6 +1791,9 @@ a {
       padding: 10px;
       background: #FFFFFF;
       border-radius: 10px; }
+      @media only screen and (max-width: 390px) {
+        .my-account__content__topcontent__wallet {
+          margin: 0 15px !important; } }
       .my-account__content__topcontent__wallet__top {
         display: flex;
         place-content: space-between;
@@ -1809,6 +1812,14 @@ a {
             font-size: 11px;
             line-height: 14px;
             color: #94A6B7; }
+        @media only screen and (max-width: 390px) {
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 60px; }
+          .my-account__content__topcontent__wallet__top a > span > span {
+            font-size: 10px; } }
+        @media only screen and (max-width: 370px) {
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 55px; } }
       .my-account__content__topcontent__wallet__bottom {
         display: flex;
         place-content: space-between;
@@ -2032,6 +2043,9 @@ a {
       text-align: center; }
       .wallet__content__top__icons img {
         max-width: 75px; }
+        @media only screen and (max-width: 420px) {
+          .wallet__content__top__icons img {
+            max-width: 60px; } }
       .wallet__content__top__icons p {
         margin-bottom: 0;
         margin-top: -8px;
@@ -3226,7 +3240,7 @@ a {
         padding: 15px;
         padding-bottom: 0;
         display: flex;
-        place-content: space-between;
+        place-content: flex-start;
         flex-wrap: wrap;
         gap: 10px; }
         .betting-record .nav-expand .dropdown .dropdown-menu.show .description {
@@ -4093,11 +4107,17 @@ a {
 .account-setting {
   background: #f2f2f2;
   padding-top: 35px; }
+  @media only screen and (max-width: 425px) {
+    .account-setting {
+      padding-top: 30px; } }
+  @media only screen and (max-width: 370px) {
+    .account-setting {
+      padding-top: 25px; } }
   .account-setting__content__info {
     background-image: url(/images/account-setting/bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     min-height: 310px;
     display: flex;
     place-content: center;

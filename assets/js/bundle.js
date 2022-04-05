@@ -30,8 +30,10 @@ var translator = new Translator({
   filesLocation: "/i18n",
 });
 
+const PREFERED_REGION = 'preferred_region';
 const _get_translator_config = translator.config.persistKey || "preferred_language";
 const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
+const _get_region = localStorage.getItem(PREFERED_REGION);
 
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
@@ -61,11 +63,22 @@ if (selectLanguageModalElm.length > 0) {
 }
 $(".choose-language").on("click", function (e) {
   const select_language = $(this).data("language");
+  const select_region = $(this).data("region");
+  const accept_languages = ['Malaysia', 'Singapore']
+
+  if (!accept_languages.includes(select_region)) {
+    window.location.href = '/access-denied.html';
+    return false;
+  }
+
+
   if (LANGUAGES[select_language]) {
     translator.translatePageTo(LANGUAGES[select_language]);
     selectLanguageModal.hide();
     $("#mySidenav").removeClass("active");
+    localStorage.setItem(PREFERED_REGION, select_region)
     changeLanguageColor()
+    window.location.reload();
   } else {
     console.log("No language setup");
   }
@@ -81,10 +94,27 @@ $(".universal__content__language").on("click", function (e) {
   }
 });
 
+$('.universal .play-now a').on("click", function (e) {
+  e.preventDefault();
+  console.log('=-=-=');
+  const slick_current_select = $('#selectLanguage .slick-list .slick-track .slick-current .title');
+  if(slick_current_select.length > 0) {
+    const slick_current_select_title = slick_current_select.data('i18n')
+    const accept_languages = ['universal_page.Malaysia', 'universal_page.Singapore']
+    if (accept_languages.includes(slick_current_select_title)) {
+      window.location.href = '/login.html'
+    } else {
+      window.location.href = '/access-denied.html'
+    }
+  }
+})
+
 function changeLanguageColor () {
   $('.choose-language').each(function (){
     const get_attr_lang = $(this).data('language').toLowerCase();
-    if(_get_language == get_attr_lang) {
+    const get_attr_region = $(this).data('region');
+    const _get_region = localStorage.getItem(PREFERED_REGION);
+    if(_get_language == get_attr_lang && _get_region == get_attr_region) {
       $(this).addClass('text-primary');
     }
   })

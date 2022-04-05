@@ -53,7 +53,7 @@
         padding: 15px;
         padding-bottom: 0;
         display: flex;
-        place-content: space-between;
+        place-content: flex-start;
         flex-wrap: wrap;
         gap: 10px; }
         .betting-record .nav-expand .dropdown .dropdown-menu.show .description {

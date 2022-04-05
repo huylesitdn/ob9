@@ -96,6 +96,10 @@
         background: #FFFFFF;
         border-radius: 10px;
 
+        @media only screen and (max-width: 390px) {
+          margin: 0 15px !important;
+        }
+
 
         &__top {
           display: flex;
@@ -120,6 +124,27 @@
                 font-size: 11px;
                 line-height: 14px;
                 color: #94A6B7;
+              }
+            }
+          }
+
+          @media only screen and (max-width: 390px) {
+            a {
+              img {
+                max-width: 60px;
+              }
+
+              &>span {
+                &>span {
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          @media only screen and (max-width: 370px) {
+            a {
+              img {
+                max-width: 55px;
               }
             }
           }
