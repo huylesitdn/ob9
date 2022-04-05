@@ -1030,8 +1030,32 @@ a {
       font-size: 12px;
       line-height: 16px;
       text-align: center;
+      text-transform: uppercase;
       color: #9FAACA;
       margin-top: 12px; }
+    @media only screen and (max-width: 410px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 25px;
+          line-height: 25px; }
+        .home__content .home-game__content .home-item__content__play_now {
+          margin-top: 10px; } }
+    @media only screen and (max-width: 390px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 24px;
+          line-height: 24px; }
+        .home__content .home-game__content .home-item__content__play_now {
+          margin-top: 10px; } }
+    @media only screen and (max-width: 350px) {
+      .home__content .home-game__content .home-item__content {
+        left: 10px; }
+        .home__content .home-game__content .home-item__content__title {
+          font-size: 23px;
+          line-height: 23px;
+          margin-bottom: 7px; } }
 
 .home__content .home-game__content .lottery-game #lotteryGame {
   background: #F5F5F5;
@@ -5026,8 +5050,7 @@ a {
         background-repeat: no-repeat;
         background-size: cover; }
       .about-us__content__legal-content__item__img.img-1::after {
-        background-position: left;
-        left: 20px; }
+        background-position: left; }
       .about-us__content__legal-content__item__img.img-2::after {
         background-position: center; }
       .about-us__content__legal-content__item__img.img-3::after {

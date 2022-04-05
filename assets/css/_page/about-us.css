@@ -36,8 +36,7 @@
         background-repeat: no-repeat;
         background-size: cover; }
       .about-us__content__legal-content__item__img.img-1::after {
-        background-position: left;
-        left: 20px; }
+        background-position: left; }
       .about-us__content__legal-content__item__img.img-2::after {
         background-position: center; }
       .about-us__content__legal-content__item__img.img-3::after {
