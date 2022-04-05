@@ -5,7 +5,7 @@
     
     <!-- Content -->
     <section class="main manage-bank-account ">
-      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'MANAGE BANK ACCOUNT'})
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'Manage_Bank_Account'})
       <div class="manage-bank-account__content container-fluid">
 
         <div class="manage-bank-account__content__img">
@@ -14,9 +14,7 @@
         <a href="/wallet/manage-add-bank-account.html" class="manage-bank-account__content__add-btn" data-i18n="Add_bank_account">
           + Add bank account
         </a>
-        <div class="manage-bank-account__content__description">
-          Up to 10 bank accounts can be added
-        </div>
+        <div class="manage-bank-account__content__description" data-i18n="Up_to_10_bank_accounts_can_be_added"></div>
 
         <!-- MODAL -->
         @@include('../../components/select-bank-modal.html')

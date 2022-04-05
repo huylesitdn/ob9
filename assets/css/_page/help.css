@@ -101,7 +101,7 @@
       border-radius: 0; }
       .help-page__content__content .list-group .list-group-item {
         border: none;
-        border-bottom: 1px solid #7F7F7F;
+        border-bottom: 1px solid #f5f5f5;
         padding: 10px 0;
         margin-bottom: 15px; }
         .help-page__content__content .list-group .list-group-item a {
@@ -174,7 +174,7 @@
     padding: 15px; }
     .help-page__content__customer-service-center__content {
       display: flex;
-      place-content: center;
+      place-content: flex-start;
       place-items: center;
       gap: 15px;
       z-index: 1;
@@ -245,6 +245,8 @@
             width: 45px;
             display: flex;
             place-items: center; }
+            .help-page__content__card.faq .content li a div.img img {
+              max-width: 30px; }
             .help-page__content__card.faq .content li a div.img.no-border {
               border: none; }
           .help-page__content__card.faq .content li a div.text {
@@ -269,10 +271,12 @@
           text-align: center;
           color: #333333; }
           .help-page__content__card.tutorial-guides .content > a img {
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            max-width: 42px; }
   .help-page.customer-service .navbar.nav-child {
     background: linear-gradient(90deg, #7696FF 0%, #557BF7 100%) !important; }
   .help-page.customer-service .help-page__content__top {
-    padding: 100px 15px 0 15px; }
+    padding: 80px 15px 0 15px;
+    min-height: auto; }
     .help-page.customer-service .help-page__content__top::before {
-      height: 300px; }
+      height: 280px; }

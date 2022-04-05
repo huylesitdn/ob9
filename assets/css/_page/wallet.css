@@ -21,6 +21,8 @@
       place-content: space-between;
       place-items: flex-start;
       text-align: center; }
+      .wallet__content__top__icons img {
+        max-width: 75px; }
       .wallet__content__top__icons p {
         margin-bottom: 0;
         margin-top: -8px;

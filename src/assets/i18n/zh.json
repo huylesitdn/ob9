@@ -49,6 +49,7 @@
   },
   "wallet_page": {
     "Approve": "成功",
+    "Crypto": "加密货币",
     "Online_Banking": "银行转账",
     "Payment_Gateway": "支付网关",
     "Crypto_Currency": "加密货币",
@@ -78,7 +79,9 @@
     "withdrawal": {
       "Add_Bank_Account": "添加银行账户",
       "Max": "最大金额",
+      "Please_enter_withdrawal_amount": "请输入提款金额 (100 - 50,000)",
       "description": "请在申请提款前将所有余额转入主钱包。",
+      "description1": "今日可用提款次数：10次，今日可用提款额度：MYR50,000 , 最高提款金额：MYR50,000",
       "help": "需要协助？请联系 <a href='#'>客服人员</a> zh"
     },
     "add-bank-account": {
@@ -109,7 +112,7 @@
   },
   "menu": {
     "home": "首页",
-    "my_account": "我的",
+    "my_account": "我的账号",
     "vip": "VIP",
     "sponsor": "赞助",
     "faq": "常见问题",
@@ -118,6 +121,7 @@
     "contact_us": "联系我们",
     "region_language": "区域及语言",
     "logout": "安全退出",
+    "Help_Center": "帮助中心",
     "follow_us": "关注我们"
   },
   "my_account_page": {
@@ -187,6 +191,7 @@
   },
   "Back_to_top": "回到顶部",
   "total_balance": "中心钱包",
+  "DEPOSIT": "存款",
   "deposit": "存款",
   "withdraw": "提款",
   "rebate": "返水",
@@ -356,7 +361,7 @@
     "Weekly_Angpow": "每周红包:",
     "Issued_on_Monday": "周一发放",
     "Birthday_Bonus": "生日礼金:",
-    "Redeem_on": "兑换与20日10月2022年",
+    "Redeem_on": "兑换于20日10月2022年",
     "VIP_Cash_Rebate": "VIP 返水比例",
     "VIP_Cash_Rebate1": "VIP 最高返水比例",
     "VIP_Withdrawal_Limit": "VIP 提款额度",
@@ -925,7 +930,7 @@
   "Sport_Betting_Guide_page_img6": "<img src=\"/images/help/sport-betting-guide-zh-6.png\" />",
   "Sport_Betting_Guide_page_img7": "",
   "Sport_Betting_Guide_page_img8": "<img src=\"/images/help/sport-betting-guide-zh-8.png\" />",
-  "CURRENCY_KEY": "¥",
+  "CURRENCY_KEY": "MYR",
   "transaction_history_title": "交易记录",
   "Betting_Record_title": "投注记录",
   "Betting_Record_page": {
@@ -976,6 +981,21 @@
   "login_logo1_img": "<img src=\"/images/login-logo-1-zh.png\" />",
   "login_logo2_img": "<img src=\"/images/login-logo-2-zh.png\" />",
   "universal_logo_img": "<img src=\"/images/universal-logo-zh.png\" />",
+  "Per_Deposit_Amount": "最低/最高金额： MYR50-MYR50,000",
+  "Min_Max_Limit": "款额限制 最少/最多： MYR50-MYR50,000",
+  "ADD_BANK_ACCOUNT": "添加银行账户",
+  "Need_assistance": "需要协助？请联系客服人员",
+  "Up_to_10_bank_accounts_can_be_added": "最多可添加10个银行账户",
+  "Manage": "管理",
+  "Official_Regional_Partner_of_Juventus": "尤文图斯官方区域合作伙伴",
+  "Aston_Villa_Official_Principal_Partner": "阿斯顿维拉官方顶级合作伙伴",
+  "juventus_mobile_image": "<img src=\"/images/sponsors/article/juventus/mobile-zh.png\" />",
+  "Fund_not_received": "未收到存款",
+  "Deposited_from_Maybank": "Maybank 存款",
+  "PROFILE": "我的资料",
+  "": "",
+  "": "",
+  "": "",
   "": "",
   "": ""
 }

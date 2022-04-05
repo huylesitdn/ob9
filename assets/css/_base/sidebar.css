@@ -60,7 +60,8 @@
         gap: 15px;
         text-decoration: none; }
         #mySidenav.sidenav .left-nav__top__nav__item a div {
-          text-align: center; }
+          text-align: center;
+          width: 30px; }
           #mySidenav.sidenav .left-nav__top__nav__item a div img {
             max-width: 25px;
             max-height: 25px; }
@@ -80,7 +81,9 @@
       #mySidenav.sidenav .left-nav__bottom__follow-us div {
         padding: 15px; }
         #mySidenav.sidenav .left-nav__bottom__follow-us div img {
-          padding: 0 10px; }
+          max-width: 30px;
+          max-height: 30px;
+          margin: 0 10px; }
       #mySidenav.sidenav .left-nav__bottom__follow-us span {
         font-style: normal;
         font-size: 14px;
@@ -97,7 +100,8 @@
         color: #000000;
         text-decoration: none; }
       #mySidenav.sidenav .left-nav__bottom__logout img {
-        margin-right: 15px; }
+        margin-right: 15px;
+        max-width: 20px; }
   #mySidenav.sidenav .backdrop {
     transition: 1s;
     background: rgba(0, 0, 0, 0.3);

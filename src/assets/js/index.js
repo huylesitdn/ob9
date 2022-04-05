@@ -36,6 +36,7 @@ const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.
 translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
+  changeLanguageColor();
 });
 
 /**
@@ -64,6 +65,7 @@ $(".choose-language").on("click", function (e) {
     translator.translatePageTo(LANGUAGES[select_language]);
     selectLanguageModal.hide();
     $("#mySidenav").removeClass("active");
+    changeLanguageColor()
   } else {
     console.log("No language setup");
   }
@@ -78,6 +80,15 @@ $(".universal__content__language").on("click", function (e) {
     console.log("No language setup");
   }
 });
+
+function changeLanguageColor () {
+  $('.choose-language').each(function (){
+    const get_attr_lang = $(this).data('language').toLowerCase();
+    if(_get_language == get_attr_lang) {
+      $(this).addClass('text-primary');
+    }
+  })
+}
 
 /**
  * MENU SLIDE

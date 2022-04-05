@@ -114,7 +114,7 @@
 
     .home-login-now {
       position: fixed;
-      bottom: 70px;
+      bottom: 60px;
       left: 0;
       right: 0;
       z-index: 99;
@@ -369,6 +369,11 @@
                   .nav-item {
                     .nav-link {
                       padding: 0;
+
+                      img {
+                        max-width: 40px;
+                        max-height: 30px;
+                      }
 
                       &.active {
                         background-color: transparent;
@@ -760,6 +765,7 @@
 
             img {
               margin-bottom: 5px;
+              max-width: 32px;
             }
 
             .vs {

@@ -10,5 +10,9 @@
     </a>
   </div>
 </nav>
-
-@@include('./sidebar.html')
+@@if (!!context.without_login) {
+  @@include('./sidebar-without-login.html')
+}
+@@if (!context.without_login) {
+  @@include('./sidebar.html')
+}

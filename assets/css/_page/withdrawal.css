@@ -59,6 +59,8 @@
           gap: 15px; }
           .withdrawal__content__bank-account__items__label__content__img {
             min-height: 30px; }
+            .withdrawal__content__bank-account__items__label__content__img img {
+              max-width: 30px; }
           .withdrawal__content__bank-account__items__label__content__title {
             font-size: 12px;
             line-height: 12px;

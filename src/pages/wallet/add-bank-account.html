@@ -5,7 +5,7 @@
     
     <!-- Content -->
     <section class="main add-bank-account">
-      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'ADD BANK ACCOUNT'})
+      @@include('../../components/base/navbar-child.html', {back_url: '/wallet', title: 'ADD_BANK_ACCOUNT'})
       <div class="add-bank-account__content container-fluid">
 
         <div class="add-bank-account__content__input">
@@ -15,9 +15,7 @@
           </div>
         </div>
 
-        <div class="add-bank-account__content__description">
-          Please make sure your name on OB and your bank account is matched.
-        </div>
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description"></div>
 
         <div class="add-bank-account__content__input">
           <div class="add-bank-account__content__input__select-bank" data-bs-toggle="modal" data-bs-target="#selectBankModal">
@@ -29,13 +27,14 @@
           </div>
           <div class="items">
             <label class="form-label" data-i18n="Bank_Account_Number">Bank Account Number</label>
-            <input type="text" class="form-control" placeholder="Please enter bank account number" />
+            <input type="text" class="form-control" data-i18n="wallet_page.add-bank-account.Please_enter_bank_account_number" data-i18n-attr="placeholder" placeholder="" />
           </div>
         </div>
 
-        <div class="add-bank-account__content__description">
+        <!-- <div class="add-bank-account__content__description">
           Please enter correct details for process withdrawal
-        </div>
+        </div> -->
+        <div class="add-bank-account__content__description" data-i18n="wallet_page.add-bank-account.description"></div>
 
         <div class="add-bank-account__content__submit">
           <!-- <button class="btn btn-primary" data-i18n="SUBMIT" disabled>SUBMIT</button> -->
@@ -44,10 +43,8 @@
           </div>
         </div>
 
-        <div class="add-bank-account__content__help">
-          Need assistance? Please contact <a href="#">Customer Service</a>
-        </div>
-        
+        <div class="add-bank-account__content__help" data-i18n="Need_assistance"></div>
+
 
         <!-- MODAL -->
         @@include('../../components/select-bank-modal.html')

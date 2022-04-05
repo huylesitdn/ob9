@@ -629,6 +629,16 @@
   }
 }
 
+html[lang="zh"] {
+  .register_link {
+    place-items: center !important;
+    span {
+      transform: rotate(-180deg) !important;
+      -webkit-transform: rotate(180deg) !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .dropdown-menu {
     .btn {

@@ -49,6 +49,7 @@
   },
   "wallet_page": {
     "Approve": "Approve",
+    "Crypto": "Crypto",
     "Online_Banking": "Online Banking",
     "Payment_Gateway": "Payment Gateway",
     "Crypto_Currency": "Crypto Currency",
@@ -78,7 +79,9 @@
     "withdrawal": {
       "Add_Bank_Account": "Add Bank Account",
       "Max": "Max",
+      "Please_enter_withdrawal_amount": "Please enter withdrawal amount (100 - 50,000)",
       "description": "Please transfer all balances to the main wallet before withdrawal request.",
+      "description1": "Today available withdrawal times: 10 Times, Today available withdrawal amount: MYR50,000, Max Per Transaction Amount: MYR50,000",
       "help": "Need assistance? Please contact <a href='#'>Customer Service</a>"
     },
     "add-bank-account": {
@@ -188,6 +191,7 @@
   },
   "Back_to_top": "Back to top",
   "total_balance": "Total balance",
+  "DEPOSIT": "Deposit",
   "deposit": "Deposit",
   "withdraw": "Withdraw",
   "rebate": "Rebate",
@@ -913,7 +917,7 @@
     "edit": "Edit",
     "select_all": "Select All",
     "cancel_all": "Cancel All",
-    "mark_all_read": "Mark All Read",
+    "mark_all_read": "Mark All As Read",
     "delete": "Delete",
     "Your_inbox_is_empty": "Your inbox is empty",
     "": "",
@@ -978,6 +982,20 @@
   "login_logo1_img": "<img src=\"/images/login-logo-1.png\" />",
   "login_logo2_img": "<img src=\"/images/login-logo-2.png\" />",
   "universal_logo_img": "<img src=\"/images/universal-logo.png\" />",
+  "Per_Deposit_Amount": "Per Deposit Amount: MYR50-MYR50,000",
+  "Min_Max_Limit": "Min/Max Limit:50/50000",
+  "ADD_BANK_ACCOUNT": "ADD BANK ACCOUNT",
+  "Need_assistance": "Need assistance? Please contact <a href=\"#\">Customer Service</a>",
+  "Up_to_10_bank_accounts_can_be_added": "Up to 10 bank accounts can be added",
+  "Manage": "Manage",
+  "Official_Regional_Partner_of_Juventus": "Official Regional Partner of Juventus",
+  "Aston_Villa_Official_Principal_Partner": "Aston Villa Official Principal Partner",
+  "juventus_mobile_image": "<img src=\"/images/sponsors/article/juventus/mobile.png\" />",
+  "Fund_not_received": "Fund not received",
+  "Deposited_from_Maybank": "Deposited from Maybank",
+  "PROFILE": "PROFILE",
+  "": "",
+  "": "",
   "": "",
   "": ""
 }

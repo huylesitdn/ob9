@@ -5,8 +5,7 @@
     background-image: url(../images/my-account/my-account-bg-1.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
-    min-height: 400px; }
+    background-position: top; }
     .my-account__content__topcontent__nav {
       display: flex;
       place-content: flex-end;
@@ -19,6 +18,8 @@
       padding: 20px;
       gap: 8px;
       padding-bottom: 10px; }
+      .my-account__content__topcontent__nav img {
+        max-width: 33px; }
     .my-account__content__topcontent__top {
       display: flex;
       place-content: flex-start;
@@ -85,6 +86,8 @@
         color: #000000; }
         .my-account__content__topcontent__wallet__top a {
           color: #000000; }
+          .my-account__content__topcontent__wallet__top a img {
+            max-width: 70px; }
           .my-account__content__topcontent__wallet__top a > span > span {
             font-weight: 300;
             font-size: 11px;
@@ -107,6 +110,8 @@
           place-content: center;
           place-items: center;
           color: #000000; }
+          .my-account__content__topcontent__wallet__bottom > a img {
+            max-width: 40px; }
           .my-account__content__topcontent__wallet__bottom > a > div {
             margin-bottom: 0;
             margin-top: 5px; }
@@ -124,8 +129,8 @@
       line-height: 14px;
       color: #000000;
       border-bottom: 1px solid #f1f1f1;
-      padding-bottom: 5px;
-      padding-top: 30px; }
+      padding-bottom: 15px;
+      padding-top: 15px; }
       .my-account__content__navbar li a > div {
         display: flex;
         place-items: center;
@@ -150,8 +155,7 @@
       background-image: url(../images/my-account/my-account-bg.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: top;
-      min-height: 390px; }
+      background-position: top; }
       .my-account__content__topcontent__nav {
         display: flex;
         place-content: flex-end;

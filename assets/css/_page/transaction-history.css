@@ -155,6 +155,8 @@
         text-align: left; }
         .transaction-history__content.history-items .items_img {
           min-width: 30px; }
+          .transaction-history__content.history-items .items_img img {
+            max-width: 30px; }
         .transaction-history__content.history-items .items__content {
           width: 100%; }
           .transaction-history__content.history-items .items__content__title {

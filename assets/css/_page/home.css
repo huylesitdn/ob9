@@ -74,7 +74,7 @@
 
 .home__content .home-login-now {
   position: fixed;
-  bottom: 70px;
+  bottom: 60px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -268,6 +268,9 @@
     opacity: 0; }
     .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link {
       padding: 0; }
+      .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link img {
+        max-width: 40px;
+        max-height: 30px; }
       .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.nav .nav-item .nav-link.active {
         background-color: transparent; }
     .home__content .home-game__content .lottery-game #lotteryGame .carousel-inner .carousel-item.active {
@@ -511,7 +514,8 @@
           color: #000000;
           place-items: center; }
           #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__vs img {
-            margin-bottom: 5px; }
+            margin-bottom: 5px;
+            max-width: 32px; }
           #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__vs .vs {
             font-weight: 300;
             font-size: 14px;
