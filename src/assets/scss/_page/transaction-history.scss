@@ -1,8 +1,10 @@
 .transaction-history {
   background-color: #f2f2f2;
   position: relative;
+  transition: .3s;
 
   &.backdrop {
+
     .transaction-history__content {
       &::after {
         content: "";
@@ -124,6 +126,7 @@
               .form-control {
                 border: none;
                 text-align: right;
+
                 &[readonly] {
                   background-color: transparent;
                 }
@@ -131,7 +134,8 @@
 
               &.action {
                 margin-left: -15px !important;
-                margin-right: -15px !important;;
+                margin-right: -15px !important;
+                ;
                 display: flex;
                 place-content: space-between;
                 place-items: center;
@@ -215,6 +219,7 @@
 
         &_img {
           min-width: 30px;
+
           img {
             max-width: 30px;
           }

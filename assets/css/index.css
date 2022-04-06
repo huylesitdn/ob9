@@ -3006,7 +3006,8 @@ a {
 
 .transaction-history {
   background-color: #f2f2f2;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
   .transaction-history.backdrop .transaction-history__content::after {
     content: "";
     width: 100%;
@@ -3211,7 +3212,8 @@ a {
 
 .betting-record {
   background-color: #f2f2f2;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
   .betting-record.backdrop .betting-record__content::after {
     content: "";
     width: 100%;
@@ -3255,7 +3257,7 @@ a {
         .betting-record .nav-expand .dropdown > .btn:focus {
           box-shadow: none; }
       .betting-record .nav-expand .dropdown .dropdown-menu.show {
-        top: calc(100% - 30px);
+        top: calc(100% - 5px);
         margin: 0;
         border: none;
         border-radius: 0;
@@ -4812,7 +4814,9 @@ a {
 
 .bonus-history {
   background-color: #f2f2f2;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
+  .bonus-history.backdrop .bonus-history__items::after,
   .bonus-history.backdrop .bonus-history__content::after {
     content: "";
     width: 100%;

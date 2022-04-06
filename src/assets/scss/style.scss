@@ -500,8 +500,13 @@
       padding: 15px;
 
       &__img {
-        min-width: 50px;
+        min-width: 40px;
         text-align: center;
+
+        img {
+          max-width: 30px;
+          max-height: 30px;
+        }
       }
 
       &__content {
@@ -632,6 +637,7 @@
 html[lang="zh"] {
   .register_link {
     place-items: center !important;
+
     span {
       transform: rotate(-180deg) !important;
       -webkit-transform: rotate(180deg) !important;

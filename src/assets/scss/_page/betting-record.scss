@@ -1,6 +1,7 @@
 .betting-record {
   background-color: #f2f2f2;
   position: relative;
+  transition: .3s;
 
   &.backdrop {
     .betting-record__content {
@@ -64,7 +65,7 @@
 
       .dropdown-menu {
         &.show {
-          top: calc(100% - 30px);
+          top: calc(100% - 5px);
           margin: 0;
           border: none;
           border-radius: 0;

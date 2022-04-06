@@ -96,7 +96,6 @@ $(".universal__content__language").on("click", function (e) {
 
 $('.universal .play-now a').on("click", function (e) {
   e.preventDefault();
-  console.log('=-=-=');
   const slick_current_select = $('#selectLanguage .slick-list .slick-track .slick-current .title');
   if(slick_current_select.length > 0) {
     const slick_current_select_title = slick_current_select.data('i18n')
@@ -453,9 +452,12 @@ $(
 if ($(".transaction-history-dropdown").length > 0) {
   $(".transaction-history-dropdown").each(function (index) {
     this.addEventListener("hidden.bs.dropdown", function () {
+      $('.main.transaction-history').css('padding-top', 65)
       $(".transaction-history").removeClass("backdrop");
     });
     this.addEventListener("shown.bs.dropdown", function () {
+      const dropdown_menu_show = $('.transaction-history .dropdown-menu.show').height();
+      $('.main.transaction-history').css('padding-top', 65 + 15 + dropdown_menu_show)
       $(".transaction-history").addClass("backdrop");
     });
   });
@@ -464,9 +466,12 @@ if ($(".transaction-history-dropdown").length > 0) {
 if ($(".betting-record-dropdown").length > 0) {
   $(".betting-record-dropdown").each(function (index) {
     this.addEventListener("hidden.bs.dropdown", function () {
+      $('.main.betting-record').css('padding-top', 65)
       $(".betting-record").removeClass("backdrop");
     });
     this.addEventListener("shown.bs.dropdown", function () {
+      const dropdown_menu_show = $('.betting-record .dropdown-menu.show').height();
+      $('.main.betting-record').css('padding-top', 65 + 15 + dropdown_menu_show)
       $(".betting-record").addClass("backdrop");
     });
   });
@@ -475,9 +480,12 @@ if ($(".betting-record-dropdown").length > 0) {
 if ($(".bonus-history-dropdown").length > 0) {
   $(".bonus-history-dropdown").each(function (index) {
     this.addEventListener("hidden.bs.dropdown", function () {
+      $('.main.bonus-history').css('padding-top', 65)
       $(".bonus-history").removeClass("backdrop");
     });
     this.addEventListener("shown.bs.dropdown", function () {
+      const dropdown_menu_show = $('.bonus-history .dropdown-menu.show').height();
+      $('.main.bonus-history').css('padding-top', 65 + 15 + dropdown_menu_show)
       $(".bonus-history").addClass("backdrop");
     });
   });
@@ -626,6 +634,7 @@ function toggleInboxDisplayNone () {
 mobiscroll.setOptions({
   theme: "ios",
   themeVariant: "light",
+  locale: mobiscroll.locale[_get_language],
 });
 
 $(function () {

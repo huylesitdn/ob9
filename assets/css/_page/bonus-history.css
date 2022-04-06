@@ -1,6 +1,8 @@
 .bonus-history {
   background-color: #f2f2f2;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
+  .bonus-history.backdrop .bonus-history__items::after,
   .bonus-history.backdrop .bonus-history__content::after {
     content: "";
     width: 100%;

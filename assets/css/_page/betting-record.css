@@ -1,6 +1,7 @@
 .betting-record {
   background-color: #f2f2f2;
-  position: relative; }
+  position: relative;
+  transition: .3s; }
   .betting-record.backdrop .betting-record__content::after {
     content: "";
     width: 100%;
@@ -44,7 +45,7 @@
         .betting-record .nav-expand .dropdown > .btn:focus {
           box-shadow: none; }
       .betting-record .nav-expand .dropdown .dropdown-menu.show {
-        top: calc(100% - 30px);
+        top: calc(100% - 5px);
         margin: 0;
         border: none;
         border-radius: 0;

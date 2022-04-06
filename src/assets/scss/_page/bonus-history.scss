@@ -1,8 +1,11 @@
 .bonus-history {
   background-color: #f2f2f2;
   position: relative;
+  transition: .3s;
 
   &.backdrop {
+
+    .bonus-history__items,
     .bonus-history__content {
       &::after {
         content: "";

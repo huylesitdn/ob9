@@ -346,8 +346,11 @@
   border-bottom: 1px solid #f2f2f2;
   padding: 15px; }
   #selectBankModal .select-bank-modal__items__img {
-    min-width: 50px;
+    min-width: 40px;
     text-align: center; }
+    #selectBankModal .select-bank-modal__items__img img {
+      max-width: 30px;
+      max-height: 30px; }
   #selectBankModal .select-bank-modal__items__content {
     font-weight: 400;
     font-size: 16px;
