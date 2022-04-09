@@ -255,7 +255,7 @@
         .checkmark {
           width: 30px;
           height: 30px;
-          background-image: url(/images/wallet/deposit/check-none.png);
+          background-image: url(../images/wallet/deposit/check-none.png);
           background-size: 30px;
           background-repeat: no-repeat;
           background-position: center;
@@ -264,7 +264,7 @@
 
         input {
           &:checked~.checkmark {
-            background-image: url(/images/wallet/deposit/checked.png);
+            background-image: url(../images/wallet/deposit/checked.png);
           }
         }
       }

@@ -87,7 +87,7 @@
         margin-bottom: 0;
         padding: 10px;
         padding-left: 20px;
-        background-image: url(/images/sponsors/article/border-left.png);
+        background-image: url(../images/sponsors/article/border-left.png);
         background-repeat: no-repeat;
         background-position: left;
         margin-bottom: 15px;
@@ -161,7 +161,7 @@
             left: 20%;
 
             &:before {
-              background-image: url(/images/sponsors/article/left.png);
+              background-image: url(../images/sponsors/article/left.png);
             }
           }
 
@@ -169,7 +169,7 @@
             right: 20%;
 
             &:before {
-              background-image: url(/images/sponsors/article/right.png);
+              background-image: url(../images/sponsors/article/right.png);
             }
           }
         }
@@ -366,11 +366,11 @@
               }
 
               .carousel-control-prev-icon {
-                background-image: url(/images/sponsors/article/left.png);
+                background-image: url(../images/sponsors/article/left.png);
               }
 
               .carousel-control-next-icon {
-                background-image: url(/images/sponsors/article/right.png);
+                background-image: url(../images/sponsors/article/right.png);
               }
             }
 
@@ -571,7 +571,7 @@
               margin: 0 auto;
               height: 60px;
               width: 60px;
-              background-image: url(/images/sponsors/article/juventus/industry-lisence.png);
+              background-image: url(../images/sponsors/article/juventus/industry-lisence.png);
               background-repeat: no-repeat;
               background-size: cover;
             }

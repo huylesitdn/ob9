@@ -499,7 +499,7 @@
         position: relative;
         margin-bottom: 12px; }
         #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__label {
-          background-image: url(/images/hot-matcher/label.png);
+          background-image: url(../images/hot-matcher/label.png);
           background-repeat: no-repeat;
           width: 60px;
           height: 50px;

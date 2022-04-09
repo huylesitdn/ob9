@@ -10,6 +10,10 @@ var rename = require('gulp-rename');
 const paths = {
   scripts: {
     src: './src/',
+    dest: './build/assets/'
+  },
+  default: {
+    src: './src/',
     dest: './build/'
   },
   scss: {
@@ -93,7 +97,7 @@ async function includeHTML(){
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest(paths.scripts.dest));
+    .pipe(gulp.dest(paths.default.dest));
 }
 exports.includeHTML = includeHTML;
 
@@ -106,7 +110,7 @@ exports.default = async function() {
   // Init serve files from the build folder
   server.init({
     server: {
-      baseDir: paths.scripts.dest
+      baseDir: paths.default.dest
     }
   });
   // Build and reload at the first time

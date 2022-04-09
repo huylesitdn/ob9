@@ -1,22 +1,21 @@
-# gulp-html-include-boilerplate
-A simple boilerplate using gulp-file-include, browser-sync and gulp-sass
-
 ## Install the packages
 ```
-yarn
+npm install
 ```
 
 ## Run the gulp command
 ```
-yarn dev
+npm dev
 ```
 
-## Help Links
+```
+npm build
+```
 
-[Gulp.js](http://gulpjs.com/)
 
-[gulp-file-include](https://www.npmjs.com/package/gulp-file-include)
+## Run after build
 
-[browser-sync](https://www.browsersync.io/docs/gulp)
-
-[gulp-sass](https://www.npmjs.com/package/gulp-sass)
+```
+cd build/
+npm serve -l 1234 
+```

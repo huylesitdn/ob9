@@ -32,7 +32,7 @@
         margin: 0 auto;
         height: 100px;
         width: 100px;
-        background-image: url(/images/about-us/about-logo.png);
+        background-image: url(../images/about-us/about-logo.png);
         background-repeat: no-repeat;
         background-size: cover; }
       .about-us__content__legal-content__item__img.img-1::after {
@@ -56,7 +56,7 @@
         content: "";
         width: 100px;
         height: 17px;
-        background-image: url(/images/about-us/left.png);
+        background-image: url(../images/about-us/left.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
@@ -66,7 +66,7 @@
         content: "";
         width: 100px;
         height: 17px;
-        background-image: url(/images/about-us/right.png);
+        background-image: url(../images/about-us/right.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;

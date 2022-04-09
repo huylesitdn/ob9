@@ -27,7 +27,7 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  filesLocation: "/i18n",
+  filesLocation: "assets/i18n",
 });
 
 const PREFERED_REGION = 'preferred_region';

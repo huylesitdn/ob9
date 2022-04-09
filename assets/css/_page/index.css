@@ -53,11 +53,11 @@
         .universal__content #selectLanguage .slick-arrow.slick-prev {
           left: -8px; }
           .universal__content #selectLanguage .slick-arrow.slick-prev::before {
-            background-image: url(/images/language/left.png); }
+            background-image: url(../images/language/left.png); }
         .universal__content #selectLanguage .slick-arrow.slick-next {
           right: -8px; }
           .universal__content #selectLanguage .slick-arrow.slick-next::before {
-            background-image: url(/images/language/right.png); }
+            background-image: url(../images/language/right.png); }
       .universal__content #selectLanguage .slick-list {
         padding: 0 !important; }
         .universal__content #selectLanguage .slick-list .slick-track {
@@ -995,7 +995,7 @@
         position: relative;
         margin-bottom: 12px; }
         #hotMatchModal .modal-content .modal-body .hot-match-content .hot-match-items__label {
-          background-image: url(/images/hot-matcher/label.png);
+          background-image: url(../images/hot-matcher/label.png);
           background-repeat: no-repeat;
           width: 60px;
           height: 50px;
@@ -1241,13 +1241,13 @@
       .select-promotion__items__content__input .checkmark {
         width: 30px;
         height: 30px;
-        background-image: url(/images/wallet/deposit/check-none.png);
+        background-image: url(../images/wallet/deposit/check-none.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         display: block; }
       .select-promotion__items__content__input input:checked ~ .checkmark {
-        background-image: url(/images/wallet/deposit/checked.png); }
+        background-image: url(../images/wallet/deposit/checked.png); }
 
 .promotion {
   background-color: #F2F2F2;
@@ -2125,14 +2125,14 @@
         .withdrawal__content__bank-account__items__label .checkmark {
           width: 16px;
           height: 16px;
-          background-image: url(/images/wallet/deposit/check-none.png);
+          background-image: url(../images/wallet/deposit/check-none.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover; }
         .withdrawal__content__bank-account__items__label__checkbox {
           display: none; }
           .withdrawal__content__bank-account__items__label__checkbox:checked ~ .checkmark {
-            background-image: url(/images/wallet/deposit/checked.png); }
+            background-image: url(../images/wallet/deposit/checked.png); }
       .withdrawal__content__bank-account__add-bank {
         display: flex;
         place-content: center;
@@ -2383,7 +2383,7 @@
       margin-bottom: 0;
       padding: 10px;
       padding-left: 20px;
-      background-image: url(/images/sponsors/article/border-left.png);
+      background-image: url(../images/sponsors/article/border-left.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }
@@ -2434,11 +2434,11 @@
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev {
           left: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev:before {
-            background-image: url(/images/sponsors/article/left.png); }
+            background-image: url(../images/sponsors/article/left.png); }
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-next {
           right: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-next:before {
-            background-image: url(/images/sponsors/article/right.png); }
+            background-image: url(../images/sponsors/article/right.png); }
       .sponsors-article__content__items .slider-flip .slick-list .slick-track {
         display: flex;
         place-content: center;
@@ -2553,9 +2553,9 @@
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-prev-icon {
             background-size: 6px; }
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-next .carousel-control-prev-icon, .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-prev-icon {
-            background-image: url(/images/sponsors/article/left.png); }
+            background-image: url(../images/sponsors/article/left.png); }
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-next .carousel-control-next-icon, .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-next-icon {
-            background-image: url(/images/sponsors/article/right.png); }
+            background-image: url(../images/sponsors/article/right.png); }
     .sponsors-article__content__items #carouselSposorship .carousel-inner .carousel-item-video {
       width: 100%; }
       .sponsors-article__content__items #carouselSposorship .carousel-inner .carousel-item-video video {
@@ -2679,7 +2679,7 @@
           margin: 0 auto;
           height: 60px;
           width: 60px;
-          background-image: url(/images/sponsors/article/juventus/industry-lisence.png);
+          background-image: url(../images/sponsors/article/juventus/industry-lisence.png);
           background-repeat: no-repeat;
           background-size: cover; }
         .sponsors-article__content__items.industry .industry-bottom div.img-1::after {
@@ -3174,7 +3174,7 @@
               bottom: 0;
               width: 20px;
               height: 20px;
-              background-image: url(/images/profile/avatarEdit.png);
+              background-image: url(../images/profile/avatarEdit.png);
               background-repeat: no-repeat; }
             .profile__content form .items .avatar > div img {
               width: 65px;
@@ -3239,7 +3239,7 @@
         .profile .modal .modal-content .select-profile-picture-modal__items__item .checkmark {
           width: 16px;
           height: 16px;
-          background-image: url(/images/profile/check.png);
+          background-image: url(../images/profile/check.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -3659,27 +3659,27 @@
             border-radius: 10px;
             overflow: hidden; }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip0 {
-              background-image: url(/images/vip/privilege/vip-0-bg.png); }
+              background-image: url(../images/vip/privilege/vip-0-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip1 {
-              background-image: url(/images/vip/privilege/vip-1-bg.png); }
+              background-image: url(../images/vip/privilege/vip-1-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip2 {
-              background-image: url(/images/vip/privilege/vip-2-bg.png); }
+              background-image: url(../images/vip/privilege/vip-2-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip3 {
-              background-image: url(/images/vip/privilege/vip-3-bg.png); }
+              background-image: url(../images/vip/privilege/vip-3-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip4 {
-              background-image: url(/images/vip/privilege/vip-4-bg.png); }
+              background-image: url(../images/vip/privilege/vip-4-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip5 {
-              background-image: url(/images/vip/privilege/vip-5-bg.png); }
+              background-image: url(../images/vip/privilege/vip-5-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip6 {
-              background-image: url(/images/vip/privilege/vip-6-bg.png); }
+              background-image: url(../images/vip/privilege/vip-6-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip7 {
-              background-image: url(/images/vip/privilege/vip-7-bg.png); }
+              background-image: url(../images/vip/privilege/vip-7-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip8 {
-              background-image: url(/images/vip/privilege/vip-8-bg.png); }
+              background-image: url(../images/vip/privilege/vip-8-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip9 {
-              background-image: url(/images/vip/privilege/vip-9-bg.png); }
+              background-image: url(../images/vip/privilege/vip-9-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip10 {
-              background-image: url(/images/vip/privilege/vip-10-bg.png); }
+              background-image: url(../images/vip/privilege/vip-10-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__current {
               position: absolute;
               top: 0;
@@ -3736,7 +3736,7 @@
       line-height: 19px;
       color: #000000;
       padding-left: 15px;
-      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-image: url(../images/vip/privilege/my-privilege-title-bg.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }
@@ -3780,7 +3780,7 @@
       line-height: 19px;
       color: #000000;
       padding-left: 15px;
-      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-image: url(../images/vip/privilege/my-privilege-title-bg.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }
@@ -3856,7 +3856,7 @@
     .account-setting {
       padding-top: 25px; } }
   .account-setting__content__info {
-    background-image: url(/images/account-setting/bg.png);
+    background-image: url(../images/account-setting/bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4134,7 +4134,7 @@
         position: absolute;
         width: 56px;
         height: 10px;
-        background-image: url(/images/referral-program/referral-program-left.png);
+        background-image: url(../images/referral-program/referral-program-left.png);
         background-repeat: no-repeat;
         background-position: center;
         left: 15px; }
@@ -4143,7 +4143,7 @@
         position: absolute;
         width: 56px;
         height: 10px;
-        background-image: url(/images/referral-program/referral-program-right.png);
+        background-image: url(../images/referral-program/referral-program-right.png);
         background-repeat: no-repeat;
         background-position: center;
         right: 15px; }
@@ -4167,7 +4167,7 @@
           position: absolute;
           width: 20px;
           height: 13px;
-          background-image: url(/images/referral-program/right.png);
+          background-image: url(../images/referral-program/right.png);
           background-repeat: no-repeat;
           background-position: center;
           left: -10px;
@@ -4177,7 +4177,7 @@
           position: absolute;
           width: 20px;
           height: 13px;
-          background-image: url(/images/referral-program/right.png);
+          background-image: url(../images/referral-program/right.png);
           background-repeat: no-repeat;
           background-position: center;
           right: -10px;
@@ -4766,7 +4766,7 @@
         margin: 0 auto;
         height: 100px;
         width: 100px;
-        background-image: url(/images/about-us/about-logo.png);
+        background-image: url(../images/about-us/about-logo.png);
         background-repeat: no-repeat;
         background-size: cover; }
       .about-us__content__legal-content__item__img.img-1::after {
@@ -4790,7 +4790,7 @@
         content: "";
         width: 100px;
         height: 17px;
-        background-image: url(/images/about-us/left.png);
+        background-image: url(../images/about-us/left.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
@@ -4800,7 +4800,7 @@
         content: "";
         width: 100px;
         height: 17px;
-        background-image: url(/images/about-us/right.png);
+        background-image: url(../images/about-us/right.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left;
@@ -4841,7 +4841,7 @@
     line-height: 16px;
     text-align: justify; }
     .cryptocurrency-introduction__content__items__title {
-      background-image: url(/images/wallet/cryptocurrency-introduction/title-bg.png);
+      background-image: url(../images/wallet/cryptocurrency-introduction/title-bg.png);
       background-repeat: no-repeat;
       font-weight: 500;
       font-size: 14px;
@@ -4858,7 +4858,7 @@
       left: 0;
       right: 0; }
       .cryptocurrency-introduction__content__items__title.long {
-        background-image: url(/images/wallet/cryptocurrency-introduction/title-bg1.png); }
+        background-image: url(../images/wallet/cryptocurrency-introduction/title-bg1.png); }
     .cryptocurrency-introduction__content__items__subtitle {
       font-weight: 600;
       font-size: 14px;
@@ -5046,7 +5046,7 @@
             place-items: center; }
 
 .access-denied {
-  background-image: url(/images/access-denied-bg.png);
+  background-image: url(../images/access-denied-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

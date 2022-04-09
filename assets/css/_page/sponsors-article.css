@@ -55,7 +55,7 @@
       margin-bottom: 0;
       padding: 10px;
       padding-left: 20px;
-      background-image: url(/images/sponsors/article/border-left.png);
+      background-image: url(../images/sponsors/article/border-left.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }
@@ -106,11 +106,11 @@
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev {
           left: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-prev:before {
-            background-image: url(/images/sponsors/article/left.png); }
+            background-image: url(../images/sponsors/article/left.png); }
         .sponsors-article__content__items .slider-flip .slick-arrow.slick-next {
           right: 20%; }
           .sponsors-article__content__items .slider-flip .slick-arrow.slick-next:before {
-            background-image: url(/images/sponsors/article/right.png); }
+            background-image: url(../images/sponsors/article/right.png); }
       .sponsors-article__content__items .slider-flip .slick-list .slick-track {
         display: flex;
         place-content: center;
@@ -225,9 +225,9 @@
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-prev-icon {
             background-size: 6px; }
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-next .carousel-control-prev-icon, .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-prev-icon {
-            background-image: url(/images/sponsors/article/left.png); }
+            background-image: url(../images/sponsors/article/left.png); }
           .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-next .carousel-control-next-icon, .sponsors-article__content__items #carouselSposorship .carousel-indicators button.carousel-control-prev .carousel-control-next-icon {
-            background-image: url(/images/sponsors/article/right.png); }
+            background-image: url(../images/sponsors/article/right.png); }
     .sponsors-article__content__items #carouselSposorship .carousel-inner .carousel-item-video {
       width: 100%; }
       .sponsors-article__content__items #carouselSposorship .carousel-inner .carousel-item-video video {
@@ -351,7 +351,7 @@
           margin: 0 auto;
           height: 60px;
           width: 60px;
-          background-image: url(/images/sponsors/article/juventus/industry-lisence.png);
+          background-image: url(../images/sponsors/article/juventus/industry-lisence.png);
           background-repeat: no-repeat;
           background-size: cover; }
         .sponsors-article__content__items.industry .industry-bottom div.img-1::after {

@@ -386,27 +386,27 @@
             border-radius: 10px;
             overflow: hidden; }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip0 {
-              background-image: url(/images/vip/privilege/vip-0-bg.png); }
+              background-image: url(../images/vip/privilege/vip-0-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip1 {
-              background-image: url(/images/vip/privilege/vip-1-bg.png); }
+              background-image: url(../images/vip/privilege/vip-1-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip2 {
-              background-image: url(/images/vip/privilege/vip-2-bg.png); }
+              background-image: url(../images/vip/privilege/vip-2-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip3 {
-              background-image: url(/images/vip/privilege/vip-3-bg.png); }
+              background-image: url(../images/vip/privilege/vip-3-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip4 {
-              background-image: url(/images/vip/privilege/vip-4-bg.png); }
+              background-image: url(../images/vip/privilege/vip-4-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip5 {
-              background-image: url(/images/vip/privilege/vip-5-bg.png); }
+              background-image: url(../images/vip/privilege/vip-5-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip6 {
-              background-image: url(/images/vip/privilege/vip-6-bg.png); }
+              background-image: url(../images/vip/privilege/vip-6-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip7 {
-              background-image: url(/images/vip/privilege/vip-7-bg.png); }
+              background-image: url(../images/vip/privilege/vip-7-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip8 {
-              background-image: url(/images/vip/privilege/vip-8-bg.png); }
+              background-image: url(../images/vip/privilege/vip-8-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip9 {
-              background-image: url(/images/vip/privilege/vip-9-bg.png); }
+              background-image: url(../images/vip/privilege/vip-9-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card.vip10 {
-              background-image: url(/images/vip/privilege/vip-10-bg.png); }
+              background-image: url(../images/vip/privilege/vip-10-bg.png); }
             .vip__content .privilege-content__card #privilegeVipCard .slick-list .slick-track .slick-slide .privilege-card__current {
               position: absolute;
               top: 0;
@@ -463,7 +463,7 @@
       line-height: 19px;
       color: #000000;
       padding-left: 15px;
-      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-image: url(../images/vip/privilege/my-privilege-title-bg.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }
@@ -507,7 +507,7 @@
       line-height: 19px;
       color: #000000;
       padding-left: 15px;
-      background-image: url(/images/vip/privilege/my-privilege-title-bg.png);
+      background-image: url(../images/vip/privilege/my-privilege-title-bg.png);
       background-repeat: no-repeat;
       background-position: left;
       margin-bottom: 15px; }

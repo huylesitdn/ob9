@@ -69,14 +69,14 @@
         .withdrawal__content__bank-account__items__label .checkmark {
           width: 16px;
           height: 16px;
-          background-image: url(/images/wallet/deposit/check-none.png);
+          background-image: url(../images/wallet/deposit/check-none.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover; }
         .withdrawal__content__bank-account__items__label__checkbox {
           display: none; }
           .withdrawal__content__bank-account__items__label__checkbox:checked ~ .checkmark {
-            background-image: url(/images/wallet/deposit/checked.png); }
+            background-image: url(../images/wallet/deposit/checked.png); }
       .withdrawal__content__bank-account__add-bank {
         display: flex;
         place-content: center;

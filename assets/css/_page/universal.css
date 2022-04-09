@@ -53,11 +53,11 @@
         .universal__content #selectLanguage .slick-arrow.slick-prev {
           left: -8px; }
           .universal__content #selectLanguage .slick-arrow.slick-prev::before {
-            background-image: url(/images/language/left.png); }
+            background-image: url(../images/language/left.png); }
         .universal__content #selectLanguage .slick-arrow.slick-next {
           right: -8px; }
           .universal__content #selectLanguage .slick-arrow.slick-next::before {
-            background-image: url(/images/language/right.png); }
+            background-image: url(../images/language/right.png); }
       .universal__content #selectLanguage .slick-list {
         padding: 0 !important; }
         .universal__content #selectLanguage .slick-list .slick-track {

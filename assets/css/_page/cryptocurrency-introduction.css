@@ -19,7 +19,7 @@
     line-height: 16px;
     text-align: justify; }
     .cryptocurrency-introduction__content__items__title {
-      background-image: url(/images/wallet/cryptocurrency-introduction/title-bg.png);
+      background-image: url(../images/wallet/cryptocurrency-introduction/title-bg.png);
       background-repeat: no-repeat;
       font-weight: 500;
       font-size: 14px;
@@ -36,7 +36,7 @@
       left: 0;
       right: 0; }
       .cryptocurrency-introduction__content__items__title.long {
-        background-image: url(/images/wallet/cryptocurrency-introduction/title-bg1.png); }
+        background-image: url(../images/wallet/cryptocurrency-introduction/title-bg1.png); }
     .cryptocurrency-introduction__content__items__subtitle {
       font-weight: 600;
       font-size: 14px;

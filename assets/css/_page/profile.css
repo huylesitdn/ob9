@@ -21,7 +21,7 @@
               bottom: 0;
               width: 20px;
               height: 20px;
-              background-image: url(/images/profile/avatarEdit.png);
+              background-image: url(../images/profile/avatarEdit.png);
               background-repeat: no-repeat; }
             .profile__content form .items .avatar > div img {
               width: 65px;
@@ -86,7 +86,7 @@
         .profile .modal .modal-content .select-profile-picture-modal__items__item .checkmark {
           width: 16px;
           height: 16px;
-          background-image: url(/images/profile/check.png);
+          background-image: url(../images/profile/check.png);
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
