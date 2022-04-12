@@ -1102,7 +1102,20 @@
   "sponsors_page__juventus__Information__cup_2": "<img src=\"assets/images/sponsors/article/juventus/info-cup-2.png\" />",
   "sponsors_page__aston_villa__Information__logo_1": "<img src=\"assets/images/sponsors/article/aston-villa/logo-1.png\" class=\"w-100\" />",
   "Deposit_Bonus_Turnover": "(Deposit + Bonus) x Turnover",
-  "": "",
+  "forget_password_page": {
+    "FORGET_PASSWORD": "FORGET PASSWORD",
+    "title": "Please enter your registered email address to reset your password ",
+    "email_address_label": "Please enter your registered email address",
+    "next": "NEXT",
+    "description": "Forget your email address? Contact <a href=\"#\">Customer Service</a> to retrieve password.",
+    "EMAIL_ADDRESS_NOT_FOUND": "EMAIL ADDRESS NOT FOUND",
+    "Please_contact_customer": "Please contact customer service if you forgot your email address.",
+    "success": "Successful",
+    "success_description": "Password reset succeeded. Please check your email for a new password to log in.",
+    "ok": "OK",
+    "": "",
+    "": ""
+  },
   "": "",
   "": ""
 }

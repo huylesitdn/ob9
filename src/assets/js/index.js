@@ -27,8 +27,8 @@ var translator = new Translator({
   registerGlobally: "__",
   persist: true,
   persistKey: "preferred_language",
-  // filesLocation: "assets/i18n",
-  filesLocation: "https://raw.githubusercontent.com/huylesitdn/ob9/main/assets/i18n",
+  filesLocation: "assets/i18n",
+  // filesLocation: "https://raw.githubusercontent.com/huylesitdn/ob9/main/assets/i18n",
 });
 
 const PREFERED_REGION = 'preferred_region';
@@ -707,5 +707,18 @@ if (is_register_thank_you_route) {
     window.location.href = '/wallet/deposit.html';
   }, 5000)
 }
+
+const incorrectEmailModalElm = $("#incorrectEmailModal");
+if (incorrectEmailModalElm.length > 0) {
+  var incorrectEmailModal = new bootstrap.Modal(incorrectEmailModalElm, {});
+}
+$('.forget-password-page .btn-next').on('click', function (e) {
+  const forget_password_input = $('.forget-password-page #forget_password_input')
+  if (!forget_password_input.val()) {
+    incorrectEmailModal.show();
+  } else {
+    window.location.href = '/forget-password-success.html';
+  }
+});
 
 console.log("--- index.jsaaa");
