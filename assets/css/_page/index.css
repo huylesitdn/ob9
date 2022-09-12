@@ -2720,6 +2720,93 @@
         color: #7E8796;
         margin-bottom: 5px; }
 
+.leicester .sponsors-article__content__items__title {
+  color: #164194; }
+
+.leicester #carouselSposorshipEventVideo .slick-list {
+  background-image: url(../images/sponsors/leicester/videobg.9d5d2d39307c023734fc4105a3058da0.png);
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: initial;
+  background-size: cover; }
+  .leicester #carouselSposorshipEventVideo .slick-list .carousel-item-caption {
+    margin-top: 15px;
+    color: #164194; }
+
+.leicester #carouselSposorshipEventVideo .slick-dots {
+  display: none; }
+
+.leicester h3 {
+  color: #164194;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px; }
+
+.leicester h4 {
+  color: #164194;
+  font-size: 16px;
+  line-height: 20px; }
+
+.leicester .sponsors-article__content__items {
+  border-bottom-color: #cbdaf8; }
+  .leicester .sponsors-article__content__items .sponsors-article__content__items__description {
+    color: #164194; }
+  .leicester .sponsors-article__content__items .Highlight_Moment_item {
+    margin: 20px 0;
+    border-left: 15px solid #cedefd;
+    position: relative; }
+    .leicester .sponsors-article__content__items .Highlight_Moment_item__img {
+      padding: 10px 0; }
+    .leicester .sponsors-article__content__items .Highlight_Moment_item__content {
+      position: absolute;
+      left: 0px;
+      bottom: 10px;
+      background: linear-gradient(rgba(61, 98, 169, 0) -37.81%, #183977 100%);
+      border-radius: 1px;
+      width: 100%;
+      color: white;
+      text-indent: 2em;
+      padding: 15px 10px; }
+  .leicester .sponsors-article__content__items .Team_Star {
+    background-image: url(../images/sponsors/leicester/Oval.b015b378f14465d574a2f7c43f4d090c.png);
+    background-repeat: no-repeat;
+    background-size: 100% 76%;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0; }
+    .leicester .sponsors-article__content__items .Team_Star__img {
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      position: relative;
+      padding: 0; }
+      .leicester .sponsors-article__content__items .Team_Star__img img {
+        height: 180px;
+        width: fit-content; }
+      .leicester .sponsors-article__content__items .Team_Star__img__name {
+        background: linear-gradient(133.11deg, #59cbfc 11.06%, #3971eb 94.99%);
+        box-shadow: rgba(55, 104, 233, 0.41) 3px 3px 10px, rgba(39, 96, 227, 0.45) -3px -3px 3px inset, rgba(180, 237, 255, 0.35) 3px 3px 3px inset;
+        z-index: 3;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 12px 0; }
+    .leicester .sponsors-article__content__items .Team_Star__content {
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 0.02rem solid #c4e8fd;
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      text-align: justify;
+      color: #164194;
+      position: relative;
+      letter-spacing: -0.01rem; }
+
 .transaction-history {
   background-color: #f2f2f2;
   position: relative;

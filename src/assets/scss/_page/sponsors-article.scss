@@ -191,6 +191,7 @@
               flex-direction: column;
 
               .carousel-item {
+
                 &-images,
                 &-video {
                   width: 100%;
@@ -232,6 +233,7 @@
                 padding-top: 0;
 
                 .carousel-item {
+
                   &-images,
                   &-video {
                     width: 100%;
@@ -270,10 +272,11 @@
 
         .slick-list {
           .slick-track {
-            
+
             .slick-slide {
-             
+
               .carousel-item {
+
                 &-images,
                 &-video {
                   width: 100%;
@@ -305,6 +308,7 @@
                 padding-top: 0;
 
                 .carousel-item {
+
                   &-images,
                   &-video {
                     width: 100%;
@@ -640,6 +644,124 @@
             margin-bottom: 5px;
           }
         }
+      }
+    }
+  }
+}
+
+
+.leicester {
+  .sponsors-article__content__items__title {
+    color: rgb(22, 65, 148);
+  }
+
+  #carouselSposorshipEventVideo {
+    .slick-list {
+      background-image: url(../images/sponsors/leicester/videobg.9d5d2d39307c023734fc4105a3058da0.png);
+      background-repeat: no-repeat;
+      background-position-y: 20px;
+      background-position-x: initial;
+      background-size: cover;
+
+      .carousel-item-caption {
+        margin-top: 15px;
+        color: rgb(22, 65, 148);
+      }
+    }
+
+    .slick-dots {
+      display: none;
+    }
+  }
+
+  h3 {
+    color: rgb(22, 65, 148);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  h4 {
+    color: rgb(22, 65, 148);
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sponsors-article__content__items {
+    border-bottom-color: rgb(203, 218, 248);
+
+    .sponsors-article__content__items__description {
+      color: rgb(22, 65, 148);
+    }
+
+    .Highlight_Moment_item {
+      margin: 20px 0;
+      border-left: 15px solid rgb(206, 222, 253);
+      position: relative;
+
+      &__img {
+        padding: 10px 0;
+      }
+
+      &__content {
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        background: linear-gradient(rgba(61, 98, 169, 0) -37.81%, rgb(24, 57, 119) 100%);
+        border-radius: 1px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        text-indent: 2em;
+        padding: 15px 10px;
+      }
+    }
+
+    .Team_Star {
+      background-image: url(../images/sponsors/leicester/Oval.b015b378f14465d574a2f7c43f4d090c.png);
+      background-repeat: no-repeat;
+      background-size: 100% 76%;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 0;
+
+      &__img {
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        position: relative;
+        padding: 0;
+
+        img {
+          height: 180px;
+          width: fit-content;
+        }
+
+        &__name {
+          background: linear-gradient(133.11deg, rgb(89, 203, 252) 11.06%, rgb(57, 113, 235) 94.99%);
+          box-shadow: rgba(55, 104, 233, 0.41) 3px 3px 10px, rgba(39, 96, 227, 0.45) -3px -3px 3px inset, rgba(180, 237, 255, 0.35) 3px 3px 3px inset;
+          z-index: 3;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          justify-content: center;
+          color: rgb(255, 255, 255);
+          font-weight: 500;
+          border-radius: 10px;
+          padding: 12px 0;
+        }
+      }
+
+      &__content {
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 0.02rem solid rgb(196, 232, 253);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        text-align: justify;
+        color: rgb(22, 65, 148);
+        position: relative;
+        letter-spacing: -0.01rem;
       }
     }
   }
