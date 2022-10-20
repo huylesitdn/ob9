@@ -705,12 +705,16 @@
   display: flex;
   flex-direction: column;
   place-content: center;
-  place-items: flex-end;
+  place-items: flex-start;
   gap: 10px;
+  width: 100%;
+  right: 0;
+  max-width: var(--max-with-mobile);
+  margin: auto;
 
   @media only screen and (max-width: 576px) {
-    left: 20px;
-    bottom: 60px;
+    left: 10px;
+    bottom: 70px;
   }
 
   img {

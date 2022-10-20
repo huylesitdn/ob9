@@ -5852,12 +5852,16 @@
   display: flex;
   flex-direction: column;
   place-content: center;
-  place-items: flex-end;
-  gap: 10px; }
+  place-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  right: 0;
+  max-width: var(--max-with-mobile);
+  margin: auto; }
   @media only screen and (max-width: 576px) {
     .event-icon {
-      left: 20px;
-      bottom: 60px; } }
+      left: 10px;
+      bottom: 70px; } }
   .event-icon img {
     max-width: 120px; }
     @media only screen and (max-width: 576px) {
