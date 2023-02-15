@@ -64,6 +64,12 @@
         border: none;
         min-height: 50px;
 
+        .btn {
+          border-radius: 20px !important;
+          height: calc(100% - 8px);
+          margin-right: 4px;
+        }
+
         .input-group-text {
           background-color: transparent;
           border: none;

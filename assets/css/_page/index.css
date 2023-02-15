@@ -332,6 +332,10 @@
         border-radius: 30px;
         border: none;
         min-height: 50px; }
+        .register__form form .input-group .btn {
+          border-radius: 20px !important;
+          height: calc(100% - 8px);
+          margin-right: 4px; }
         .register__form form .input-group .input-group-text {
           background-color: transparent;
           border: none;
