@@ -490,6 +490,56 @@
   }
 }
 
+#newsModal {
+  .modal-dialog {
+    .modal-content {
+      border-radius: 20px;
+      overflow: hidden;
+
+      .modal-body {
+        .table {
+          background: #fff;
+
+          thead {
+            tr {
+              th {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                text-align: center;
+                color: #fff;
+                vertical-align: middle;
+                border: none;
+                height: 50px;
+                background: linear-gradient(180deg, #8EA9FF 0%, #678BFF 32.29%, #557BF7 100%);
+              }
+            }
+          }
+
+          tbody {
+            border-top: none !important;
+
+            tr {
+
+              td {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000000;
+                background-color: #fff;
+                height: 50px;
+                text-align: left;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 #selectBankModal {
   .select-bank-modal {
     &__items {
