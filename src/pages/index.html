@@ -30,7 +30,7 @@
 
         <div class="notification">
           <div class="notification__sound"><img src="assets//icons/sound.png" alt="" /></div>
-          <div class="text-animated">
+          <div class="text-animated" data-bs-toggle="modal" data-bs-target="#newsModal">
             <span class="text-overflow" data-i18n="index.notification_run">The announcement message will runs here. The announcement message will runs here. The announcement message will runs here</span>
           </div>
           <div class="notification__hot-matches" data-bs-toggle="modal" data-bs-target="#hotMatchModal" data-i18n="hot_matches_icon"></div>
@@ -164,6 +164,7 @@
 
       <!-- MODAL -->
       @@include('../components/home/hot-match-modal.html')
+      @@include('../components/home/news-modal.html')
       <!-- MODAL -->
 
       @@include('../components/world-cup/event-icon.html')

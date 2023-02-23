@@ -297,12 +297,15 @@
         text-align: center;
         color: #000000; }
 
+#newsModal .modal-dialog,
 #selectLanguage .modal-dialog {
   padding: 0 30px;
   margin: auto; }
+  #newsModal .modal-dialog .modal-content,
   #selectLanguage .modal-dialog .modal-content {
     border-radius: 0;
     border: none; }
+    #newsModal .modal-dialog .modal-content .modal-header,
     #selectLanguage .modal-dialog .modal-content .modal-header {
       background-image: url(../images/select-language-bg.png);
       background-repeat: no-repeat;
@@ -314,13 +317,17 @@
       color: #FFFFFF;
       text-align: center;
       border-radius: 0 !important; }
+    #newsModal .modal-dialog .modal-content .modal-body,
     #selectLanguage .modal-dialog .modal-content .modal-body {
       padding-top: 30px;
       padding-bottom: 30px; }
+      #newsModal .modal-dialog .modal-content .modal-body img,
       #selectLanguage .modal-dialog .modal-content .modal-body img {
         max-width: 40px; }
+      #newsModal .modal-dialog .modal-content .modal-body .choose-language,
       #selectLanguage .modal-dialog .modal-content .modal-body .choose-language {
         word-break: keep-all; }
+      #newsModal .modal-dialog .modal-content .modal-body .title,
       #selectLanguage .modal-dialog .modal-content .modal-body .title {
         font-weight: 300;
         font-size: 12px;
@@ -328,6 +335,7 @@
         text-align: center;
         color: #000000;
         margin-top: 7px; }
+      #newsModal .modal-dialog .modal-content .modal-body .subtitle,
       #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
         display: flex;
         place-items: center;
