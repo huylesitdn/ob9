@@ -3,7 +3,7 @@
   padding-top: 0;
   background-size: contain;
   background-repeat: repeat-y;
-  background-position: center;
+  background-position: top;
   background-image: url(../images/raia-mini-game/RAYA-BG-03.png); }
   .raia-mini-game-block__content {
     padding: 30px 0;
