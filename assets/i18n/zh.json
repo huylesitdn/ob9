@@ -1243,7 +1243,7 @@
   },
   "raia_mini_game_page": {
     "header": "世界杯点球挑战赛",
-    "top_banner": "<img src=\"assets/images/raia-mini-game/RAYA-BANNER-Moblie.png\" />",
+    "top_banner": "<img src=\"assets/images/raia-mini-game/RAYA-BANNER-PC-zh.png\" />",
     "top_banner_mobile": "<img src=\"assets/images/raia-mini-game/RAYA-BANNER-Moblie.png\" />",
     "how_to_play": "游戏教学",
     "YOUR_PRIZE_HISTORY": "您的获奖记录",
