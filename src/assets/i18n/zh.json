@@ -1242,7 +1242,7 @@
     "": ""  
   },
   "raia_mini_game_page": {
-    "header": "世界杯点球挑战赛",
+    "header": "欧宝开斋节迷你游戏",
     "top_banner": "<img src=\"assets/images/raia-mini-game/RAYA-BANNER-PC-zh.png\" />",
     "top_banner_mobile": "<img src=\"assets/images/raia-mini-game/RAYA-BANNER-Moblie.png\" />",
     "how_to_play": "游戏教学",
@@ -1320,7 +1320,7 @@
     "how_to_play_step2__title": "步骤2",
     "how_to_play_step2__description": "活动期间每日单笔存款 MYR100 可赢取 1 张门票",
     "how_to_play_step3__title": "步骤3",
-    "how_to_play_step3__description": "射球得分并赢取现金！",
+    "how_to_play_step3__description": "掀开图片并赢取奖金！",
     "event_icon": "<img src=\"assets/images/world-cup/en/CN-GIF.gif\" />",
     "": "",
     "": "" 
