@@ -6466,7 +6466,6 @@ a {
     .raia-mini-game-page__container .play-now {
       min-height: 200px; } }
   .raia-mini-game-page__container .play-now > div {
-    background-color: rgba(0, 0, 0, 0.7);
     content: "";
     width: 100%;
     height: 100%;
