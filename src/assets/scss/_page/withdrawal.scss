@@ -5,6 +5,36 @@
     padding-left: 0;
     padding-right: 0;
 
+    &__withdrawal-verification {
+      background-image: url(../images/SG-verification-page/Frame-and-girl.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      place-items: center;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      padding-left: 80px;
+      padding-right: 20px;
+      margin-right: 20px;
+
+      span {
+        color: #3678FE;
+        font-size: 25px;
+        line-height: 45px;
+        display: block;
+      }
+
+      .icon {
+        max-width: 150px;
+      }
+    }
+
     &__wallet {
       background: #FFFFFF;
       padding: 15px;
@@ -77,6 +107,7 @@
 
             &__img {
               min-height: 30px;
+
               img {
                 max-width: 30px;
               }
@@ -87,6 +118,24 @@
               line-height: 12px;
               text-align: center;
               color: #000000;
+            }
+          }
+
+          &__status {
+            color: #fff;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 2px 5px;
+            border-radius: 4px;
+            position: absolute;
+            right: 40px;
+
+            &.verifying {
+              background-color: #F4D48C;
+            }
+
+            &.verified {
+              background-color: #597EF7;
             }
           }
 
