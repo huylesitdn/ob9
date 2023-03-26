@@ -721,4 +721,8 @@ $('.forget-password-page .btn-next').on('click', function (e) {
   }
 });
 
+$('.custom-file .custom-file-input').on('change', function(e) {
+  $('.custom-file .custom-file-input-label').val(e.target.files[0].name);
+})
+
 console.log("--- index.jsaaa");

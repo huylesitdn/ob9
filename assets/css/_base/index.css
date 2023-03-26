@@ -78,6 +78,25 @@ a {
   color: #597EF7;
   text-decoration: none; }
 
+.custom-file {
+  display: flex;
+  flex: 1;
+  padding: 10px 0; }
+  .custom-file .btn {
+    border-radius: 0;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #000;
+    width: 150px;
+    display: flex;
+    place-content: center;
+    place-items: center; }
+  .custom-file .form-control {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 5px !important; }
+
 .modal.slide-up {
   top: auto;
   bottom: 0;

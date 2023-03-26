@@ -2296,14 +2296,14 @@
             height: 30px; }
           .add-bank-account__content__input .items .input-group .form-control {
             border-bottom: none; }
-          .add-bank-account__content__input .items .input-group .btn {
+          .add-bank-account__content__input .items .input-group .btn-primary {
             background-color: #4E7FFF;
             border: none;
             border-radius: 5px !important;
             height: 30px;
             display: flex;
             place-items: center; }
-            .add-bank-account__content__input .items .input-group .btn.disabled, .add-bank-account__content__input .items .input-group .btn:disabled {
+            .add-bank-account__content__input .items .input-group .btn-primary.disabled, .add-bank-account__content__input .items .input-group .btn-primary:disabled {
               background-color: rgba(78, 127, 255, 0.5);
               pointer-events: none; }
     .add-bank-account__content__description {
