@@ -1,3 +1,31 @@
+.nav-live-match {
+  background: transparent linear-gradient(0deg, #C4D1FA 0%, #F9FBFC 99%) 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 27px;
+  color: #5986F2;
+  font-size: 12px;
+  min-width: 105px;
+  min-height: 32px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  gap: 6px;
+  font-weight: 300;
+  padding: 10px !important;
+  width: auto !important;
+  width: fit-content !important;
+  height: 35px;
+
+  img {
+    width: 18px;
+  }
+
+  span {
+    border-bottom: none !important;
+    width: auto !important;
+  }
+}
+
 .live-match-block {
   padding: 0;
 
@@ -6,7 +34,8 @@
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../images/live-match/BG.png);
+    background-image: url(../images/live-match/bg.png);
+    background-attachment: fixed;
   }
 
   .block-content {
@@ -51,22 +80,24 @@
     background-image: url(../images/live-match/top-bg.png);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 
     &__ads {
       display: flex;
       place-content: center;
       place-items: center;
-      height: 100px;
+      height: 80px;
       background-color: #f5f5f5;
       padding-top: 15px;
     }
 
     &__video {
-      min-height: 350px;
+      min-height: 270px;
 
       iframe {
         width: 100%;
-        height: 350px;
+        height: 270px;
+        border: 3px solid #5393FB;
       }
 
       &__vs {
@@ -100,6 +131,7 @@
     background-size: cover;
     background-repeat: repeat-y;
     background-image: url(../images/live-match/content-bg.png);
+    background-color: #fff;
 
     &__title {
       display: flex;
@@ -107,7 +139,7 @@
       place-items: center;
       margin-bottom: 20px;
       position: relative;
-      min-height: 80px;
+      min-height: 50px;
 
       span {
         font-style: normal;
@@ -120,11 +152,11 @@
         display: flex;
         place-content: center;
         place-items: center;
-        min-width: 185px;
+        min-width: 160px;
 
         &::before {
           position: absolute;
-          width: 80px;
+          width: 70px;
           height: 40px;
           left: -50%;
           content: "";
@@ -136,7 +168,7 @@
 
         &::after {
           position: absolute;
-          width: 80px;
+          width: 70px;
           height: 40px;
           right: -50%;
           content: "";
@@ -370,15 +402,30 @@
           &__match {
             background: #E1E8F5;
             border-radius: 30px;
-            padding: 15px 20px;
+            padding: 15px 10px;
             display: flex;
             place-content: space-between;
-            place-items: flex-end;
-            font-size: 18px;
+            place-items: center;
+            font-size: 15px;
             font-weight: 400;
             color: #353F4B;
             margin: 15px 0;
             width: 100%;
+
+            .time {
+              font-weight: 700;
+            }
+
+            &>div {
+              display: flex;
+              place-content: center;
+              place-items: center;
+              gap: 5px;
+
+              img {
+                width: 25px;
+              }
+            }
           }
 
           &__action {
@@ -390,7 +437,7 @@
             .btn {
               padding: 0;
               min-width: initial;
-              font-size: 14px;
+              font-size: 13px;
             }
 
             .btn-watch {
@@ -424,8 +471,9 @@
                 display: flex;
                 place-content: center;
                 place-items: center;
-                min-width: 120px;
+                min-width: 110px;
                 margin-left: -20px;
+                padding-left: 10px;
               }
             }
 
