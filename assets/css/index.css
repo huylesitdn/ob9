@@ -6779,9 +6779,9 @@ a {
   place-content: center;
   place-items: center;
   height: 60px;
-  margin: 30px auto 5px;
-  width: 70%;
-  padding-top: 70px; }
+  margin: 30px auto -15px;
+  width: 90%;
+  padding: 70px 15px 0; }
 
 .live-match-page__top {
   margin: auto;
