@@ -11,14 +11,15 @@
     .nav-live-match span::after {
       position: absolute;
       content: "";
-      right: -20px;
-      width: 15px;
-      height: 15px;
+      right: -25px;
+      width: 20px;
+      height: 20px;
       overflow: hidden;
       background-repeat: no-repeat;
       background-image: url(../images/live-match/live.gif);
-      background-size: 60px;
-      background-position: center; }
+      background-size: 75px;
+      background-position: center;
+      top: -3px; }
 
 .live-match-block {
   padding: 0; }
