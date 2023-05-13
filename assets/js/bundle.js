@@ -725,4 +725,10 @@ $('.custom-file .custom-file-input').on('change', function(e) {
   $('.custom-file .custom-file-input-label').val(e.target.files[0].name);
 })
 
+const customerAnnoucementElm = $("#customerAnnoucement");
+if (customerAnnoucementElm.length > 0) {
+  var customerAnnoucement = new bootstrap.Modal(customerAnnoucementElm, {});
+  customerAnnoucement.show()
+}
+
 console.log("--- index.jsaaa");

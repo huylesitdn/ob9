@@ -297,14 +297,17 @@
         text-align: center;
         color: #000000; }
 
+#customerAnnoucement .modal-dialog,
 #newsModal .modal-dialog,
 #selectLanguage .modal-dialog {
   padding: 0 30px;
   margin: auto; }
+  #customerAnnoucement .modal-dialog .modal-content,
   #newsModal .modal-dialog .modal-content,
   #selectLanguage .modal-dialog .modal-content {
     border-radius: 0;
     border: none; }
+    #customerAnnoucement .modal-dialog .modal-content .modal-header,
     #newsModal .modal-dialog .modal-content .modal-header,
     #selectLanguage .modal-dialog .modal-content .modal-header {
       background-image: url(../images/select-language-bg.png);
@@ -317,16 +320,20 @@
       color: #FFFFFF;
       text-align: center;
       border-radius: 0 !important; }
+    #customerAnnoucement .modal-dialog .modal-content .modal-body,
     #newsModal .modal-dialog .modal-content .modal-body,
     #selectLanguage .modal-dialog .modal-content .modal-body {
       padding-top: 30px;
       padding-bottom: 30px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body img,
       #newsModal .modal-dialog .modal-content .modal-body img,
       #selectLanguage .modal-dialog .modal-content .modal-body img {
         max-width: 40px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .choose-language,
       #newsModal .modal-dialog .modal-content .modal-body .choose-language,
       #selectLanguage .modal-dialog .modal-content .modal-body .choose-language {
         word-break: keep-all; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .title,
       #newsModal .modal-dialog .modal-content .modal-body .title,
       #selectLanguage .modal-dialog .modal-content .modal-body .title {
         font-weight: 300;
@@ -335,6 +342,7 @@
         text-align: center;
         color: #000000;
         margin-top: 7px; }
+      #customerAnnoucement .modal-dialog .modal-content .modal-body .subtitle,
       #newsModal .modal-dialog .modal-content .modal-body .subtitle,
       #selectLanguage .modal-dialog .modal-content .modal-body .subtitle {
         display: flex;
