@@ -2,17 +2,18 @@ const gulp        = require('gulp');
 const fileinclude = require('gulp-file-include');
 const server = require('browser-sync').create();
 const { watch, series } = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
+// const sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 
 const paths = {
-  scripts: {
+  assets: {
     src: './src/',
     dest: './build/assets/'
   },
-  default: {
+  scripts: {
     src: './src/',
     dest: './build/'
   },
@@ -55,6 +56,7 @@ async function compileJS() {
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest(paths.js.dest_dir));
 }
+
 async function compileI18n() {
   gulp.src([paths.i18n.src])
     .pipe(gulp.dest(paths.i18n.dest_dir));
@@ -67,7 +69,7 @@ async function compileI18n() {
 // Copy assets after build
 async function copyAssets() {
   gulp.src(['assets/**/*'])
-    .pipe(gulp.dest(paths.scripts.dest));
+    .pipe(gulp.dest(paths.assets.dest));
 }
 
 // Build files html and reload server
@@ -79,9 +81,8 @@ async function buildAndReload() {
 
 // Build files html and reload server
 async function srcReload() {
-  await compileScss();
-  await compileI18n();
   await compileJS();
+  await compileScss();
   await compileVendorJS();
   await buildAndReload();
   reload();
@@ -90,14 +91,14 @@ async function srcReload() {
 async function includeHTML(){
   return gulp.src([
     './src/pages/*.html',
-    './src/pages/*.html',
+    './src/pages/**/*.html',
     '!./src/components/**/*.html', // ignore
     ])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest(paths.default.dest));
+    .pipe(gulp.dest(paths.scripts.dest));
 }
 exports.includeHTML = includeHTML;
 
@@ -110,11 +111,12 @@ exports.default = async function() {
   // Init serve files from the build folder
   server.init({
     server: {
-      baseDir: paths.default.dest
+      baseDir: paths.scripts.dest
     }
   });
   // Build and reload at the first time
   buildAndReload();
+
   // Watch Sass task
   // watch('./src/assets/scss/*.scss',  series(compileScss));
   // watch('./src/assets/scss/**/*.scss',  series(compileScss));
@@ -123,11 +125,12 @@ exports.default = async function() {
   // Watch js task
   // watch('./src/assets/js/vendor.js',  series(compileVendorJS));
   // watch(['./src/assets/js/*.js'],  series(compileJS));
+
   // Watch task
   watch([
     "src/**/*"
   ], series(srcReload));
-
+  
   watch([
     // "./src/pages/**/*",
     "assets/**/*"

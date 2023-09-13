@@ -158,6 +158,7 @@
           line-height: 14px;
           color: #A5A9B3; }
     .withdrawal__content__submit {
+      background-color: #f2f2f2;
       padding: 15px; }
       .withdrawal__content__submit .btn {
         width: 100%;
