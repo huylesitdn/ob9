@@ -799,7 +799,7 @@
     "warning": "*The USDT addresses corresponding to the two protocols do not communicate with each other. When performing operations such as transfer and reload, you should carefully check the correct address."
   },
   "Login_to_view": "Login to view",
-  "Log_in_now_to_enjoy_better_experiences": "Log in now to enjoy better experiences",
+  "Log_in_now_to_enjoy_better_experiences": "Enjoy better experiences",
   "Login_Register": "Login/Register",
   "SUCCESSFUL": "SUCCESSFUL",
   "contact_us_page": {
@@ -1380,6 +1380,7 @@
   "Add_Address": "Add Address",
   "Please_enter_Address": "Please enter wallet address",
   "OTP_SENT": "OTP sent. Please check your phone and key in the OTP.",
+  "Join_now": "JOIN NOW",
   "": "",
   "": ""
 }
