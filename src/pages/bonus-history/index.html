@@ -7,45 +7,30 @@
     <section class="main bonus-history ">
       @@include('../../components/base/navbar-child.html', {
         back_url: '/my-account.html', 
-        title: 'Bonus_History', 
-        nav_expand_url: '../bonus-history/nav-expand.html',
-        nav_expand_active_btn: 0,
-        nav_expand_active_btn_text: 'bonus_history_page.Unclaim'
+        title: 'Bonus_Center', 
       })
-      <div class="bonus-history__items">
-        <div class="bonus-history__items__item row">
-          <div class="bonus-history__items__item__left col-8">
-            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.Cash_Rebate"></div>
-            <div class="bonus-history__items__item__left__price">MYR30.00</div>
-            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
-          </div>
-          <div class="bonus-history__items__item__right col-4">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
-            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
-          </div>
-        </div>
 
-        <div class="bonus-history__items__item row">
-          <div class="bonus-history__items__item__left col-8">
-            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.VIP_Tier_Upgrade_Bonus"></div>
-            <div class="bonus-history__items__item__left__price">MYR30.00</div>
-            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
-          </div>
-          <div class="bonus-history__items__item__right col-4">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
-            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
-          </div>
+      <div class="w-100 bg-white">
+        <div class="px-3 pt-2">
+          <ul class="nav nav-tabs nav-fill deposit__content__tab" id="depositTab" role="tablist">
+            <li class="nav-item deposit__content__tab__item" role="presentation">
+              <button class="nav-link deposit__content__tab__item__link active" id="cash-rebate-tab" data-bs-toggle="tab" data-bs-target="#cash-rebate" type="button" role="tab" aria-controls="cash-rebate" aria-selected="true">
+                <span data-i18n="CASH_REBATE"></span>
+              </button>
+            </li>
+            <li class="nav-item deposit__content__tab__item" role="presentation">
+              <button class="nav-link deposit__content__tab__item__link mid" id="weekly-angpow-tab" data-bs-toggle="tab" data-bs-target="#weekly-angpow" type="button" role="tab" aria-controls="weekly-angpow" aria-selected="false">
+                <span data-i18n="VIP_ANGPOW"></span>
+              </button>
+            </li>
+          </ul>
         </div>
-
-        <div class="bonus-history__items__item row">
-          <div class="bonus-history__items__item__left col-8">
-            <div class="bonus-history__items__item__left__title" data-i18n="bonus_history_page.Birthday_Bonus"></div>
-            <div class="bonus-history__items__item__left__price">MYR30.00</div>
-            <div class="bonus-history__items__item__left__description">2022-02-24 10:36:08</div>
+        <div class="tab-content deposit__content__tab_content" id="depositTabContent">
+          <div class="tab-pane fade show active" id="cash-rebate" role="tabpanel" aria-labelledby="cash-rebate-tab">
+            @@include('../../components/bonus-history/cash-rebate.html')
           </div>
-          <div class="bonus-history__items__item__right col-4">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimSuccessModal" data-i18n="bonus_history_page.Claim_Now"></button>
-            <div class="bonus-history__items__item__right__description">DD924u421948928</div>
+          <div class="tab-pane fade" id="weekly-angpow" role="tabpanel" aria-labelledby="weekly-angpow-tab">
+            @@include('../../components/bonus-history/weekly-angpow.html')
           </div>
         </div>
       </div>
