@@ -7132,6 +7132,9 @@ a {
   right: 0;
   width: 30px; }
 
+.bg-purple {
+  background-color: #6f42c1; }
+
 .rewards-block {
   padding-top: 50px;
   padding-bottom: 300px;
