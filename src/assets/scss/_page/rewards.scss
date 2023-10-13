@@ -122,6 +122,21 @@
         min-height: 150px;
       }
 
+      .current-point {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        text-shadow: 1px 1px 10px rgb(255, 210, 97);
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
       &__title {
         font-size: 20px;
         color: #fff;
@@ -305,6 +320,11 @@
 
               .btn {
                 transition: 0.3s;
+
+                &:focus,
+                &:active {
+                  box-shadow: none !important;
+                }
 
                 &:hover {
                   opacity: 0.8 !important;

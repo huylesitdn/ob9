@@ -82,6 +82,19 @@
     border-radius: 20px; }
     .rewards-block__content__card__content .content {
       min-height: 150px; }
+    .rewards-block__content__card__content .current-point {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      text-shadow: 1px 1px 10px #ffd261;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold; }
     .rewards-block__content__card__content__title {
       font-size: 20px;
       color: #fff;
@@ -216,5 +229,7 @@
           text-align: center; }
           .rewards-block__content__card__content .items .item__content__action .btn {
             transition: 0.3s; }
+            .rewards-block__content__card__content .items .item__content__action .btn:focus, .rewards-block__content__card__content .items .item__content__action .btn:active {
+              box-shadow: none !important; }
             .rewards-block__content__card__content .items .item__content__action .btn:hover {
               opacity: 0.8 !important; }
