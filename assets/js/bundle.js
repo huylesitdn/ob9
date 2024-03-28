@@ -737,4 +737,33 @@ if (customerAnnoucementImageElm.length > 0) {
   customerAnnoucementImage.show()
 }
 
+
+const euroNavEl = $('#euro-nav button[data-bs-toggle="tab"]');
+euroNavEl.on("shown.bs.tab", function (e) {
+  switch (e.target.id) {
+    case "tab1-tab": {
+      $('.uefa-euro-page').removeClass('match-prediction pentalty-shoot').addClass('perdict-event');
+      $('#bannerTab1').toggleClass('d-none');
+      $('#bannerTab2').addClass('d-none');
+      $('#bannerTab3').addClass('d-none');
+      break;
+    }
+    case "tab2-tab": {
+      $('.uefa-euro-page').removeClass('perdict-event pentalty-shoot').addClass('match-prediction')
+      $('#bannerTab2').toggleClass('d-none');
+      $('#bannerTab1').addClass('d-none');
+      $('#bannerTab3').addClass('d-none');
+      break;
+    }
+    case "tab3-tab": {
+      $('.uefa-euro-page').removeClass('perdict-event match-prediction').addClass('pentalty-shoot')
+      $('#bannerTab3').toggleClass('d-none');
+      $('#bannerTab1').addClass('d-none');
+      $('#bannerTab2').addClass('d-none');
+      break;
+    }
+  }
+});
+
+
 console.log("--- index.jsaaa");
