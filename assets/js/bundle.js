@@ -17,6 +17,7 @@ function getUrlVars() {
 const LANGUAGES = {
   EN: "en",
   ZH: "zh",
+  SG: "sg",
 };
 
 var translator = new Translator({
@@ -36,7 +37,7 @@ const _get_translator_config = translator.config.persistKey || "preferred_langua
 const _get_language = localStorage.getItem(_get_translator_config) || LANGUAGES.EN;
 const _get_region = localStorage.getItem(PREFERED_REGION);
 
-translator.fetch([LANGUAGES.EN, LANGUAGES.ZH]).then(() => {
+translator.fetch([LANGUAGES.EN, LANGUAGES.ZH, LANGUAGES.SG]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
   changeLanguageColor();
@@ -765,5 +766,19 @@ euroNavEl.on("shown.bs.tab", function (e) {
   }
 });
 
+
+$('.match_flag .match_flag_item').on('click', function() {
+  // get data-match on button 
+  var _match = $(this).data('match');
+
+  // add d-none to match-flag
+  $('.match-container .match-item .match-flag > div').addClass('d-none');
+  // add d-none to match-name
+  $('.match-container .match-item .match-name > div').addClass('d-none');
+
+  // show match flag with _match
+  $('.match-container .match-item .match-flag .' + _match).removeClass('d-none');
+  $('.match-container .match-item .match-name .' + _match).removeClass('d-none');
+})
 
 console.log("--- index.jsaaa");

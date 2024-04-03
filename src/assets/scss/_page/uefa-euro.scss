@@ -86,6 +86,28 @@
         border: 2px solid #349dff;
       }
 
+      .match_flag {
+        display: flex;
+        place-items: center;
+        place-content: center;
+        flex-wrap: wrap;
+        gap: 7px;
+        padding: 5px;
+
+        .match_flag_item {
+          padding: 5px;
+          border-radius: 3px;
+
+          &:hover {
+            background-color: #349dff;
+          }
+
+          img {
+            width: 35px;
+          }
+        }
+      }
+
       .match-date {
         text-align: center;
         position: relative;
@@ -125,6 +147,15 @@
             -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
             -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
             border-radius: 20px;
+
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            .match_team_logo {
+              max-width: 55px;
+              padding-bottom: 15px;
+            }
           }
 
           .match-name {
@@ -135,6 +166,16 @@
             -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
             min-height: 30px;
             margin-bottom: 10px;
+
+            display: flex;
+            place-content: center;
+            place-items: center;
+
+            .match_team_name {
+              text-transform: uppercase;
+              font-weight: 700;
+              font-size: 12px;
+            }
           }
 
           &::after {
@@ -292,6 +333,21 @@
           min-height: 320px;
           margin-bottom: 20px;
           position: relative;
+          overflow: hidden;
+
+          .penalty-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            img {
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
         }
 
         .penalty-how-to-play {
@@ -949,17 +1005,18 @@
           place-content: center;
 
           &__title {
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url(../images/world-cup/bar-bg.png);
-            background-position: center;
+            background: #0c66d8;
+            padding: 10px 40px;
+            display: inline-block;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
             text-align: center;
             text-transform: uppercase;
             font-size: 20px;
             font-weight: 600;
             color: #fff;
             padding: 3px 40px;
-            height: 35px;
+            height: 40px;
             display: flex;
             place-content: center;
             place-items: center;
@@ -978,24 +1035,27 @@
             }
 
             &__item {
-              border: 2px solid #e24b72;
-              background-color: #727272;
+              background-color: #fff;
               border-radius: 15px;
               height: 100%;
               padding: 0 15px 15px;
+              box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+              -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
+              -moz-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.3);
 
               &__title {
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-image: url(../images/world-cup/bar-child-bg.png);
-                background-position: center;
+                background: #0c66d8;
+                padding: 12px 50px;
+                display: inline-block;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
                 text-align: center;
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: 600;
                 color: #fff;
                 padding: 3px 15px;
-                min-height: 25px;
+                min-height: 35px;
                 display: flex;
                 place-content: center;
                 place-items: center;
@@ -1009,7 +1069,7 @@
               &__description {
                 font-size: 14px;
                 font-weight: 400;
-                color: #fff;
+                color: var(--bs-body-color);
                 min-height: 50px;
                 display: flex;
                 place-content: center;
