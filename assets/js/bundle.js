@@ -41,6 +41,7 @@ translator.fetch([LANGUAGES.EN, LANGUAGES.ZH, LANGUAGES.SG]).then(() => {
   // -> Translations are ready...
   translator.translatePageTo(_get_language);
   changeLanguageColor();
+  euroFinalMatch();
 });
 
 /**
@@ -767,18 +768,42 @@ euroNavEl.on("shown.bs.tab", function (e) {
 });
 
 
-$('.match_flag .match_flag_item').on('click', function() {
-  // get data-match on button 
-  var _match = $(this).data('match');
+function euroFinalMatch() {
+  var MATCH_TEAM_COUNT = 0;
 
-  // add d-none to match-flag
-  $('.match-container .match-item .match-flag > div').addClass('d-none');
-  // add d-none to match-name
-  $('.match-container .match-item .match-name > div').addClass('d-none');
+  $(".match_flag .match_flag_item").on("click", function () {
+    var _flag_name = $(this).data("name"),
+      match_team_1 = $(
+        ".match-container .match-item .match-flag > .match_team_1"
+      ),
+      match_team_2 = $(
+        ".match-container .match-item .match-flag > .match_team_2"
+      ),
+      match_name_1 = $(
+        ".match-container .match-item .match-name > .match_name_1"
+      ),
+      match_name_2 = $(
+        ".match-container .match-item .match-name > .match_name_2"
+      );
 
-  // show match flag with _match
-  $('.match-container .match-item .match-flag .' + _match).removeClass('d-none');
-  $('.match-container .match-item .match-name .' + _match).removeClass('d-none');
-})
+    const countryNameLanguage = translator.translateForKey(
+      "euro_page." + _flag_name,
+      _get_language
+    );
+    if (MATCH_TEAM_COUNT % 2 === 0) {
+      match_name_1.html(countryNameLanguage);
+      match_team_1.html(
+        `<img src="assets/images/euro/team/${_flag_name}.png" />`
+      );
+    } else {
+      match_name_2.html(countryNameLanguage);
+      match_team_2.html(
+        `<img src="assets/images/euro/team/${_flag_name}.png" />`
+      );
+    }
+    MATCH_TEAM_COUNT++;
+  });
+}
+
 
 console.log("--- index.jsaaa");
